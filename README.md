@@ -8,4 +8,9 @@
 - 💬 Ask me about board games
 - 📫 How to reach me: stewardgoods.com
 - 😄 Pronouns: He/Him/They/Them
-- ⚡ Fun fact: My top five most played game of the past 365 days are Age of Empires IV, Splitgate, Boomerang Fu, Regicide, and Hanabi
+- ⚡ Fun fact: My top five most played game of the past 365 days (in order, most played listed first):
+  - Age of Empires IV
+  - Splitgate
+  - Boomerang Fu
+  - Regicide
+  - Hanabi
