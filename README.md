@@ -6,7 +6,7 @@
 - 👯 I’m looking to collaborate on video game development
 - 🤔 I’m looking for help with running API authenticated Angular projects locally 
 - 💬 Ask me about board games
-- 📫 How to reach me: stewardgoods.com
+- 📫 How to reach me: https://jacobstephens.net
 - 😄 Pronouns: He/Him/They/Them
 - ⚡ Fun fact: My top five most played game of the past 365 days (in order, most played listed first):
   - Age of Empires IV
