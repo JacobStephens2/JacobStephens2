@@ -1,4 +1,4 @@
-### Howdy, 👋
+### Howdy 👋
 
 *Updated May 20, 2022*
 - 🔭 I’m currently working on pursuing my goal of creating in the mediums I read
