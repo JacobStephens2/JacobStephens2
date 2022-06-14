@@ -1,6 +1,6 @@
 ### Howdy 👋
 
-*Updated June 12, 2022*
+*Updated June 13, 2022*
 - 🔭 I’m currently working on an app that helps facilitate event management
 - 🌱 I’m currently learning how to develop apps with a React front end and Node back end
 - 👯 I’m looking to collaborate on development of the event management app
