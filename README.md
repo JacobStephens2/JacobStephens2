@@ -1,8 +1,8 @@
 ### Howdy 👋
 
 *Updated June 13, 2022*
-- 🔭 I’m currently working on an app that helps facilitate event management
-- 🌱 I’m currently learning how to develop apps with a React.js authenticated front end and PHP Slim and MySQL back end API
+- 🔭 I’m currently working on my artifact minimalism app
+- 🌱 I’m currently learning how to perform dynamic live data searches with JavaScript, PHP, and MySQL
 - 👯 I’m looking to collaborate on development of the event management app
 - 🤔 I’m looking for help with running API authenticated Angular projects locally 
 - 💬 Ask me about figuring out how to spend leisure time
