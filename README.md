@@ -1,6 +1,6 @@
 ### Howdy 👋
 
-*Updated June 13, 2022*
+*Updated September 27, 2023*
 - 🔭 I’m currently working on my artifact minimalism app
 - 🌱 I’m currently learning how to use websocket connections to enable clients to live see inputs from one another
 - 📫 How to reach me: https://jacobstephens.net
