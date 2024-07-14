@@ -1,6 +1,6 @@
 ### Hi! 👋
 
-- 🌱 I’m currently learning Java for mobile and web server backend development.
+- 🌱 I’m currently learning Java to create a mobile app for my artifact manager.
 
 Resume: https://resume.jacobstephens.net
 
