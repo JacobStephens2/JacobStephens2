@@ -1,8 +1,7 @@
 ### Hi! 👋
 
 - 🌱 I’m currently learning Java for mobile and web server backend development.
-- 📫 How to reach me: https://resume.jacobstephens.net
 
-My resume: https://resume.jacobstephens.net
+Resume: https://resume.jacobstephens.net
 
-My GitHub resume: https://resume.github.io/?JacobStephens2
+LinkedIn: https://www.linkedin.com/in/jacob-stephens-0b034a200/
