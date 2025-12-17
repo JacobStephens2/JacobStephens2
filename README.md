@@ -1,6 +1,6 @@
 ### Hi! 👋
 
-Portfolio: https://stephens.page
+Portfolio and Links: https://stephens.page
 
 Resume: https://resume.jacobstephens.net
 
