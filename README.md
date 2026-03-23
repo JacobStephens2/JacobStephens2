@@ -13,7 +13,7 @@ I'm Jacob, a senior full-stack engineer based in Pennsylvania. I build automatio
 #### Links
 
 - 🌐 [stephens.page](https://stephens.page)
-- 📄 [resume.jacobstephens.net](https://resume.jacobstephens.net)
+- 📄 [resume.stephens.page](https://resume.stephens.page)
 - 💼 [LinkedIn](https://www.linkedin.com/in/jacob-stephens-0b034a200/)
 
 
