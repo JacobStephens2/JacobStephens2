@@ -15,3 +15,10 @@ I'm Jacob, a senior full-stack engineer based in Pennsylvania. I build automatio
 - 🌐 [stephens.page](https://stephens.page)
 - 📄 [resume.jacobstephens.net](https://resume.jacobstephens.net)
 - 💼 [LinkedIn](https://www.linkedin.com/in/jacob-stephens-0b034a200/)
+
+
+#### GitHub Stats
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=JacobStephens2&theme=default)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JacobStephens2&layout=compact&langs_count=8)
