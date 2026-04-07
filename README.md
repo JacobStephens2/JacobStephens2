@@ -13,6 +13,7 @@ I'm Jacob, a senior full-stack engineer based in Philadelphia, PA. I build produ
 
 #### 🔧 Personal Projects
 
+- **[Clowder & Crest](https://github.com/JacobStephens2/clowder-and-crest)** — Cozy medieval cat guild management game with 7 minigame types, 35 jobs, 7 narrative chapters, pixel art sprites, and an explorable town map. Play at [clowder.stephens.page](https://clowder.stephens.page). (TypeScript, Phaser 3, Vite, Capacitor)
 - **[MacroTracker](https://github.com/JacobStephens2/MacroTracker)** — Self-hosted macro tracking PWA with barcode scanning, multi-API food search (Open Food Facts, USDA, FatSecret), recipes, weight trends, and CSV export. (TypeScript/Vite, Express, SQLite)
 - **[CreightonTrackingApp](https://github.com/JacobStephens2/CreightonTrackingApp)** — Privacy-focused Creighton Model fertility tracker with E2E encryption, offline capability, chart/calendar views, and provider sharing. (TypeScript, Vite, Express, SQLite, PWA)
 - **[wedding.stephens.page](https://github.com/JacobStephens2/wedding.stephens.page)** — Full-stack wedding website with invite-based RSVP, guest management admin, interactive registry with purchase tracking, photo gallery, and cron-based monitoring. (PHP, MySQL, JavaScript)
