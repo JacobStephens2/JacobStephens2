@@ -16,10 +16,10 @@ I'm Jacob, a senior full-stack engineer at [Educational Travel Adventures](https
 - **[Clowder & Crest](https://github.com/JacobStephens2/clowder-and-crest)** — Cozy medieval cat guild management game with 7 minigame types, 35 jobs, 7 narrative chapters, pixel art sprites, and an explorable town map. Play at [clowderandcrest.com](https://clowderandcrest.com/). (TypeScript, Phaser 3, Vite, Capacitor)
 - **[MacroTracker](https://github.com/JacobStephens2/MacroTracker)** — Self-hosted macro tracking PWA with barcode scanning, multi-API food search (Open Food Facts, USDA, FatSecret), recipes, weight trends, and CSV export. (TypeScript/Vite, Express, SQLite)
 - **[CreightonTrackingApp](https://github.com/JacobStephens2/CreightonTrackingApp)** — Privacy-focused Creighton Model fertility tracker with E2E encryption, offline capability, chart/calendar views, and provider sharing. (TypeScript, Vite, Express, SQLite, PWA)
-- **[wedding.stephens.page](https://github.com/JacobStephens2/wedding-platform)** — Full-stack wedding website with invite-based RSVP, guest management admin, interactive registry with purchase tracking, photo gallery, and cron-based monitoring. (PHP, MySQL, JavaScript)
+- **[wedding-platform](https://github.com/JacobStephens2/wedding-platform)** — Full-stack wedding website with invite-based RSVP, guest management admin, interactive registry with purchase tracking, photo gallery, and cron-based monitoring. (PHP, MySQL, JavaScript)
 - **[Magisterium MCP Server](https://github.com/JacobStephens2/magisterium_mcp_server)** — Model Context Protocol server giving AI assistants access to the Magisterium API for Catholic Church teaching with citations. (TypeScript, Node.js, MCP)
 - **[daily\_dozen](https://github.com/JacobStephens2/daily_dozen)** — Daily Dozen food checklist tracker with user accounts, offline support, and cloud sync. (Node.js, Express, PWA)
-- **[exodus40lite](https://github.com/JacobStephens2/exodus40lite)** — Lenten accountability tracker for small groups, adapted from Exodus 90. (JavaScript, PHP, MySQL, PWA)
+- **[exodus](https://github.com/JacobStephens2/exodus40lite)** — Lenten accountability tracker for small groups, adapted from Exodus 90. (JavaScript, PHP, MySQL, PWA)
 - **[Channel Zero News](https://github.com/JacobStephens2/channel-zero-news-web-app)** — Interactive party game with host control panel, real-time submission tracking, and teleprompter for live mock news broadcasts. (PHP, MySQL, Bootstrap)
 
 #### 🔗 Links
