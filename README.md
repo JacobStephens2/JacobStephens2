@@ -1,24 +1,19 @@
-### Hi! 👋
+### Jacob Stephens
 
-I'm Jacob, a senior full-stack engineer at [Educational Travel Adventures](https://github.com/Educational-Travel-Adventures), based in Philadelphia, PA. I build production PHP and TypeScript systems — payment processing, automation, REST APIs, and Linux infrastructure — and privacy-first health and lifestyle apps on the side. Experienced with AI-assisted development tooling (Claude Code, Codex, MCP).
+Senior full-stack engineer and infrastructure architect. I design, build, and
+operate production systems end to end — a multi-portal PHP / MySQL reservations
+platform, multi-tenant AI assistants on Docker, a Python agent-orchestration
+host, and an internal FastAPI / Next.js platform that replaced a SaaS vendor —
+the stack a multi-million-dollar specialty-travel business runs on.
 
-#### 🛠 Tech Stack
+Most of that work lives in private repositories. The architecture and the
+reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/eta-platform.html)**
+and in **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** (sanitized ADRs).
 
-`PHP` `TypeScript` `JavaScript` `Node.js/Express` `MySQL` `SQLite` `React` `HTML/CSS` `REST APIs` `Linux` `Apache` `Git` `Vite` `Capacitor` `PWA` `WordPress` `Rust` `Kotlin` `Swift` `C#` `WebAssembly`
+📄 **[Resume](https://resume.stephens.page)** · 🗂 **[Portfolio](https://stephens.page/portfolio.html)**
 
-#### 💼 Professional Work
+---
 
-- **[Tourbot](https://github.com/Educational-Travel-Adventures)** — Full-stack tour management system handling reservations, group bookings, vendor management, payment processing, document generation, and AI-assisted chat for a multi-million dollar travel business. (PHP, MySQL, JavaScript, OpenClaw)
-- **[ETA Guides Portal](https://github.com/Educational-Travel-Adventures)** — Mobile-first PWA for tour guide contractors with trip itineraries, expense reporting, document management, and offline support. (PHP, MySQL, Bootstrap, PWA)
-
-#### 🔧 Personal Projects
-
-- **[cascade](https://github.com/JacobStephens2/cascade)** — Waterfall white-noise player with one headless Rust core driving six native shells — web (PWA), Android, macOS, Windows, iOS, and watchOS. Demonstrates a Clave-style headless-core + native-UI architecture with focus/sleep timers and native media controls. (Rust, React/Vite, Kotlin/Compose, SwiftUI, WinUI 3/C#, UniFFI, wasm-bindgen)
-- **[CreightonTracker](https://github.com/JacobStephens2/CreightonTrackerClient)** — Privacy-focused Creighton Model fertility tracker with E2E encryption, offline capability, chart/calendar views, and provider sharing. (TypeScript, Vite, Express, SQLite, PWA)
-- **[Clowder & Crest](https://github.com/JacobStephens2/clowder-and-crest)** — Cozy medieval cat guild management game with 7 minigame types, 35 jobs, 7 narrative chapters, pixel art sprites, and an explorable town map. Play at clowderandcrest.com. (TypeScript, Phaser 3, Vite, Capacitor)
-- **[MacroTracker](https://github.com/JacobStephens2/MacroTracker)** — Self-hosted macro tracking PWA with barcode scanning, multi-API food search (Open Food Facts, USDA, FatSecret), recipes, weight trends, and CSV export. (TypeScript/Vite, Express, SQLite)
-- **[wedding-platform](https://github.com/JacobStephens2/wedding-platform)** — Full-stack wedding website with invite-based RSVP, guest management admin, interactive registry with purchase tracking, photo gallery, and cron-based monitoring. (PHP, MySQL, JavaScript)
-- **[Magisterium MCP Server](https://github.com/JacobStephens2/magisterium_mcp_server)** *(archived)* — MCP server giving AI assistants access to the Magisterium API for Catholic Church teaching with citations. Built 2025 as an early MCP integration; archived once tooling moved on. (TypeScript, Node.js, MCP)
-- **[daily_dozen](https://github.com/JacobStephens2/daily_dozen)** — Daily Dozen food checklist tracker with user accounts, offline support, and cloud sync. (Node.js, Express, PWA)
-- **[exodus](https://github.com/JacobStephens2/exodus)** — Lenten accountability tracker for small groups, adapted from Exodus 90. (JavaScript, PHP, MySQL, PWA)
-- **[Channel Zero News](https://github.com/JacobStephens2/channel-zero-news)** — Interactive party game with host control panel, real-time submission tracking, and teleprompter for live mock news broadcasts. (PHP, MySQL, Bootstrap)
+Outside work I ship cross-platform apps with a privacy-first bent — client-side
+encryption, offline-first storage, and one core driving many native shells.
+A few are pinned below.
