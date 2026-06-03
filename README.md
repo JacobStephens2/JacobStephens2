@@ -10,6 +10,8 @@ Most of that work lives in private repositories. The architecture and the
 reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/eta-platform.html)**
 and in **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** (sanitized ADRs).
 
+I also contribute upstream — recently a MySQL 8.4 `caching_sha2_password` auth-handshake fix to [php-mysql-replication](https://github.com/krowinski/php-mysql-replication/pull/148).
+
 📄 **[Resume](https://resume.stephens.page)** · 🗂 **[Portfolio](https://stephens.page/portfolio.html)**
 
 ---
