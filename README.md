@@ -1,6 +1,6 @@
 ### Jacob Stephens
 
-Senior full-stack engineer and infrastructure architect. I design, build, and
+Senior software engineer working across platform and infrastructure. I design, build, and
 operate production systems end to end — a multi-portal PHP / MySQL reservations
 platform, multi-tenant AI assistants on Docker, a Python agent-orchestration
 host, and an internal FastAPI / Next.js platform that replaced a SaaS vendor —
