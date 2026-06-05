@@ -1,10 +1,6 @@
 ### Jacob Stephens
 
-Senior software engineer working across platform and infrastructure. I design, build, and
-operate production systems end to end - a multi-portal PHP / MySQL reservations
-platform, multi-tenant AI assistants on Docker, a Python agent-orchestration
-host, and an internal FastAPI / Next.js platform to replace a SaaS vendor -
-the stack a multi-million-dollar specialty-travel business runs on.
+Platform infrastructure engineer specializing in safe AI automation for revenue-critical legacy systems. I design, build, and operate production systems end to end — a multi-portal PHP / MySQL reservations platform, multi-tenant AI assistants on Docker, a Python agent-orchestration host, and an internal FastAPI / Next.js platform to replace a SaaS vendor — the stack a multi-million-dollar specialty-travel business runs on.
 
 Most of that work lives in private repositories. The architecture and the
 reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/eta-platform.html)**
