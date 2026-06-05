@@ -16,6 +16,6 @@ I also contribute upstream - recently a MySQL 8.4 `caching_sha2_password` auth-h
 
 ---
 
-Outside work I ship cross-platform apps with a privacy-first bent — client-side
+Outside work I ship cross-platform apps with a privacy-first bent - client-side
 encryption, offline-first storage, and one core driving many native shells.
 A few are pinned below.
