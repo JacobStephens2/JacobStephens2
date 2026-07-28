@@ -1,6 +1,6 @@
 ### Jacob Stephens
 
-**Safe AI automation for revenue-critical legacy systems.** I design, build, and operate production systems end to end — a multi-portal PHP / MySQL reservations platform, multi-tenant AI assistants on Docker, a Python agent-orchestration host, and an internal FastAPI / Next.js platform to replace a SaaS vendor — the stack a multi-million-dollar specialty-travel business runs on. That's the *Legacy-to-AI Bridge* problem: modernization without a rewrite, agents without blast radius, and human-in-the-loop where it matters.
+**Safe AI automation for revenue-critical legacy systems.** I design, build, and operate production systems end to end — a multi-portal PHP / MySQL reservations platform, multi-tenant AI assistants on Docker, and a Python agent-orchestration host, for a multi-million-dollar specialty-travel business. That's the *Legacy-to-AI Bridge* problem: modernization without a rewrite, agents without blast radius, and human-in-the-loop where it matters.
 
 Most of that work lives in private repositories. The architecture and the reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/eta-platform.html)** and in **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** (sanitized ADRs, a threat model for agent sandboxes, and an operational review checklist).
 
