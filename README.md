@@ -15,6 +15,14 @@ Products I've built and shipped end to end — offline-first, client-side encryp
 
 Both apps run on the same pattern I use in infra work: one core, native shells, and privacy by construction. Server-side code stays private; the public showcase demonstrates the front end and the architecture.
 
+## In the works — public audience, private repo
+
+Apps I'm building toward a public release; the code stays private for now, but each has a public home you can follow.
+
+| App | What it is | Where to follow |
+|---|---|---|
+| **Quadrille** | Lifting log — a native iOS + watchOS weightlifting tracker with a shared core and integrated Watch app, built to ship to the App Store | [quadrille.app](https://quadrille.app) |
+
 ## Production tools I run daily
 
 Command-line and self-hosted tools I built for my own agent + infra workflow, in daily production use.
@@ -44,5 +52,4 @@ More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) e
 📄 **[Resume](https://resume.stephens.page)** · **[Portfolio](https://stephens.page/portfolio.html)** · **[Available for Staff / Lead platform-infra roles](mailto:jacob@stephens.page?subject=Staff%2FLead%20platform%20role)**
 
 ---
-
 <sub>*St. Carlo Acutis, pray for us.*</sub>
