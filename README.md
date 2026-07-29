@@ -15,6 +15,15 @@ Products I've built and shipped end to end — offline-first, client-side encryp
 
 Both apps run on the same pattern I use in infra work: one core, native shells, and privacy by construction. Server-side code stays private; the public showcase demonstrates the front end and the architecture.
 
+## Production tools I run daily
+
+Command-line and self-hosted tools I built for my own agent + infra workflow, in daily production use.
+
+| Tool | What it is | Code |
+|---|---|---|
+| **vaulted-agent-launcher** (`va`) | Launches Claude Code, Codex, and Grok with vault-resolved secrets in-process — per-agent blast radius, no `.env` files or vault tokens on disk (1Password, Bitwarden SM, pass, sops; macOS + Linux) | [vaulted-agent-launcher](https://github.com/JacobStephens2/vaulted-agent-launcher) |
+| **muxboard** | Flask-embeddable web dashboard over `tmux` for one host or a fleet, live in-browser attach — default-deny auth, attach caps, documented threat model | [muxboard](https://github.com/JacobStephens2/muxboard) |
+
 ## Published packages
 
 Small, dependency-free primitives extracted from that production work — each ships as a wire-compatible TypeScript + Go pair, tested against parity vectors so the two produce byte-identical output.
