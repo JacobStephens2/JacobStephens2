@@ -22,6 +22,9 @@ Apps I'm building toward a public release; the code stays private for now, but e
 | App | What it is | Where to follow |
 |---|---|---|
 | **Quadrille** | Lifting log — a native iOS + watchOS weightlifting tracker with a shared core and integrated Watch app, built to ship to the App Store | [quadrille.app](https://quadrille.app) |
+| **Verelle** | Marquette Method FertilityCare charting — offline-first, encrypted, Android-native with a Rust core | [verelle.app](https://verelle.app/) |
+| **Nightloch** | Partner-gated, time-scheduled digital accountability boundaries across iOS/macOS/Android/Windows | [nightloch.app](https://nightloch.app) |
+| **Clave** | Cooperative salsa partner-dance card game for two players, with a headless engine and two-device rooms | [clave.dance](https://clave.dance/) |
 
 ## Production tools I run daily
 
@@ -31,6 +34,7 @@ Command-line and self-hosted tools I built for my own agent + infra workflow, in
 |---|---|---|
 | **vaulted-agent-launcher** (`va`) | Launches Claude Code, Codex, and Grok with vault-resolved secrets in-process — per-agent blast radius, no `.env` files or vault tokens on disk (1Password, Bitwarden SM, pass, sops; macOS + Linux) | [vaulted-agent-launcher](https://github.com/JacobStephens2/vaulted-agent-launcher) |
 | **muxboard** | Flask-embeddable web dashboard over `tmux` for one host or a fleet, live in-browser attach — default-deny auth, attach caps, documented threat model | [muxboard](https://github.com/JacobStephens2/muxboard) |
+| **skills** | Reusable SKILL.md agent skills for application planning, adversarial review, and adjudication — used across my own Claude Code / Codex workflows | [skills](https://github.com/JacobStephens2/skills) |
 
 ## Published packages
 
