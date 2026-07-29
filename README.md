@@ -23,7 +23,7 @@ Apps I'm building toward a public release; the code stays private for now, but e
 |---|---|---|
 | **Quadrille** | Lifting log — a native iOS + watchOS weightlifting tracker with a shared core and integrated Watch app, built to ship to the App Store | [quadrille.app](https://quadrille.app) |
 | **Verelle** | Marquette Method FertilityCare charting — offline-first, encrypted, Android-native with a Rust core | [verelle.app](https://verelle.app/) |
-| **Nightloch** | Partner-gated, time-scheduled digital accountability boundaries across iOS/macOS/Android/Windows | [nightloch.app](https://nightloch.app) |
+| **Nightloch** | Partner-locked digital accountability curfews — WireGuard + AdGuard Home DNS filtering with a Go control plane | [nightloch.app](https://nightloch.app) |
 | **Clave** | Cooperative salsa partner-dance card game for two players, with a headless engine and two-device rooms | [clave.dance](https://clave.dance/) |
 
 ## Production tools I run daily
