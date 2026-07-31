@@ -53,6 +53,8 @@ TypeScript releases are published via GitHub Actions with [npm Trusted Publishin
 
 More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) ecosystem — that's where the "safe AI automation" thesis externally validates.
 
+Available for platform-infra roles.
+
 📄 **[Resume](https://resume.stephens.page)** · **[Portfolio](https://stephens.page/portfolio.html)** · **[Available for Staff / Lead platform-infra roles](mailto:jacob@stephens.page?subject=Staff%2FLead%20platform%20role)**
 
 ---
