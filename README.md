@@ -32,9 +32,9 @@ Command-line and self-hosted tools I built for my own agent + infra workflow, in
 | Tool | What it is | Code |
 |---|---|---|
 | **vaulted-agent-launcher** (`va`) | Launches Claude Code, Codex, and Grok with vault-resolved secrets in-process — per-agent blast radius, no `.env` files or vault tokens on disk (1Password, Bitwarden SM, pass, sops; macOS + Linux) | [vaulted-agent-launcher](https://github.com/JacobStephens2/vaulted-agent-launcher) |
-| **muxboard** | Flask-embeddable web dashboard over `tmux` for one host or a fleet, live in-browser attach — default-deny auth, attach caps, documented threat model | [muxboard](https://github.com/JacobStephens2/muxboard) |
+| **muxboard** | Flask-embeddable web dashboard over `tmux` for one host or a fleet, live in-browser attach — default-deny auth, attach caps, documented threat model | [muxboard.dev](https://muxboard.dev) · [code](https://github.com/JacobStephens2/muxboard) |
 | **skills** | Reusable SKILL.md agent skills for application planning, adversarial review, and adjudication — used across my own Claude Code / Codex workflows | [skills](https://github.com/JacobStephens2/skills) |
-| **inkvoke** | Single-binary, agent-friendly Go CLI for OpenAI's image models (`gpt-image-2` by default) — generate from prompts, edit existing images, and run batches from a JSON manifest | [inkvoke](https://github.com/JacobStephens2/inkvoke) |
+| **inkvoke** | Single-binary, agent-friendly Go CLI for OpenAI's image models (`gpt-image-2` by default) — generate from prompts, edit existing images, and run batches from a JSON manifest | [inkvoke.dev](https://inkvoke.dev) · [code](https://github.com/JacobStephens2/inkvoke) |
 
 ## Published packages
 
