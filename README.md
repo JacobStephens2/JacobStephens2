@@ -50,6 +50,7 @@ TypeScript releases are published via GitHub Actions with [npm Trusted Publishin
 ## Upstream contributions
 
 - MySQL 8.4 `caching_sha2_password` auth-handshake fix to [`krowinski/php-mysql-replication#148`](https://github.com/krowinski/php-mysql-replication/pull/148).
+- Kimi Code `kimi -p` env-key regression fix (agent-core-v2 auth gate ignored `process.env`) to [`MoonshotAI/kimi-code#2746`](https://github.com/MoonshotAI/kimi-code/pull/2746) (issue [#2745](https://github.com/MoonshotAI/kimi-code/issues/2745)).
 
 More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) ecosystem — that's where the "safe AI automation" thesis externally validates.
 
