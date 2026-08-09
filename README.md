@@ -4,7 +4,7 @@
 
 Most of that work lives in private repositories. The architecture and the reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/eta-platform.html)** and in **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** (sanitized ADRs, a threat model for agent sandboxes, and an operational review checklist).
 
-## Shipped apps with real users
+## Shipped apps
 
 Products I've built and shipped end to end — offline-first, client-side encrypted, and released to real users across web, iOS/watchOS, and Android.
 
@@ -15,7 +15,7 @@ Products I've built and shipped end to end — offline-first, client-side encryp
 
 Both apps run on the same pattern I use in infra work: one core, native shells, and privacy by construction. Server-side code stays private; the public showcase demonstrates the front end and the architecture.
 
-## In the works — public audience, private repo
+## In the works
 
 Apps I'm building toward a public release; the code stays private for now, but each has a public home you can follow.
 
@@ -25,7 +25,7 @@ Apps I'm building toward a public release; the code stays private for now, but e
 | **Nightloch** | Partner-locked digital accountability curfews — WireGuard + AdGuard Home DNS filtering with a Go control plane | [nightloch.app](https://nightloch.app) |
 | **Clave** | Cooperative salsa partner-dance card game for two players, with a headless engine and two-device rooms | [clave.dance](https://clave.dance/) |
 
-## Production tools I run daily
+## Production tools
 
 Command-line and self-hosted tools I built for my own agent + infra workflow, in daily production use.
 
