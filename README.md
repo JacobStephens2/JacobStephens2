@@ -12,6 +12,7 @@ Products I've built and shipped end to end — offline-first, client-side encryp
 |---|---|---|---|
 | **Chart35** | Privacy-first Creighton Model fertility charting — offline-first PWA, end-to-end encrypted sync, provider sharing; in the App Store / Play / TestFlight, with users via organic search | [chart35.com/creighton](https://chart35.com/creighton) | [chart35-showcase](https://github.com/JacobStephens2/chart35-showcase) (public architecture & privacy slice) |
 | **Drome** | Free, local-first iOS tracker for 75-day challenges — one Rust rules engine driving native SwiftUI + WidgetKit, event-sourced | [drome.day](https://drome.day) | showcase coming |
+| **Cascade** | Waterfall white-noise player — one headless Rust core driving six native shells across web (PWA), Android, macOS, Windows, iOS, and watchOS; a headless-core + native-UI kata | [cascade.stephens.page](https://cascade.stephens.page) | [cascade](https://github.com/JacobStephens2/cascade) |
 
 Both apps run on the same pattern I use in infra work: one core, native shells, and privacy by construction. Server-side code stays private; the public showcase demonstrates the front end and the architecture.
 
