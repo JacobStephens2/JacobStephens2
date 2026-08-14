@@ -52,6 +52,7 @@ TypeScript releases are published via GitHub Actions with [npm Trusted Publishin
 
 - MySQL 8.4 `caching_sha2_password` auth-handshake fix to [`krowinski/php-mysql-replication#148`](https://github.com/krowinski/php-mysql-replication/pull/148).
 - Kimi Code `kimi -p` env-key regression fix (agent-core-v2 auth gate ignored `process.env`) to [`MoonshotAI/kimi-code#2746`](https://github.com/MoonshotAI/kimi-code/pull/2746) (issue [#2745](https://github.com/MoonshotAI/kimi-code/issues/2745)).
+- SwarmForge agent-lifecycle bug report: unexpected exit of the cleanup-owner agent triggers an unconditional teardown of every swarm session, killing active workers — reported at [`unclebob/swarm-forge#49`](https://github.com/unclebob/swarm-forge/issues/49) with a proposal to decouple whole-swarm teardown from the cleanup-owner's process lifecycle.
 
 More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) ecosystem — that's where the "safe AI automation" thesis externally validates.
 
@@ -60,4 +61,5 @@ Available for platform-infra roles.
 📄 **[Resume](https://resume.stephens.page)** · **[Portfolio](https://stephens.page/portfolio.html)** · **[Available for Staff / Lead platform-infra roles](mailto:jacob@stephens.page?subject=Staff%2FLead%20platform%20role)**
 
 ---
-<sub>*St. Carlo Acutis, pray for us.*</sub>
+
+*St. Carlo Acutis, pray for us.*
