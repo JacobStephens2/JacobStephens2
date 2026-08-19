@@ -1,6 +1,6 @@
 ### Jacob Stephens
 
-**Safe AI automation for revenue-critical legacy systems.** I'm the sole engineering owner of a multi-million-dollar specialty-travel stack — a multi-portal PHP / MySQL reservations platform, multi-tenant AI assistants on Docker, and a Python agent-orchestration host — and I run the whole thing behind a human merge gate.
+**Safe AI automation for revenue-critical legacy systems.** I lead a two-engineer team owning a multi-million-dollar specialty-travel stack — a multi-portal PHP / MySQL reservations platform, multi-tenant AI assistants on Docker, and a Python agent-orchestration host — and I run the whole thing behind a human merge gate.
 
 - **~80% of measured query load removed** across the reservations platform via three zero-downtime online-DDL indexes (before/after EXPLAIN + slow-log deltas, no customer-visible cutover).
 - **Manifest page: 5–7s → ~1s**, SQL / request 2,650 → 183, byte-identical HTML — the caching layer is verified equivalent, not just faster ([case study](https://stephens.page/eta-platform.html)).
@@ -9,14 +9,14 @@
 
 Most of that work lives in private repos. The architecture and the reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/eta-platform.html)** and in **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** — sanitized ADRs, a threat model for agent sandboxes, and an operational review checklist.
 
-### Public artifacts that prove the thesis
+### Public artifacts
 
 | Repo | What it proves | Evidence |
 |---|---|---|
 | **[vaulted-agent-launcher](https://github.com/JacobStephens2/vaulted-agent-launcher)** (`va`) | Per-agent blast radius: launches Claude Code, Codex, Grok, and Kimi with vault-resolved secrets in-process — no `.env` files or vault tokens on disk (1Password, Bitwarden SM, `pass`, sops; macOS + Linux) | Design issues [#70](https://github.com/JacobStephens2/vaulted-agent-launcher/issues/70), [#72](https://github.com/JacobStephens2/vaulted-agent-launcher/issues/72) · [installer hosting docs](https://github.com/JacobStephens2/vaulted-agent-launcher/blob/main/docs/hosting-the-installer.md) |
 | **[muxboard](https://github.com/JacobStephens2/muxboard)** | Babysitting long-running agents: Flask-embeddable web dashboard over `tmux` for one host or a fleet, live in-browser attach — default-deny auth, attach caps, documented threat model | [muxboard.dev](https://muxboard.dev/) |
 | **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** | Sanitized ADRs and the operational review checklist from the ETA factory — the human merge gate, in writing | [ADR index](https://github.com/JacobStephens2/infrastructure-patterns) |
-| **[chart35-showcase](https://github.com/JacobStephens2/chart35-showcase)** | Privacy-by-construction: offline-first PWA, end-to-end encrypted sync, provider sharing. **52 accounts, 40 verified, 47 synced** on [Chart35](https://chart35.com/creighton) via organic search alone | Architecture + privacy slice public; production data stays E2E-encrypted so the server sees only account metadata and encrypted-snapshot sizes |
+| **[chart35-showcase](https://github.com/JacobStephens2/chart35-showcase)** | Privacy-by-construction: offline-first PWA, end-to-end encrypted sync, provider sharing. **83 iOS + 17 Android installs, 52 web accounts (40 verified, 47 synced)** on [Chart35](https://chart35.com/creighton) — App Store / Play / TestFlight, growth via organic search alone | Architecture + privacy slice public; production data stays E2E-encrypted so the server sees only account metadata and encrypted-snapshot sizes |
 | **[cascade](https://github.com/JacobStephens2/cascade)** | Headless-core + native-UI kata: one Rust core, **2 shipped shells (Web PWA, Android)**, 4 architected to extend (macOS, Windows, iOS, watchOS) | [cascade.stephens.page](https://cascade.stephens.page/) · [architecture](https://cascade.stephens.page/architecture/) |
 | **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** | Production-grade k8s manifests: probes, resource limits, hardened `securityContext`, HPA, ingress, kustomize; statically validated with kubeconform | [Dockerfile](https://github.com/JacobStephens2/k3s-demo/blob/main/Dockerfile) |
 
