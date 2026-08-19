@@ -54,6 +54,6 @@ More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) e
 
 ---
 
-📄 **[Resume](https://resume.stephens.page/)** · **[Portfolio](https://stephens.page/portfolio.html)** · **[Available for Staff / Lead platform-infra roles](mailto:jacob@stephens.page)**
+📄 **[Resume](https://resume.stephens.page/)** · **[Portfolio](https://stephens.page/portfolio.html)** · **[Available for Staff / Lead platform-infra roles](https://stephens.page/contact.html)**
 
 St. Carlo Acutis, pray for us.
