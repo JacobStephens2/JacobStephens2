@@ -41,7 +41,6 @@ More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) e
 
 **Tools in daily production use**
 
-- **[skills](https://github.com/JacobStephens2/skills)** — reusable SKILL.md agent skills for application planning, adversarial review, and adjudication
 - **[inkvoke](https://github.com/JacobStephens2/inkvoke)** — single-binary, agent-friendly Go CLI for OpenAI's image models; prompt / edit / manifest-batch ([inkvoke.dev](https://inkvoke.dev/))
 
 **Published packages** — wire-compatible TypeScript + Go pairs, tested against parity vectors for byte-identical output. TypeScript releases publish via [npm Trusted Publishing (OIDC)](https://docs.npmjs.com/trusted-publishers/) — no long-lived tokens, provenance on every version.
