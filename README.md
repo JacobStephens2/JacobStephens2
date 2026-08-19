@@ -17,7 +17,7 @@ Most of that work lives in private repos. The architecture and the reasoning beh
 | **[muxboard](https://github.com/JacobStephens2/muxboard)** | Babysitting long-running agents: Flask-embeddable web dashboard over `tmux` for one host or a fleet, live in-browser attach — default-deny auth, attach caps, documented threat model | [muxboard.dev](https://muxboard.dev/) |
 | **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** | Sanitized ADRs and the operational review checklist from the ETA factory — the human merge gate, in writing | [ADR index](https://github.com/JacobStephens2/infrastructure-patterns) |
 | **[chart35-showcase](https://github.com/JacobStephens2/chart35-showcase)** | Privacy-by-construction: offline-first PWA, end-to-end encrypted sync, provider sharing. **83 iOS + 17 Android installs, 52 web accounts (40 verified, 47 synced)** on [Chart35](https://chart35.com/creighton) — App Store / Play / TestFlight, growth via organic search alone | Architecture + privacy slice public; production data stays E2E-encrypted so the server sees only account metadata and encrypted-snapshot sizes |
-| **[cascade](https://github.com/JacobStephens2/cascade)** | Headless-core + native-UI kata: one Rust core, **2 shipped shells (Web PWA, Android)**, 4 architected to extend (macOS, Windows, iOS, watchOS) | [cascade.stephens.page](https://cascade.stephens.page/) · [architecture](https://cascade.stephens.page/architecture/) |
+| **[cascade](https://github.com/JacobStephens2/cascade)** | Headless-core + native-UI kata: one Rust core driving six shells. Web PWA live; Windows, notarized macOS, Android sideload, and iOS TestFlight on [/apps](https://cascade.stephens.page/apps) (watchOS comes with iPhone) | [cascade.stephens.page](https://cascade.stephens.page/) · [architecture](https://cascade.stephens.page/architecture/) |
 | **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** | Production-grade k8s manifests: probes, resource limits, hardened `securityContext`, HPA, ingress, kustomize; statically validated with kubeconform | [Dockerfile](https://github.com/JacobStephens2/k3s-demo/blob/main/Dockerfile) |
 
 ### Upstream contributions
@@ -37,7 +37,7 @@ More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) e
 
 - **[Chart35](https://chart35.com/creighton)** — privacy-first Creighton Model fertility charting; App Store / Play / TestFlight ([chart35-showcase](https://github.com/JacobStephens2/chart35-showcase))
 - **[Drome](https://drome.day/)** — local-first iOS tracker for 75-day challenges; one Rust rules engine, native SwiftUI + WidgetKit, event-sourced
-- **[Cascade](https://cascade.stephens.page/)** — waterfall white-noise player ([cascade](https://github.com/JacobStephens2/cascade))
+- **[Cascade](https://cascade.stephens.page/)** — waterfall white-noise player for web, Windows, macOS, Android, and iOS ([cascade](https://github.com/JacobStephens2/cascade) · [apps](https://cascade.stephens.page/apps))
 
 **Tools in daily production use**
 
