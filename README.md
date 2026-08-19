@@ -35,9 +35,7 @@ More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) e
 
 **Products**
 
-- **[Chart35](https://chart35.com/creighton)** — privacy-first Creighton Model fertility charting; App Store / Play / TestFlight ([chart35-showcase](https://github.com/JacobStephens2/chart35-showcase))
 - **[Drome](https://drome.day/)** — local-first iOS tracker for 75-day challenges; one Rust rules engine, native SwiftUI + WidgetKit, event-sourced
-- **[Cascade](https://cascade.stephens.page/)** — waterfall white-noise player for web, Windows, macOS, Android, and iOS ([cascade](https://github.com/JacobStephens2/cascade) · [apps](https://cascade.stephens.page/apps))
 
 **Tools in daily production use**
 
