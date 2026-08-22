@@ -1,6 +1,6 @@
 ### Jacob Stephens
 
-**Safe AI automation for revenue-critical legacy systems.** I lead a two-engineer team owning a multi-million-dollar specialty-travel stack — a multi-portal PHP / MySQL reservations platform, multi-tenant AI assistants on Docker, and a Python agent-orchestration host — and I run the whole thing behind a human merge gate.
+**Safe AI automation for revenue-critical legacy systems.** I lead a two-engineer team owning a multi-million-dollar specialty-travel stack — a multi-portal PHP / MySQL reservations platform, Docker-based Manager Sandboxes, and a Python agent-orchestration host — and I run the whole thing behind a human merge gate.
 
 - **~80% of measured query load removed** across the reservations platform via three zero-downtime online-DDL indexes (before/after EXPLAIN + slow-log deltas, no customer-visible cutover).
 - **Manifest page: 5–7s → ~1s**, SQL / request 2,650 → 183, byte-identical HTML — the caching layer is verified equivalent, not just faster ([case study](https://stephens.page/blog/one-engineer-platform-production-systems/)).
@@ -18,7 +18,7 @@ Most of that work lives in private repos. The architecture and the reasoning beh
 | **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** | Sanitized ADRs and the operational review checklist from the ETA factory — the human merge gate, in writing | [ADR index](https://github.com/JacobStephens2/infrastructure-patterns) |
 | **[chart35-showcase](https://github.com/JacobStephens2/chart35-showcase)** | Privacy-by-construction: offline-first PWA, end-to-end encrypted sync, provider sharing. **83 iOS + 17 Android installs, 52 web accounts (40 verified, 47 synced)** on [Chart35](https://chart35.com/creighton) — App Store / Play / TestFlight, growth via organic search alone | Architecture + privacy slice public; production data stays E2E-encrypted so the server sees only account metadata and encrypted-snapshot sizes |
 | **[cascade](https://github.com/JacobStephens2/cascade)** | Headless-core + native-UI kata: one Rust core driving six shells. Web PWA live; Windows, notarized macOS, Android sideload, and iOS TestFlight on [/apps](https://cascade.stephens.page/apps) (watchOS comes with iPhone) | [cascade.stephens.page](https://cascade.stephens.page/) · [architecture](https://cascade.stephens.page/architecture/) |
-| **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** | Production-grade k8s manifests: probes, resource limits, hardened `securityContext`, HPA, ingress, kustomize; statically validated with kubeconform | [Dockerfile](https://github.com/JacobStephens2/k3s-demo/blob/main/Dockerfile) |
+| **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** | Kubernetes Demo: a separate, non-production single-node k3s learning and portfolio environment with probes, resource limits, hardened `securityContext`, HPA, ingress, and kustomize; Manager Sandboxes do not run on it | [Dockerfile](https://github.com/JacobStephens2/k3s-demo/blob/main/Dockerfile) |
 
 ### Upstream contributions
 
