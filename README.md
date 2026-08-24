@@ -3,11 +3,11 @@
 **Safe AI automation for revenue-critical legacy systems.** I lead a two-engineer team owning a multi-million-dollar specialty-travel stack — a multi-portal PHP / MySQL reservations platform, multi-tenant AI assistants on Docker, and a Python agent-orchestration host — and I run the whole thing behind a human merge gate.
 
 - **~80% of measured query load removed** across the reservations platform via three zero-downtime online-DDL indexes (before/after EXPLAIN + slow-log deltas, no customer-visible cutover).
-- **Manifest page: 5–7s → ~1s**, SQL / request 2,650 → 183, byte-identical HTML — the caching layer is verified equivalent, not just faster ([case study](https://stephens.page/eta-platform.html)).
-- **12 manager-prototyped features shipped through a human merge gate** (Vagabond marketing lead prototyping on live production data; review + hardening by me and one engineer I manage), zero agent-caused incidents in production ([factory ADR: shared collector seam](https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0021-shared-collector-seam-over-direct-backend-wiring.md), [scoped system user ADR](https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0005-scoped-system-user-over-service-account.md)).
+- **Manifest page: 5–7s → ~1s**, SQL / request 2,650 → 183, byte-identical HTML — the caching layer is verified equivalent, not just faster ([case study](https://stephens.page/blog/one-engineer-platform-production-systems/)).
+- **14 manager-prototyped features shipped through a human merge gate** (Vagabond marketing lead prototyping on live production data; review + hardening by me and one engineer I manage), zero agent-caused incidents in production ([factory ADR: shared collector seam](https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0021-shared-collector-seam-over-direct-backend-wiring.md), [scoped system user ADR](https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0005-scoped-system-user-over-service-account.md)).
 - **14-host observability fleet + 3 enterprise migrations** (Bitbucket → GitHub, WordPress hardening, Tailscale rollout), no customer-visible outage.
 
-Most of that work lives in private repos. The architecture and the reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/eta-platform.html)** and in **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** — sanitized ADRs, a threat model for agent sandboxes, and an operational review checklist.
+Most of that work lives in private repos. The architecture and the reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/blog/one-engineer-platform-production-systems/)** and in **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** — sanitized ADRs, a threat model for agent sandboxes, and an operational review checklist.
 
 ### Public artifacts
 
