@@ -25,21 +25,18 @@ Most of that work lives in private repos. The architecture and the reasoning beh
 - **MySQL 8.4 `caching_sha2_password` auth-handshake fix** in `krowinski/php-mysql-replication` — [PR #148](https://github.com/krowinski/php-mysql-replication/pull/148). The library's handshake ignored the new default plugin; patched the auth-switch path so binlog readers connect to MySQL 8.4 without downgrading server auth.
 - **Kimi Code `kimi -p` env-key regression** in `MoonshotAI/kimi-code` — [PR #2746](https://github.com/MoonshotAI/kimi-code/pull/2746) closing [issue #2745](https://github.com/MoonshotAI/kimi-code/issues/2745). `agent-core-v2`'s auth gate resolved credentials from `args.provider?.env ?? {}` and ignored `process.env`, breaking headless `-p` runs; fixed the resolver to fall through to `process.env`.
 - **SwarmForge whole-swarm teardown bug** in `unclebob/swarm-forge` — [issue #49](https://github.com/unclebob/swarm-forge/issues/49). Unexpected exit of the cleanup-owner agent triggered an unconditional teardown of every swarm session; proposed decoupling teardown from the cleanup-owner's process lifecycle.
+- **Herdr duplicate browser-tab open on Control-click** in `herdrdev/herdr` — [issue #3720](https://github.com/herdrdev/herdr/issues/3720). Control-clicking links in terminal panes on macOS spawned `/usr/bin/open` twice simultaneously (46 µs apart) in Terminal.app, opening duplicate Chrome tabs; isolated and documented deterministic reproduction steps.
 
 More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) ecosystem — that's where the "safe AI automation" thesis externally validates.
 
 ### Also shipped
 
 <details>
-<summary>Products, tools, and published packages — click to expand</summary>
+<summary>Products and published packages — click to expand</summary>
 
 **Products**
 
 - **[Drome](https://drome.day/)** — local-first iOS tracker for 75-day challenges; one Rust rules engine, native SwiftUI + WidgetKit, event-sourced
-
-**Tools in daily production use**
-
-- **[inkvoke](https://github.com/JacobStephens2/inkvoke)** — single-binary, agent-friendly Go CLI for OpenAI's image models; prompt / edit / manifest-batch ([inkvoke.dev](https://inkvoke.dev/))
 
 **Published packages** — wire-compatible TypeScript + Go pairs, tested against parity vectors for byte-identical output. TypeScript releases publish via [npm Trusted Publishing (OIDC)](https://docs.npmjs.com/trusted-publishers/) — no long-lived tokens, provenance on every version.
 
