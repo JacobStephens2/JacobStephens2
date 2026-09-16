@@ -27,8 +27,6 @@ Most of that work lives in private repos. The architecture and the reasoning beh
 - **Kimi Code `kimi -p` env-key regression** in `MoonshotAI/kimi-code` — [PR #2746](https://github.com/MoonshotAI/kimi-code/pull/2746) closing [issue #2745](https://github.com/MoonshotAI/kimi-code/issues/2745). `agent-core-v2`'s auth gate resolved credentials from `args.provider?.env ?? {}` and ignored `process.env`, breaking headless `-p` runs; fixed the resolver to fall through to `process.env`.
 - **Herdr Muse pane stuck `working` after turn end** in `herdrdev/herdr` — [issue #3951](https://github.com/herdrdev/herdr/issues/3951). Muse Code's bundled herdr reporter overrode screen detection and missed the final idle update, so the sidebar stayed yellow/`working` after a finished turn (`explain` already idle, `list` stuck); isolated with `herdr agent explain` vs `list`, and the Muse team shipped the idle report in Muse Code 1.2.1.
 
-More landing in the [Model Context Protocol](https://modelcontextprotocol.io/) ecosystem — that's where the "safe AI automation" thesis externally validates.
-
 ### Also shipped
 
 <details>
