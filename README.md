@@ -1,52 +1,57 @@
-### Jacob Stephens
+## Jacob Stephens
 
-**Safe AI automation for revenue-critical legacy systems.** I lead a two-engineer team owning a multi-million-dollar specialty-travel stack — a multi-portal PHP / MySQL reservations platform, Docker-based Manager Sandboxes, and a Python agent-orchestration host — and I run the whole thing behind a human merge gate.
+**Platform engineer building production systems, developer tools, and safe AI automation.**
 
-- **~80% of measured query load removed** across the reservations platform via three zero-downtime online-DDL indexes (before/after EXPLAIN + slow-log deltas, no customer-visible cutover).
-- **Manifest page: 5–7s → ~1s**, SQL / request 2,650 → 183, byte-identical HTML — the caching layer is verified equivalent, not just faster ([case study](https://stephens.page/blog/one-engineer-platform-production-systems/)).
-- **14 manager-prototyped features shipped through a human merge gate** (Vagabond marketing lead prototyping on live production data; review + hardening by me and one engineer I manage), zero agent-caused incidents in production ([factory ADR: shared collector seam](https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0021-shared-collector-seam-over-direct-backend-wiring.md), [scoped system user ADR](https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0005-scoped-system-user-over-service-account.md)).
-- **14-host observability fleet + 3 enterprise migrations** (Bitbucket → GitHub, WordPress hardening, Tailscale rollout), no customer-visible outage.
+I work across application code, databases, infrastructure, and operations. At Educational Travel Adventures, I lead a two-engineer team and remain hands-on with the reservations platform that supports a multi-million-dollar specialty-travel business. My work spans modernizing a legacy PHP / MySQL stack, improving reliability and performance, and building tools that let people use coding agents with clear boundaries and human review.
 
-Most of that work lives in private repos. The architecture and the reasoning behind it are written up in the **[ETA Platform case study](https://stephens.page/blog/one-engineer-platform-production-systems/)** and in **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** — sanitized ADRs, a threat model for agent sandboxes, and an operational review checklist. **[Tracewake](https://github.com/JacobStephens2/tracewake)** is the public product of that factory.
+[Resume](https://resume.stephens.page/) · [Portfolio](https://stephens.page/portfolio.html) · [LinkedIn](https://www.linkedin.com/in/jacob-c-stephens) · [Contact](https://stephens.page/contact.html)
 
-### Public artifacts
+Interested in **hands-on Senior / Staff platform and agent-platform roles**, and technical lead opportunities with substantial individual engineering work.
 
-| Repo | What it proves | Evidence |
-|---|---|---|
-| **[tracewake](https://github.com/JacobStephens2/tracewake)** | Unattended issue → draft PR, nothing merges itself: a labeled issue becomes a Proposal in a fresh microVM under a Termination Contract. Opposite bets from OpenAI Symphony — label handover, serial runs, proposal-only, the human lands | [SPEC](https://github.com/JacobStephens2/tracewake/blob/main/SPEC.md) · [ADRs](https://github.com/JacobStephens2/tracewake/tree/main/docs/adr) |
-| **[vaulted-agent](https://github.com/JacobStephens2/vaulted-agent)** (`va`) | Per-agent blast radius: launches Claude Code, Codex, Grok, Kimi, Muse, and Antigravity with vault-resolved secrets in-process — no `.env` files or vault tokens on disk (1Password, Bitwarden SM, `pass`, sops; macOS + Linux) | [vaultedagent.com](https://vaultedagent.com/) · [installer hosting docs](https://github.com/JacobStephens2/vaulted-agent/blob/main/docs/hosting-the-installer.md) |
-| **[muxboard](https://github.com/JacobStephens2/muxboard)** | Babysitting long-running agents: Flask-embeddable web dashboard over `tmux` for one host or a fleet, live in-browser attach — default-deny auth, attach caps, documented threat model | [muxboard.dev](https://muxboard.dev/) |
-| **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** | Sanitized ADRs and the operational review checklist from the ETA factory — the human merge gate, in writing | [ADR index](https://github.com/JacobStephens2/infrastructure-patterns) |
-| **[chart35-showcase](https://github.com/JacobStephens2/chart35-showcase)** | Privacy-by-construction: offline-first PWA, end-to-end encrypted sync, provider sharing. **83 iOS + 17 Android installs, 52 web accounts (40 verified, 47 synced)** on [Chart35](https://chart35.com/creighton) — App Store / Play / TestFlight, growth via organic search alone | Architecture + privacy slice public; production data stays E2E-encrypted so the server sees only account metadata and encrypted-snapshot sizes |
-| **[cascade](https://github.com/JacobStephens2/cascade)** | Headless-core + native-UI kata: one Rust core driving six shells. Web PWA live; Windows, notarized macOS, Android sideload, and iOS TestFlight on [/apps](https://cascade.stephens.page/apps) (watchOS comes with iPhone) | [cascade.stephens.page](https://cascade.stephens.page/) · [architecture](https://cascade.stephens.page/architecture/) |
-| **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** | Kubernetes Demo: a separate, non-production single-node k3s learning and portfolio environment with probes, resource limits, hardened `securityContext`, HPA, ingress, and kustomize; Manager Sandboxes do not run on it | [Dockerfile](https://github.com/JacobStephens2/k3s-demo/blob/main/Dockerfile) |
+### Production impact
+
+- **Removed ~80% of measured database query time** with three online indexes, guided by production measurements and verified with query plans.
+- **Cut manifest load time from 5–7 seconds to ~1 second** and SQL statements per request from **2,650 to 183**, while preserving byte-identical HTML.
+- **Shipped 14 manager-prototyped features** through engineering review and hardening. Managers prototype in Docker sandboxes; a human reviews changes before production.
+- **Instrumented 14 hosts** with Prometheus, Grafana, and Alertmanager, covering host metrics, database replication, uptime, and TLS expiry.
+
+Most of this code is private. The **[ETA platform case study](https://stephens.page/blog/one-engineer-platform-production-systems/)** documents the problems, decisions, and measured outcomes; **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** shares sanitized architecture decisions, threat models, and operational review practices.
+
+### Selected engineering work
+
+| Project | What to look for |
+| --- | --- |
+| **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** | Production architecture decisions and their trade-offs: tenant isolation, agent identity, deployment, and human review. |
+| **[Tracewake](https://github.com/JacobStephens2/tracewake)** | Coding-agent orchestration from a labeled issue to a draft PR, with isolated execution, bounded runs, and human-controlled merges. **v0 in development.** [Design](https://github.com/JacobStephens2/tracewake/blob/main/SPEC.md) · [Decisions](https://github.com/JacobStephens2/tracewake/tree/main/docs/adr) |
+| **[vaulted-agent](https://github.com/JacobStephens2/vaulted-agent)** | Rust launcher that resolves vault secrets into agent processes, with per-agent secret manifests and optional prompt authentication. [Product](https://vaultedagent.com/) |
+| **[muxboard](https://github.com/JacobStephens2/muxboard)** | Python dashboard for tmux sessions across a host or fleet, with browser attach, default-deny authentication, and a documented threat model. [Product](https://muxboard.dev/) |
+
+### Product engineering
+
+- **[Chart35](https://github.com/JacobStephens2/chart35-showcase)** — Offline-first charting with end-to-end encrypted sync across web, iOS, and Android. The public showcase explains the architecture and privacy boundaries. [Product](https://chart35.com/creighton)
+- **[Cascade](https://github.com/JacobStephens2/cascade)** — A waterfall sound player with one headless Rust core and six platform shells: web, Android, macOS, Windows, iOS, and watchOS. [Architecture](https://cascade.stephens.page/architecture/) · [Apps](https://cascade.stephens.page/apps)
 
 ### Upstream contributions
 
-- **MySQL 8.4 `caching_sha2_password` auth-handshake fix** in `krowinski/php-mysql-replication` — [PR #148](https://github.com/krowinski/php-mysql-replication/pull/148). The library's handshake ignored the new default plugin; patched the auth-switch path so binlog readers connect to MySQL 8.4 without downgrading server auth.
-- **Kimi Code `kimi -p` env-key regression** in `MoonshotAI/kimi-code` — [PR #2746](https://github.com/MoonshotAI/kimi-code/pull/2746) closing [issue #2745](https://github.com/MoonshotAI/kimi-code/issues/2745). `agent-core-v2`'s auth gate resolved credentials from `args.provider?.env ?? {}` and ignored `process.env`, breaking headless `-p` runs; fixed the resolver to fall through to `process.env`.
-- **Herdr Muse pane stuck `working` after turn end** in `herdrdev/herdr` — [issue #3951](https://github.com/herdrdev/herdr/issues/3951). Muse Code's bundled herdr reporter overrode screen detection and missed the final idle update, so the sidebar stayed yellow/`working` after a finished turn (`explain` already idle, `list` stuck); isolated with `herdr agent explain` vs `list`, and the Muse team shipped the idle report in Muse Code 1.2.1.
-
-### Also shipped
+- **Merged:** [MySQL 8.4 authentication fix](https://github.com/krowinski/php-mysql-replication/pull/148) in `php-mysql-replication`, enabling binlog readers to connect without downgrading server authentication.
+- **PR submitted:** [Kimi Code credential-resolution fix](https://github.com/MoonshotAI/kimi-code/pull/2746) for headless runs that ignored environment-provided credentials.
+- **Diagnosed and reported:** [Herdr / Muse stale working-state bug](https://github.com/herdrdev/herdr/issues/3951); the Muse team shipped the idle-report fix in Muse Code 1.2.1.
 
 <details>
-<summary>Products and published packages — click to expand</summary>
+<summary>Published libraries and more projects</summary>
 
-**Products**
+TypeScript and Go libraries with cross-language test fixtures:
 
-- **[Drome](https://drome.day/)** — local-first iOS tracker for 75-day challenges; one Rust rules engine, native SwiftUI + WidgetKit, event-sourced
+| Library | TypeScript | Go |
+| --- | --- | --- |
+| HMAC webhook verification | [webhook-verify](https://github.com/JacobStephens2/webhook-verify) · [npm](https://www.npmjs.com/package/@stephenspage/webhook-verify) | [webhook-verify-go](https://github.com/JacobStephens2/webhook-verify-go) |
+| AES-256-GCM encryption envelopes | [webcrypto-envelope](https://github.com/JacobStephens2/webcrypto-envelope) · [npm](https://www.npmjs.com/package/@stephenspage/webcrypto-envelope) | [webcrypto-envelope-go](https://github.com/JacobStephens2/webcrypto-envelope-go) |
 
-**Published packages** — wire-compatible TypeScript + Go pairs, tested against parity vectors for byte-identical output. TypeScript releases publish via [npm Trusted Publishing (OIDC)](https://docs.npmjs.com/trusted-publishers/) — no long-lived tokens, provenance on every version.
-
-| Package | TypeScript (npm) | Go (pkg.go.dev) |
-|---|---|---|
-| HMAC webhook verifiers (GitHub / Stripe / Twilio / Mandrill) | [`@stephenspage/webhook-verify`](https://www.npmjs.com/package/@stephenspage/webhook-verify) | [`webhook-verify-go`](https://pkg.go.dev/github.com/JacobStephens2/webhook-verify-go) |
-| AES-256-GCM envelope + PBKDF2 vault + zero-knowledge sealed shares | [`@stephenspage/webcrypto-envelope`](https://www.npmjs.com/package/@stephenspage/webcrypto-envelope) | [`webcrypto-envelope-go`](https://pkg.go.dev/github.com/JacobStephens2/webcrypto-envelope-go) |
+- **[Drome](https://drome.day/)** — Local-first iOS challenge tracker with a Rust rules engine, SwiftUI, and WidgetKit.
+- **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** — A separate, non-production Kubernetes learning environment with probes, resource limits, ingress, and kustomize.
 
 </details>
 
 ---
-
-📄 **[Resume](https://resume.stephens.page/)** · **[Portfolio](https://stephens.page/portfolio.html)** · **[Available for Staff / Lead platform-infra roles](https://stephens.page/contact.html)**
 
 St. Carlo Acutis, pray for us.
