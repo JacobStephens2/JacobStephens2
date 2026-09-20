@@ -4,9 +4,9 @@
 
 I work across application code, databases, infrastructure, and operations. At Educational Travel Adventures, I lead a two-engineer team and remain hands-on with the reservations platform that supports a multi-million-dollar specialty-travel business. My work spans modernizing a legacy PHP / MySQL stack, improving reliability and performance, and building tools that let people use coding agents with clear boundaries and human review.
 
-[Resume](https://resume.stephens.page/) · [Portfolio](https://stephens.page/portfolio.html) · [LinkedIn](https://www.linkedin.com/in/jacob-c-stephens) · [Contact](https://stephens.page/contact.html)
+[Portfolio](https://stephens.page/portfolio.html) · [LinkedIn](https://www.linkedin.com/in/jacob-c-stephens) · [Contact](https://stephens.page/contact.html) · [Resume](https://resume.stephens.page/)
 
-Interested in **hands-on Senior / Staff platform and agent-platform roles**, and technical lead opportunities with substantial individual engineering work.
+My focus is **platform reliability, developer experience, and practical AI tooling**, with technical leadership grounded in hands-on engineering.
 
 ### Production impact
 
