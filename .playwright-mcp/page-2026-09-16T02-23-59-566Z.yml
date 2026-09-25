@@ -1,0 +1,409 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - heading "Jacob Stephens" [level=1] [ref=e5]
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Download PDF" [ref=e8] [cursor=pointer]
+          - link "Download Markdown" [ref=e9] [cursor=pointer]:
+            - /url: jacob-stephens-resume.md
+        - 'button "Theme: system (click for light)" [ref=e10] [cursor=pointer]'
+    - paragraph [ref=e11]:
+      - link "jacob@stephens.page" [ref=e12] [cursor=pointer]:
+        - /url: https://stephens.page/contact.html
+        - generic [aria-hidden] [ref=e13]: ✉
+        - text: jacob@stephens.page
+      - text: "|"
+      - link "Philadelphia, PA" [ref=e14] [cursor=pointer]:
+        - /url: https://maps.app.goo.gl/3j1Vi1GNcB6NWFdq7
+        - generic [aria-hidden] [ref=e15]: ⌂
+        - text: Philadelphia, PA
+      - link "Portfolio" [ref=e16] [cursor=pointer]:
+        - /url: https://stephens.page/portfolio.html
+        - generic [aria-hidden] [ref=e17]: ↗
+        - text: Portfolio
+      - text: "|"
+      - link "GitHub" [ref=e18] [cursor=pointer]:
+        - /url: https://github.com/JacobStephens2
+      - text: "|"
+      - link "LinkedIn" [ref=e21] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/jacob-c-stephens
+        - generic [aria-hidden] [ref=e22]: in
+        - text: LinkedIn
+      - text: "|"
+      - link "Stack" [ref=e23] [cursor=pointer]:
+        - /url: https://stephens.page/stack/
+        - generic [aria-hidden] [ref=e24]: ↗
+        - text: Stack
+    - paragraph [ref=e25]: "Platform and infrastructure engineer specializing in safe AI automation for revenue-critical legacy systems. I lead a two-engineer team owning a multi-million-dollar specialty-travel stack - reservations platform, payment systems, Linux server fleet, and AI-agent infrastructure. Recent work: three Manager Sandboxes - role-specific Tourbot instances running in Docker containers behind a human merge gate - fleet-wide Prometheus/Grafana observability, and a measurement-driven production-database pass that removed ~80% of query load."
+    - generic [ref=e26]:
+      - heading "Core Technologies" [level=2] [ref=e27]
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - heading "Languages & Databases" [level=3] [ref=e30]
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "PHP" [ref=e33] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/artifact-management-tool/blob/main/api/artifacts.php
+            - listitem [ref=e34]:
+              - text: ·
+              - link "TypeScript" [ref=e35] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/MacroTracker/blob/main/src/main.ts
+            - listitem [ref=e36]:
+              - text: ·
+              - link "JavaScript" [ref=e37] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/artifact-management-tool/blob/main/ui/uses/modules/searchArtifactsList.js
+            - listitem [ref=e38]:
+              - text: ·
+              - link "Python" [ref=e39] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/sotto
+            - listitem [ref=e40]:
+              - text: ·
+              - link "Rust" [ref=e41] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/cascade/blob/main/crates/cascade-core/src/lib.rs
+            - listitem [ref=e42]:
+              - text: ·
+              - link "Dart" [ref=e43] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/countdown_ring
+            - listitem [ref=e44]:
+              - text: ·
+              - link "SQL" [ref=e45] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/artifact-manager/tree/main/database/migrations
+            - listitem [ref=e46]:
+              - text: ·
+              - link "MySQL" [ref=e47] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/artifact-management-tool/blob/b03868da1bd92936c013dd06385f7260f964b6f5/private/query_functions.php#L929
+            - listitem [ref=e48]:
+              - text: ·
+              - link "PostgreSQL" [ref=e49] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0002-external-managed-db-over-containerized.md
+            - listitem [ref=e50]:
+              - text: ·
+              - link "SQLite" [ref=e51] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/MacroTracker
+        - generic [ref=e52]:
+          - heading "Frameworks & Runtimes" [level=3] [ref=e53]
+          - list [ref=e54]:
+            - listitem [ref=e55]:
+              - link "FastAPI" [ref=e56] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/dashboard.stephens.page/blob/main/app/main.py
+            - listitem [ref=e57]:
+              - text: ·
+              - link "Next.js" [ref=e58] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/game-planning/blob/main/actions/events.ts
+            - listitem [ref=e59]:
+              - text: ·
+              - link "React" [ref=e60] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/event-manager-web-app-ui/blob/master/src/views/Events/CreateEvent.js
+            - listitem [ref=e61]:
+              - text: ·
+              - link "Node.js / Express" [ref=e62] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/MacroTracker/blob/main/server/src/index.ts
+            - listitem [ref=e63]:
+              - text: ·
+              - link "Flask" [ref=e64] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/sotto
+            - listitem [ref=e65]:
+              - text: ·
+              - link "Flutter" [ref=e66] [cursor=pointer]:
+                - /url: https://quadrille.app
+            - listitem [ref=e67]:
+              - text: ·
+              - link "Capacitor" [ref=e68] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/Chart35Client
+            - listitem [ref=e69]:
+              - text: ·
+              - link "Progressive Web Apps" [ref=e70] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/Chart35Client
+            - listitem [ref=e71]:
+              - text: ·
+              - link "WordPress" [ref=e72] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/chestercounty-life-wordpress-theme/commit/6074f5c901b539babf2375b81948fd3fa45cef57
+        - generic [ref=e73]:
+          - heading "Infrastructure & Operations" [level=3] [ref=e74]
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - link "Docker" [ref=e77] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/k3s-demo/blob/main/Dockerfile
+            - listitem [ref=e78]:
+              - text: ·
+              - link "Docker Compose" [ref=e79] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/sotto/blob/master/docker-compose.yml
+            - listitem [ref=e80]:
+              - text: ·
+              - link "Kubernetes / k3s" [ref=e81] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/k3s-demo
+            - listitem [ref=e82]:
+              - text: ·
+              - link "OPA Gatekeeper (policy as code)" [ref=e83] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0016-policy-as-code-admission-over-trusted-manifests.md
+            - listitem [ref=e84]:
+              - text: ·
+              - link "Traefik" [ref=e85] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/k3s-demo/blob/main/k8s/ingress.yaml
+            - listitem [ref=e86]:
+              - text: ·
+              - link "Caddy" [ref=e87] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0019-reuse-passkey-session-forward-auth-over-second-auth-stack.md
+            - listitem [ref=e88]:
+              - text: ·
+              - link "Apache" [ref=e89] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/artifact-management-tool/blob/main/api/.htaccess
+            - listitem [ref=e90]:
+              - text: ·
+              - link "Linux" [ref=e91] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/artifact-manager-web-app/blob/main/private/crons/crontab-copy.txt
+            - listitem [ref=e92]:
+              - text: ·
+              - link "systemd" [ref=e93] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/sotto/tree/master/deploy
+            - listitem [ref=e94]:
+              - text: ·
+              - link "DigitalOcean" [ref=e95] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/terraform-cloudflare-dns/tree/main/dr
+            - listitem [ref=e96]:
+              - text: ·
+              - link "Terraform" [ref=e97] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/terraform-cloudflare-dns
+            - listitem [ref=e98]:
+              - text: ·
+              - link "Cloudflare" [ref=e99] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/terraform-cloudflare-dns
+            - listitem [ref=e100]:
+              - text: ·
+              - link "AWS S3" [ref=e101] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0015-state-off-the-provider-it-provisions.md
+            - listitem [ref=e102]:
+              - text: ·
+              - link "Ansible" [ref=e103] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/terraform-cloudflare-dns/tree/main/ansible
+            - listitem [ref=e104]:
+              - text: ·
+              - link "Prometheus" [ref=e105] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0011-instrumented-metrics-stack-over-bespoke-prober.md
+            - listitem [ref=e106]:
+              - text: ·
+              - link "Grafana" [ref=e107] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0011-instrumented-metrics-stack-over-bespoke-prober.md
+            - listitem [ref=e108]:
+              - text: ·
+              - link "Git" [ref=e109] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/artifact-management-tool/commits/main
+            - listitem [ref=e110]:
+              - text: ·
+              - link "DNS Management" [ref=e111] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/terraform-cloudflare-dns
+        - generic [ref=e112]:
+          - heading "APIs & Application Engineering" [level=3] [ref=e113]
+          - list [ref=e114]:
+            - listitem [ref=e115]:
+              - link "REST APIs" [ref=e116] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/event-manager-api/blob/main/public/index.php
+            - listitem [ref=e117]:
+              - text: ·
+              - link "API Integration (Twilio, Textable)" [ref=e118] [cursor=pointer]:
+                - /url: https://stephens.page/portfolio.html#tourbot
+            - listitem [ref=e119]:
+              - text: ·
+              - link "HMAC-signed webhooks" [ref=e120] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/webhook-verify
+            - listitem [ref=e121]:
+              - text: ·
+              - link "Queue Systems & Automation" [ref=e122] [cursor=pointer]:
+                - /url: https://stephens.page/portfolio.html#ach-nacha-automation
+            - listitem [ref=e123]:
+              - text: ·
+              - link "ACH/NACHA File Workflows (SFTP)" [ref=e124] [cursor=pointer]:
+                - /url: https://stephens.page/portfolio.html#ach-nacha-automation
+            - listitem [ref=e125]:
+              - text: ·
+              - link "Caching Infrastructure" [ref=e126] [cursor=pointer]:
+                - /url: https://stephens.page/portfolio.html#performance-tuning
+            - listitem [ref=e127]:
+              - text: ·
+              - link "Performance Optimization" [ref=e128] [cursor=pointer]:
+                - /url: https://stephens.page/portfolio.html#performance-tuning
+            - listitem [ref=e129]:
+              - text: ·
+              - link "Offline Sync" [ref=e130] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/Chart35Client
+        - generic [ref=e131]:
+          - heading "Engineering Practices" [level=3] [ref=e132]
+          - list [ref=e133]:
+            - listitem [ref=e134]:
+              - link "PHPUnit" [ref=e135] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/artifact-manager/tree/main/tests
+            - listitem [ref=e136]:
+              - text: ·
+              - link "Vitest" [ref=e137] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/Chart35Client/tree/main/src/utils/__tests__
+            - listitem [ref=e138]:
+              - text: ·
+              - link "Playwright" [ref=e139] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/clowder-and-crest/tree/main/test
+            - listitem [ref=e140]:
+              - text: ·
+              - link "GitHub Actions CI/CD" [ref=e141] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/k3s-demo/tree/main/.github/workflows
+            - listitem [ref=e142]:
+              - text: ·
+              - link "Spec-Driven Development" [ref=e143] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/wedding-platform/blob/main/private/specification.md
+            - listitem [ref=e144]:
+              - text: ·
+              - link "PCI Compliance" [ref=e145] [cursor=pointer]:
+                - /url: https://stephens.page/portfolio.html#eta-customer-portal
+        - generic [ref=e146]:
+          - heading "Security" [level=3] [ref=e147]
+          - list [ref=e148]:
+            - listitem [ref=e149]:
+              - link "Client-side encryption (AES-256-GCM)" [ref=e150] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/Chart35Client
+            - listitem [ref=e151]:
+              - text: ·
+              - link "Scoped least-privilege credentials" [ref=e152] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0005-scoped-system-user-over-service-account.md
+            - listitem [ref=e153]:
+              - text: ·
+              - link "Runtime-injected secrets (1Password, SOPS + age)" [ref=e154] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0018-runtime-injected-secrets-over-plaintext-config.md
+            - listitem [ref=e155]:
+              - text: ·
+              - link "Private mesh for shells, MFA-gated public endpoints" [ref=e156] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0020-private-mesh-for-shells-mfa-gated-public-endpoints-for-browsers.md
+            - listitem [ref=e157]:
+              - text: ·
+              - link "Privacy-first design" [ref=e158] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/Chart35Client
+    - generic [ref=e159]:
+      - heading "Work" [level=2] [ref=e160]
+      - heading "Senior Platform & Infrastructure Engineer" [level=3] [ref=e161]
+      - paragraph [ref=e162]:
+        - link "Educational Travel Adventures" [ref=e163] [cursor=pointer]:
+          - /url: https://etadventures.com/
+        - text: "| Feb 2022 - Present | United States, Remote"
+      - list [ref=e164]:
+        - listitem [ref=e165]: I lead a two-engineer team owning the company's production stack - reservations platform, payment processing, Linux server fleet, and deployment pipeline - with end-to-end responsibility for architecture, operations, and on-call response across a multi-million-dollar travel business
+        - listitem [ref=e166]:
+          - text: Developed
+          - link "guides.etadventures.com" [ref=e167] [cursor=pointer]:
+            - /url: https://guides.etadventures.com/
+          - text: "- a mobile-first PWA for field contractors with offline service-worker support, receipt-attached expense workflows, and manager admin; adopted by 77 guides over the past 12 months to file 410 tour reports, send 3,300+ traveler SMS, and process 1,800+ expense reports (~$154K), extending the JavaScript stack across a previously PHP-only platform"
+        - listitem [ref=e168]: Architected automated reservation-cancellation workflows in PHP and MySQL, preventing bad-debt accumulation with business-rule-driven automation
+        - listitem [ref=e169]: Turned hard-coded email and voice payment reminders into a manager-editable system - self-service rules in the Tourbot UI, added Twilio SMS, wired to automated cancellation - cutting manual work by 80%+
+        - listitem [ref=e170]:
+          - text: "Drove production-database performance from measurement: caching and query work took alert pages from 5-10 seconds to under 1 second, and a"
+          - code [ref=e171]: performance_schema
+          - text: "-led index pass (online DDL, zero downtime) eliminated ~80% of measured query time on the live primary; a profile-driven N+1 elimination pass on the group-manifest page cut SQL statements per request from ~2,650 to ~183 with byte-identical HTML output"
+        - listitem [ref=e172]: "Led PCI compliance initiative: architected secure REST integrations with merchant payment processors, and inherited, improved, and modernized the ACH/NACHA bank-file workflows (SFTP) across PHP, MySQL, and OS major-version migrations, implementing security best practices including bank-account encryption"
+        - listitem [ref=e173]: Led three enterprise-wide platform migrations (PHP 5 -> 8, MySQL 5 -> 8, and CentOS 7 -> Rocky Linux 9) across the codebase and server fleet, modernizing the stack and improving application performance
+        - listitem [ref=e174]: Established engineering practices across internal and customer-facing platforms - architecture decisions, code review, and mentoring two developers
+        - listitem [ref=e175]: Built an internal orchestration and status platform (Python, Flask, SQLite) - a dashboard that probes the MySQL, web, and cron-server fleet every 60 seconds with operator deploy and preview-environment controls - running an autonomous coding agent as a scoped, least-privilege system user with auditable, vault-injected credentials
+        - listitem [ref=e176]: "Stood up fleet-wide observability on a Terraform-provisioned droplet - Prometheus, Grafana, and Alertmanager instrumenting 14 hosts (node/mysqld/blackbox exporters: uptime, replication health, TLS expiry) with email and SMS paging consolidated into a single alert pipeline"
+        - listitem [ref=e177]:
+          - text: Designed and built three Manager Sandboxes - role-specific Tourbot instances in Docker containers behind Traefik for Sales, General Management, and Marketing - each with an isolated database, few-hour production refresh, per-container resource limits, and default-deny agent command execution; AI work is isolated on per-role branches behind a human merge gate through which 14 manager-prototyped features shipped to production. No agent approves, merges, deploys, or moves money without a named human gate - the
+          - link "seven-boundary safety checklist" [ref=e178] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/infrastructure-patterns
+          - text: governing this is published as sanitized ADRs and a
+          - link "pattern write-up" [ref=e179] [cursor=pointer]:
+            - /url: https://stephens.page/notes/human-in-the-loop-ai-agents/
+        - listitem [ref=e180]:
+          - text: Replaced database triggers with binlog-tailing daemons for derived reporting data - reconciliation pipelines that keep denormalized tables consistent with the transactional source, in versioned code off the hot write path (
+          - link "ADR 0006" [ref=e181] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0006-binlog-daemons-over-database-triggers.md
+          - text: )
+        - listitem [ref=e182]: Built ProspectForge - an internal contact-sourcing platform (FastAPI, SQLAlchemy 2.0, Alembic, PostgreSQL, Next.js, self-hosted Firecrawl scraping, Docker Compose) to replace CivicIQ, the team's third-party prospecting SaaS, pending management approval
+        - listitem [ref=e183]: Engineered a server-side deploy pipeline with dirty-worktree rejection, flock-based concurrency serialization, ancestor-only ref enforcement, post-deploy healthcheck, and one-command rollback - backed by a PHPUnit suite (unit / integration / functional) and GitHub Actions CI across PHP 8.1-8.4
+      - heading "Web Developer and Client Support Specialist" [level=3] [ref=e184]
+      - paragraph [ref=e185]:
+        - link "Sharp Innovations" [ref=e186] [cursor=pointer]:
+          - /url: https://sharpinnovations.com/
+        - text: "| Nov 2021 - Feb 2022 |"
+        - link "Conestoga, PA" [ref=e187] [cursor=pointer]:
+          - /url: https://g.page/SharpInnovationsInc?share
+      - list [ref=e188]:
+        - listitem [ref=e189]: Developed automated database migration scripts in SQL and PHP, reducing migration time from hours to minutes and eliminating manual errors
+        - listitem [ref=e190]: Delivered technical support for web clients - UI/UX updates, security vulnerabilities, and Linux server configuration and optimization
+      - heading "Full-Stack Developer (Independent)" [level=3] [ref=e191]
+      - paragraph [ref=e192]:
+        - link "Steward Goods" [ref=e193] [cursor=pointer]:
+          - /url: https://stewardgoods.com/
+        - text: "| Mar 2020 - Nov 2021 | United States, Remote"
+      - list [ref=e194]:
+        - listitem [ref=e195]:
+          - text: Designed and shipped
+          - link "artifact.stewardgoods.com" [ref=e196] [cursor=pointer]:
+            - /url: https://artifact.stewardgoods.com/
+          - text: ", a multi-tenant possessions tracker built on full-stack PHP and MySQL with frontend, backend, and deployment ownership"
+        - listitem [ref=e197]:
+          - link "Optimized" [ref=e198] [cursor=pointer]:
+            - /url: /resume/files/resume.stephens.page-2023-11-05.html
+          - text: website performance through code and infrastructure improvements, achieving perfect scores (100/100) on Google Core Web Vitals
+        - listitem [ref=e199]:
+          - link "Engineered" [ref=e200] [cursor=pointer]:
+            - /url: https://chestercounty-life.com/
+          - text: PCI-compliant subscription payments with Stripe in PHP and MySQL
+    - generic [ref=e201]:
+      - heading "Selected Projects" [level=2] [ref=e202]
+      - list [ref=e203]:
+        - listitem [ref=e204]:
+          - link "infrastructure-patterns" [ref=e205] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/infrastructure-patterns
+          - text: ": Sanitized architecture decision records and the seven-boundary agent-safety checklist drawn from production systems I operate - per-role isolation, scoped least-privilege credentials, default-deny command surfaces, human merge gates, audit trails, and rollback - published so other small-business engineers can safeguard their own systems"
+        - listitem [ref=e206]:
+          - link "vaulted-agent" [ref=e207] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/vaulted-agent
+          - text: (
+          - code [ref=e208]: va
+          - text: "): Per-agent blast radius: launches Claude Code, Codex, Grok, Kimi, Muse, and Antigravity with vault-resolved secrets in-process - no"
+          - code [ref=e209]: .env
+          - text: files or vault tokens on disk (1Password, Bitwarden SM,
+          - code [ref=e210]: pass
+          - text: ", sops)"
+        - listitem [ref=e211]:
+          - link "terraform-cloudflare-dns" [ref=e212] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/terraform-cloudflare-dns
+          - text: ": Infrastructure-as-code for a personal web fleet of ~70 hostnames across 10 domains. Consolidated DNS from four registrars onto Cloudflare and brought ~220 records across 9 zones under Terraform by importing the live records (not recreating them) for a zero-downtime, no-op baseline plan. Remote state on AWS S3 kept off the compute provider for disaster-recovery independence, Ansible roles for one-command subdomain provisioning, a plan-only DigitalOcean rebuild blueprint, and GitHub Actions plan-on-PR. Sanitized public mirror of the production repo"
+        - listitem [ref=e213]:
+          - link "k3s-demo" [ref=e214] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/k3s-demo
+          - text: ": The Kubernetes Demo: a separate single-node k3s learning and portfolio environment, not ETA production. It runs a live, HTTPS two-tier app - a stateless Deployment in front of a Redis StatefulSet - provisioned end to end by Terraform and cloud-init. Production-grade manifests (rolling updates, liveness/readiness probes, resource limits, a hardened securityContext, a HorizontalPodAutoscaler, and RBAC), with an interactive page that triggers a load test and charts CPU crossing the 70% target as the pods scale 2 to 6 ("
+          - link "k3s-demo.stephens.page" [ref=e215] [cursor=pointer]:
+            - /url: https://k3s-demo.stephens.page
+          - text: ). Guarded by a five-rule OPA Gatekeeper admission layer, one rule re-expressed as a ValidatingAdmissionPolicy in CEL
+        - listitem [ref=e216]:
+          - link "Cascade" [ref=e217] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/cascade
+          - text: ": Focus/sleep sound player built on one headless Rust core that drives native shells over a"
+          - link "single JSON boundary" [ref=e218] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/cascade/blob/main/docs/architecture-brief-web-and-android.md
+          - text: . 2 shipped shells (Web PWA, Android) bound via wasm-bindgen and UniFFI; 4 architected to extend (macOS, Windows, iOS, watchOS) (
+          - link "cascade.stephens.page" [ref=e219] [cursor=pointer]:
+            - /url: https://cascade.stephens.page
+          - text: )
+        - listitem [ref=e220]:
+          - link "Chart35" [ref=e221] [cursor=pointer]:
+            - /url: https://chart35.com
+          - text: ": Privacy-first fertility tracker with client-side AES-256-GCM encryption, offline-first IndexedDB storage, and expiring provider-share links. 83 iOS + 17 Android installs, 52 web accounts (40 verified, 47 synced) - App Store / Play / TestFlight, growth via organic search alone ("
+          - link "case study" [ref=e222] [cursor=pointer]:
+            - /url: https://stephens.page/chart35.html
+          - text: ","
+          - link "architecture" [ref=e223] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/chart35-showcase
+          - text: )
+    - generic [ref=e224]:
+      - heading "Education & Certifications" [level=2] [ref=e225]
+      - heading "Bachelor of Arts in Sociology" [level=3] [ref=e226]
+      - paragraph [ref=e227]:
+        - link "Gordon College" [ref=e228] [cursor=pointer]:
+          - /url: https://gordon.edu/
+        - text: "| Aug 2012 - Aug 2017 |"
+        - link "Wenham, MA" [ref=e229] [cursor=pointer]:
+          - /url: https://goo.gl/maps/qSZ9FPhr4F78LeveA
+      - heading "Certifications" [level=3] [ref=e230]
+      - paragraph [ref=e231]:
+        - link "CompTIA A+" [ref=e232] [cursor=pointer]:
+          - /url: https://www.comptia.org/
+        - text: "| Nov 2017"

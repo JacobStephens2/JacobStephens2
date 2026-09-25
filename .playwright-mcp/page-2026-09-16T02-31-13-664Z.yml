@@ -1,0 +1,866 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Back to home" [ref=e4] [cursor=pointer]:
+      - /url: https://stephens.page/
+    - generic [ref=e5]:
+      - link "↓ Download Markdown" [ref=e6] [cursor=pointer]:
+        - /url: /jacob-stephens-portfolio.md
+      - link "jacob@stephens.page" [ref=e7] [cursor=pointer]:
+        - /url: https://stephens.page/contact.html
+      - 'button "Theme: system (click for light)" [ref=e8] [cursor=pointer]'
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Portfolio
+        - heading "Real systems, real results." [level=1] [ref=e13]
+        - paragraph [ref=e14]: Platform and infrastructure engineer specializing in safe AI automation for revenue-critical legacy systems. I lead a two-engineer team owning a multi-million-dollar specialty-travel stack - the reservations platform, payment and ACH rails, Linux fleet, Manager Sandboxes, and human-gated software factory it runs on - and the architecture decisions behind them.
+      - complementary [ref=e15]:
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - strong [ref=e18]: Professional
+            - text: Production systems built over years at Educational Travel Adventures.
+          - listitem [ref=e19]:
+            - strong [ref=e20]: Client
+            - text: Focused builds for payments, publishing, and business visibility.
+          - listitem [ref=e21]:
+            - strong [ref=e22]: Personal
+            - text: Side projects that reflect how I think about product and infrastructure.
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - heading "Professional Work" [level=2] [ref=e25]
+        - paragraph [ref=e26]: Production systems with operational and revenue impact.
+      - generic [ref=e27]:
+        - generic [ref=e28]: A connected case study tying these systems together - architecture, the legacy→modern arc, and engineering highlights - plus the sanitized architecture decisions behind them.
+        - generic [ref=e29]:
+          - link "Read the ETA Platform case study →" [ref=e30] [cursor=pointer]:
+            - /url: /blog/one-engineer-platform-production-systems/
+          - link "Architecture decisions (ADRs) →" [ref=e31] [cursor=pointer]:
+            - /url: https://github.com/JacobStephens2/infrastructure-patterns
+          - link "Seven-boundary agent-safety checklist →" [ref=e32] [cursor=pointer]:
+            - /url: /blog/human-in-the-loop-ai-agents-for-legacy-business-systems/
+      - generic [ref=e33]:
+        - article [ref=e34]:
+          - button [ref=e35]:
+            - img "Tourbot reservations and operations platform" [ref=e36]
+          - generic [ref=e37]:
+            - heading "Tourbot" [level=3] [ref=e38]
+            - generic [ref=e39]:
+              - paragraph [ref=e40]: The core operations platform at Educational Travel Adventures - a full-lifecycle group travel ERP handling sales pipeline and lead qualification, itinerary building, reservations, vendor management, passenger logistics, payment processing, communications, and 70+ reports across finance, sales, marketing, and operations.
+              - generic [ref=e41]:
+                - strong [ref=e42]: Problem
+                - generic [ref=e43]: A 40-person travel company needed a single system to run the entire business - from lead inquiry through post-trip reporting - covering sales, finance, operations, vendor coordination, and customer-facing portals without things falling through the cracks.
+              - generic [ref=e44]:
+                - strong [ref=e45]: What I Built
+                - generic [ref=e46]: A sales pipeline with lead qualification and agency management. An itinerary and quote builder with vendor pricing. Full reservation lifecycle management with passenger manifests, rooming lists, and multi-stage payment schedules. A vendor portal for self-service. A communications center with email, SMS, and document generation. Credit card processing, accounts receivable/payable, and QuickBooks integration. Customer and group leader portals. Employee tools including timeclock and expense management. Insurance and waiver workflows. 70+ reports and integrations with Google Workspace, Slack, and Twilio.
+              - generic [ref=e47]:
+                - strong [ref=e48]: Result
+                - generic [ref=e49]: An operational backbone that runs every part of the business daily - sales, booking, finance, logistics, and communications - still in production after years of continuous development.
+              - generic [ref=e50]:
+                - strong [ref=e51]: Webhook Authentication
+                - generic [ref=e52]:
+                  - text: "Webhook authentication spans senders and receivers: the payment processor's settlement posts are signature-verified with a timing-safe comparison, Tourbot signs its outbound service-to-service webhooks, and the parent-engagement portal verifies those plus Mandrill's email-event signatures. The verifiers are extracted as"
+                  - link "webhook-verify" [ref=e53] [cursor=pointer]:
+                    - /url: https://github.com/JacobStephens2/webhook-verify
+                  - text: ", with the write-up in"
+                  - link "notes" [ref=e54] [cursor=pointer]:
+                    - /url: /notes/hmac-signed-webhooks/
+                  - text: .
+            - button "Read more" [ref=e55] [cursor=pointer]
+            - generic [ref=e56]:
+              - generic [ref=e57]: PHP
+              - generic [ref=e58]: MySQL
+              - generic [ref=e59]: JavaScript
+              - generic [ref=e60]: jQuery
+              - generic [ref=e61]: Twilio
+              - generic [ref=e62]: QuickBooks
+              - generic [ref=e63]: Operations
+            - link "Organization" [ref=e65] [cursor=pointer]:
+              - /url: https://github.com/Educational-Travel-Adventures
+        - article [ref=e68]:
+          - button [ref=e69]:
+            - img "Tourbot Chat AI-powered manager intelligence system" [ref=e70]
+          - generic [ref=e71]:
+            - 'heading "Tourbot Chat: Manager Sandboxes" [level=3] [ref=e72]'
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Tourbot Chat runs inside three Manager Sandboxes - role-specific Tourbot instances in Docker containers for Sales, General Management, and Marketing - giving managers natural-language access to business intelligence and a safe place to prototype platform changes.
+              - generic [ref=e75]:
+                - strong [ref=e76]: Problem
+                - generic [ref=e77]: Managers needed to answer complex business questions - revenue breakdowns, booking trends, vendor performance - without waiting on developer time. They also wanted to experiment with reports and workflows on their own terms, without risking the production system.
+              - generic [ref=e78]:
+                - strong [ref=e79]: What I Built
+                - generic [ref=e80]: "Each Manager Sandbox runs a role-specific Tourbot instance in its own Docker container, fronted by Traefik, with a dedicated Claude-powered OpenClaw agent. Agents query a replica of the production database refreshed once daily, run analysis, generate reports, and even modify PHP code, all isolated by role: allowlist-controlled command execution, dedicated least-privilege database users, and a git-based review gate so nothing reaches production unreviewed. Each container is provisioned from a shared compose definition, so standing up a new Manager Sandbox is a one-command operation."
+              - generic [ref=e81]:
+                - strong [ref=e82]: Result
+                - generic [ref=e83]: Non-technical managers independently explore business data, generate custom reports, and prototype workflow changes through plain conversation - 14 manager-prototyped features have shipped to production through the human merge gate across Sales, General Management, and Marketing, with zero agent-caused incidents - while the system enforces per-role isolation, read-only data access, and code-review boundaries that keep the production platform safe from accidental or unreviewed change.
+            - button "Read more" [ref=e84] [cursor=pointer]
+            - generic [ref=e85]:
+              - generic [ref=e86]: OpenClaw
+              - generic [ref=e87]: Claude
+              - generic [ref=e88]: Docker
+              - generic [ref=e89]: PHP
+              - generic [ref=e90]: MySQL
+              - generic [ref=e91]: Traefik
+              - generic [ref=e92]: AI Agents
+            - generic [ref=e93]:
+              - link "Pattern write-up →" [ref=e94] [cursor=pointer]:
+                - /url: https://stephens.page/notes/human-in-the-loop-ai-agents/
+              - link "Organization" [ref=e95] [cursor=pointer]:
+                - /url: https://github.com/Educational-Travel-Adventures
+        - article [ref=e98]:
+          - generic [ref=e99]:
+            - button [ref=e100]:
+              - 'img "Tourbot Terminal: a browser hub of coding-agent session types with a cross-agent session manager" [ref=e101]'
+            - button "Previous image" [ref=e102] [cursor=pointer]: ‹
+            - button "Next image" [ref=e103] [cursor=pointer]: ›
+            - generic [ref=e104]:
+              - button "Show image 1" [ref=e105] [cursor=pointer]
+              - button "Show image 2" [ref=e106] [cursor=pointer]
+              - button "Show image 3" [ref=e107] [cursor=pointer]
+              - button "Show image 4" [ref=e108] [cursor=pointer]
+              - button "Show image 5" [ref=e109] [cursor=pointer]
+          - generic [ref=e110]:
+            - 'heading "Tourbot Terminal: Coding Agents as a Platform Service" [level=3] [ref=e111]'
+            - generic [ref=e112]:
+              - paragraph [ref=e113]: "Persistent Claude Code and Codex CLI sessions running inside each role's Manager Sandbox - hosted by the platform, reachable two ways: a browser terminal built into the ERP itself, and Claude's remote-control UI for driving the same sessions conversationally. Where Tourbot Chat gives managers an assistant, this hands them the same coding agents an engineer uses - with the platform supplying the guardrails."
+              - generic [ref=e114]:
+                - strong [ref=e115]: Problem
+                - generic [ref=e116]: The strongest building tools are terminal agents - Claude Code, Codex CLI - but they assume a shell, SSH, and tmux, none of which a business manager has. The chat assistant covers questions and prototypes, but its API-metered usage costs more per unit of work than subscription-based agent CLIs, and the CLIs are simply better at sustained building. The gap was access, not capability.
+              - generic [ref=e117]:
+                - strong [ref=e118]: What I Built
+                - generic [ref=e119]: "An xterm.js terminal embedded in Tourbot behind a dedicated permission, connected over a token-authenticated WebSocket bridge (Node, node-pty) into the Manager Sandbox container - plus a route onto Claude Code remote, so the same server-side sessions can be driven from Claude's remote-control UI instead of the raw CLI. Every session is a persistent tmux session - close the laptop, the agent keeps working; pick it back up from any device, including a phone. A session manager spans both agent families (Claude Code and Codex sessions side by side), with file upload into the agent's workspace, full-scrollback copy, lightweight pane polling for idle detection, and one-click session reset. Under the hood, privilege separation: Claude Code runs under a dedicated non-root account via a sudo wrapper - it refuses to run as root - while other session types stay isolated on a separate tmux server."
+              - generic [ref=e120]:
+                - strong [ref=e121]: Result
+                - generic [ref=e122]: "The general manager and marketing managers run real coding agents against their Manager Sandboxes - doing their own building, at subscription cost instead of API metering. In practice most drive Claude through the remote-control UI, with the embedded terminal as the direct view and the Codex path - and every Tourbot Chat boundary still holds either way: Docker container isolation, a replica database, and the human merge gate before anything reaches production. The platform hosts the sessions; the UI is whichever door fits the user. Platform engineering in the literal sense - taking a capability that required an engineer's toolchain and shipping it as a permissioned, self-service feature of the business system."
+            - button "Read more" [ref=e123] [cursor=pointer]
+            - generic [ref=e124]:
+              - generic [ref=e125]: xterm.js
+              - generic [ref=e126]: WebSockets
+              - generic [ref=e127]: node-pty
+              - generic [ref=e128]: tmux
+              - generic [ref=e129]: Claude Code
+              - generic [ref=e130]: Codex CLI
+              - generic [ref=e131]: AI Agents
+            - link "The boundary pattern it runs inside →" [ref=e133] [cursor=pointer]:
+              - /url: https://stephens.page/notes/human-in-the-loop-ai-agents/
+        - article [ref=e134]:
+          - button [ref=e135]:
+            - 'img "Diagram of the ETA Software Factory: intake, supervisor, Factory Worker in a Firecracker microVM, verify, and human merge gate" [ref=e136]'
+          - generic [ref=e137]:
+            - heading "ETA Software Factory" [level=3] [ref=e138]
+            - generic [ref=e139]:
+              - paragraph [ref=e140]: "An agentic engineering platform for Educational Travel Adventures: small, self-describing staff requests in; Factory Workers are agent attempts running in short-lived Firecracker microVMs; evidenced draft pull requests out. One human gate - the PR - held by engineering and the company owner. The production deploy path is never touched."
+              - generic [ref=e141]:
+                - strong [ref=e142]: Problem
+                - generic [ref=e143]: Useful Tourbot changes die in inboxes because every request needs engineer time end to end. Managers already prototype inside sandboxed agents, but the company needed a purpose-built pipeline that turns a staff request into a reviewable PR - with isolation strong enough that untrusted screenshots and agent-written code never sit next to crown-jewel credentials.
+              - generic [ref=e144]:
+                - strong [ref=e145]: What I Built
+                - generic [ref=e146]:
+                  - text: A Rust control plane (Axum supervisor, dashboard,
+                  - code [ref=e147]: factoryctl
+                  - text: ) on a dedicated host with socket-only PostgreSQL, an append-only ledger, and a draft-only publisher under a GitHub App machine identity. Each agent attempt becomes a Factory Worker executing implement and verify work inside a short-lived Firecracker microVM, separate from the Docker-based Manager Sandboxes. Evidence capture, adversarial cross-family review, and a constitution (
+                  - code [ref=e148]: AGENTS.md
+                  - text: ) SHA-pinned in CI keep every run attributable. Phase 1 sessions covering isolation, verifier, publisher, dashboard, and the evidence lifecycle are merged on live infrastructure.
+              - generic [ref=e149]:
+                - strong [ref=e150]: Result
+                - generic [ref=e151]: "Phase 1 runs on live hosts: control plane, Factory Worker path, draft-only publisher, and evidence path are real infrastructure - not a design deck - with the constitution and merge gate enforced in code. The intended loop is staff request → evidenced draft PR; review is the only human cost, and nothing auto-merges or deploys. End-to-end staff adoption is still the build's target, not a claimed steady-state metric. The trust model is written up interactively in public posts on the factory as a canonical model and as multi-engine discrete-event animation."
+            - button "Read more" [ref=e152] [cursor=pointer]
+            - generic [ref=e153]:
+              - generic [ref=e154]: Rust
+              - generic [ref=e155]: Axum
+              - generic [ref=e156]: Firecracker
+              - generic [ref=e157]: PostgreSQL
+              - generic [ref=e158]: OpenTofu
+              - generic [ref=e159]: Ansible
+              - generic [ref=e160]: AI Agents
+              - generic [ref=e161]: Human-in-the-loop
+            - generic [ref=e162]:
+              - link "Seven-boundary agent-safety pattern →" [ref=e163] [cursor=pointer]:
+                - /url: /blog/human-in-the-loop-ai-agents-for-legacy-business-systems/
+              - link "The diagram is not the model →" [ref=e164] [cursor=pointer]:
+                - /url: /blog/the-diagram-is-not-the-model/
+              - link "The animation is a replay →" [ref=e165] [cursor=pointer]:
+                - /url: /blog/the-animation-is-a-replay/
+              - link "Organization" [ref=e166] [cursor=pointer]:
+                - /url: https://github.com/Educational-Travel-Adventures
+        - article [ref=e169]:
+          - button [ref=e170]:
+            - img "ETA Guides Portal mobile-first contractor application" [ref=e171]
+          - generic [ref=e172]:
+            - heading "ETA Guides Portal" [level=3] [ref=e173]
+            - generic [ref=e174]:
+              - paragraph [ref=e175]: A mobile-first PWA for tour guide contractors at Educational Travel Adventures - itinerary and medical info access, document workflows, daily and summary reporting with live auto-save, expense tracking with receipt uploads, SMS messaging to travelers, calendar scheduling, and manager-side administration.
+              - generic [ref=e176]:
+                - strong [ref=e177]: Problem
+                - generic [ref=e178]: Independent contractor tour guides - with no access to the main system - needed a reliable mobile interface to view trip details, access passenger medical and dietary information, file reports and expenses, and communicate with travelers while in the field.
+              - generic [ref=e179]:
+                - strong [ref=e180]: What I Built
+                - generic [ref=e181]: A full PWA with offline support and service worker caching. Tentative and final itinerary views, passenger manifests, medical conditions, allergies, and dietary reports. Daily reports and post-tour summary questionnaires with live auto-save. An expense system with categorization, receipt attachments, and driver gratuity forms. Twilio-powered SMS messaging to travelers and billing contacts. A calendar with unavailability scheduling. Tour confirmation and ride-along workflows. Manager admin tools for document management and report reassignment.
+              - generic [ref=e182]:
+                - strong [ref=e183]: Result
+                - generic [ref=e184]: Guides in the field can view trip details, check passenger medical needs, text travelers, file reports as they go, and submit expenses with receipts - all from their phone, online or offline. Managers can administer documents and review reports without developer involvement.
+            - button "Read more" [ref=e185] [cursor=pointer]
+            - generic [ref=e186]:
+              - generic [ref=e187]: PHP
+              - generic [ref=e188]: MySQL
+              - generic [ref=e189]: Bootstrap
+              - generic [ref=e190]: Twilio
+              - generic [ref=e191]: Service Workers
+              - generic [ref=e192]: PWA
+            - generic [ref=e193]:
+              - link "Visit Site" [ref=e194] [cursor=pointer]:
+                - /url: https://guides.etadventures.com
+              - link "Organization" [ref=e195] [cursor=pointer]:
+                - /url: https://github.com/Educational-Travel-Adventures
+        - article [ref=e198]:
+          - button [ref=e199]:
+            - img "ETA Orchestration and Status dashboard" [ref=e200]
+          - generic [ref=e201]:
+            - heading "ETA Orchestration & Status" [level=3] [ref=e202]
+            - generic [ref=e203]:
+              - paragraph [ref=e204]: A Python and Flask service that probes Educational Travel Adventures' fleet of web, database, and cron servers and renders a single-page health view - paired with a hardened Linux host that lets a Claude Code agent operate safely across that infrastructure.
+              - generic [ref=e205]:
+                - strong [ref=e206]: Problem
+                - generic [ref=e207]: A dozen production and supporting servers - MySQL 8 and 5.7, Apache, ACH cron processing, Docker-hosted Manager Sandboxes, an asset host - with no single place to see what was reachable, green, or degrading, and no clean way to give an AI agent multi-server access without leaking credentials or muddying audit logs.
+              - generic [ref=e208]:
+                - strong [ref=e209]: What I Built
+                - generic [ref=e210]: "A Flask app behind Caddy and gunicorn that sweeps TCP, HTTP, and MySQL probes every 60 seconds across the fleet, with deploy controls, fleet-wide tmux management, and a web terminal - all gated by single-use magic-link tokens. The same VM runs a hardened service-account pipeline: secrets injected at launch from a managed vault, database grants scoped to least privilege, and a wrapper that lets engineers trigger the agent without ever handling its credentials. Auditing reads as \"the orchestrator did X,\" not \"Engineer Y did X via it.\""
+              - generic [ref=e211]:
+                - strong [ref=e212]: Result
+                - generic [ref=e213]: One URL to check fleet health, refreshed in the background so page loads never block on a probe - and a controlled launchpad from which an AI agent can coordinate work between web and database servers with credentials it never sees on disk.
+            - button "Read more" [ref=e214] [cursor=pointer]
+            - generic [ref=e215]:
+              - generic [ref=e216]: Python
+              - generic [ref=e217]: Flask
+              - generic [ref=e218]: SQLite
+              - generic [ref=e219]: gunicorn
+              - generic [ref=e220]: Caddy
+              - generic [ref=e221]: systemd
+              - generic [ref=e222]: Linux
+              - generic [ref=e223]: 1Password
+              - generic [ref=e224]: Claude Code
+        - article [ref=e225]:
+          - button [ref=e226]:
+            - img "ETA Customer Portal - group leader and traveler self-service" [ref=e227]
+          - generic [ref=e228]:
+            - heading "ETA Customer Portal" [level=3] [ref=e229]
+            - generic [ref=e230]:
+              - paragraph [ref=e231]: The customer-facing side of Educational Travel Adventures - group leaders, parents, and travelers self-serve account creation, trip registration, payment plans, and communication. Inherited from a previous IT team and substantially rebuilt by me and the team I lead.
+              - generic [ref=e232]:
+                - strong [ref=e233]: Problem
+                - generic [ref=e234]: "The original portal - built years earlier - had drifted out of step with the rest of the platform: payment integrations were aging, the UI looked dated next to the modern Tourbot interface, and security and PCI posture needed real work as ETA shifted between merchant processors. It needed to keep running every day for paying customers while we modernized it underneath."
+              - generic [ref=e235]:
+                - strong [ref=e236]: What I Built
+                - generic [ref=e237]: Led the rebuild while keeping the existing portal in production. Migrated the credit-card flow across multiple processors with bank-account encryption and PCI-conscious handling. Re-engineered registration, payment-plan, and refund flows. Modernized the front-end with a Tailwind-based component layer alongside legacy markup. Added in-portal chat, conference-call hooks, and customer-account export/import for cross-database migration. Tightened the API surface and aligned auth with the broader Tourbot platform.
+              - generic [ref=e238]:
+                - strong [ref=e239]: Result
+                - generic [ref=e240]: A portal that customers actually trust to take their money - clearer flows, modernized payments, current PCI posture - with continuity for the thousands of registrations and payments already in flight when the rebuild started.
+            - button "Read more" [ref=e241] [cursor=pointer]
+            - generic [ref=e242]:
+              - generic [ref=e243]: PHP
+              - generic [ref=e244]: MySQL
+              - generic [ref=e245]: JavaScript
+              - generic [ref=e246]: Tailwind
+              - generic [ref=e247]: PCI
+            - generic [ref=e248]:
+              - link "Visit Site" [ref=e249] [cursor=pointer]:
+                - /url: https://tourbot.etadventures.com/customerweb/
+              - link "Organization" [ref=e250] [cursor=pointer]:
+                - /url: https://github.com/Educational-Travel-Adventures
+        - article [ref=e253]:
+          - button [ref=e254]:
+            - img "Diagram of NACHA file generation and bank submission pipeline" [ref=e255]
+          - generic [ref=e256]:
+            - heading "ACH & NACHA Bank-File Automation" [level=3] [ref=e257]
+            - generic [ref=e258]:
+              - paragraph [ref=e259]: The cron-driven pipeline that turns scheduled customer payments into NACHA-formatted batch files and submits them to the bank for ACH processing - the system that actually moves the money. Inherited the original implementation; took ownership, modernized the runtime, and kept it running through platform migrations.
+              - generic [ref=e260]:
+                - strong [ref=e261]: Problem
+                - generic [ref=e262]: The ACH side of the business depends on producing correctly-formatted NACHA files, uploading them to the bank on a schedule, and reconciling return files when entries fail. The original cron host was stuck on CentOS 7 and PHP 5.6, the code had drifted from the rest of the platform, and the bank doesn't tolerate malformed batches - a bad file is a failed payment day.
+              - generic [ref=e263]:
+                - strong [ref=e264]: What I Built
+                - generic [ref=e265]: "Took over the bank-file generator and the surrounding cron fleet (`nacha_files_to_upload`, `nacha_returnfiles`, vendor ACH batches, and recurring-payment crons). Modernized the code paths against current PHP, migrated the MySQL backend across versions, added monitoring around the daily cron schedule, and integrated a card-payment processor as a routing target for recurring payments alongside the ACH flow. Kept the bank-facing format and submission cadence rock-steady the entire time."
+              - generic [ref=e266]:
+                - strong [ref=e267]: Result
+                - generic [ref=e268]: "The money kept moving and no one had to notice: customer ACH payments and refunds clear the bank on schedule, return files are processed back into the system, and the pipeline is now legible and modifiable instead of a black box only the original author understood."
+            - button "Read more" [ref=e269] [cursor=pointer]
+            - generic [ref=e270]:
+              - generic [ref=e271]: PHP
+              - generic [ref=e272]: MySQL
+              - generic [ref=e273]: NACHA
+              - generic [ref=e274]: ACH
+              - generic [ref=e275]: Cron
+              - generic [ref=e276]: Linux
+            - link "Organization" [ref=e278] [cursor=pointer]:
+              - /url: https://github.com/Educational-Travel-Adventures
+        - article [ref=e281]:
+          - button [ref=e282]:
+            - img "Tourbot group manifest page" [ref=e283]
+          - generic [ref=e284]:
+            - heading "Tourbot Manifest Performance Tuning" [level=3] [ref=e285]
+            - generic [ref=e286]:
+              - paragraph [ref=e287]: A six-round, profile-driven performance pass on Tourbot's group manifest page - the document staff print before every trip - taking page loads from 5-7 seconds to about 1 second by eliminating N+1 queries, batching in-request prefetches, and adding a targeted history-table index.
+              - generic [ref=e288]:
+                - strong [ref=e289]: Problem
+                - generic [ref=e290]:
+                  - text: The manifest page renders everything operations needs about a group reservation in one shot - passengers, payments, waivers, schedules, cancellation history. Each load fired ~2,650 SQL statements and opened 118 fresh MySQL connections, because the
+                  - code [ref=e291]: Booking
+                  - text: ","
+                  - code [ref=e292]: Price_statement
+                  - text: ", and"
+                  - code [ref=e293]: ReturnPaySked
+                  - text: constructors each ran helper queries per row of a 50-passenger group - almost all of it avoidable repeat work.
+              - generic [ref=e294]:
+                - strong [ref=e295]: What I Built
+                - generic [ref=e296]:
+                  - text: Six rounds, each starting from an xdebug cachegrind capture and ending with a byte-identical HTML diff. Collapsed 118 per-request MySQL connections into one via the shared PDO handle. Made
+                  - code [ref=e297]: Booking::__construct
+                  - text: skippable so 50 passengers hydrate from a single batched
+                  - code [ref=e298]: IN(…)
+                  - text: query, and added a
+                  - code [ref=e299]: Price_statement::prefetch()
+                  - text: layer - static caches and batched queries warmed once per request, with per-instance fallbacks for other callers. Replaced a leading-wildcard
+                  - code [ref=e300]: LIKE
+                  - text: in the cancellation-history query with an
+                  - code [ref=e301]: Action_Type
+                  - text: column and composite index, cutting EXPLAIN's rows-examined from 4,165 to 1.
+              - generic [ref=e302]:
+                - strong [ref=e303]: Result
+                - generic [ref=e304]: "The operations staff who print this manifest before every trip stopped waiting on it: page load dropped from 5-7s to about 1s, SQL statements per request from ~2,650 to 183 (−93%), with rendered HTML byte-identical at every step. Re-validated on a 244-sub-reservation outlier group: ~10s → ~3s and ~11,800 statements → ~2,400, still byte-identical - so the wins scale to worst-case data."
+            - button "Read more" [ref=e305] [cursor=pointer]
+            - generic [ref=e306]:
+              - generic [ref=e307]: PHP
+              - generic [ref=e308]: MySQL
+              - generic [ref=e309]: xdebug
+              - generic [ref=e310]: Profiling
+              - generic [ref=e311]: Query Optimization
+              - generic [ref=e312]: Schema & Indexing
+              - generic [ref=e313]: Performance
+            - link "Organization" [ref=e315] [cursor=pointer]:
+              - /url: https://github.com/Educational-Travel-Adventures
+        - article [ref=e318]:
+          - generic [ref=e319]:
+            - button [ref=e320]:
+              - img "Tourbot pre-computed alerts board and table views" [ref=e321]
+            - button "Previous image" [ref=e322] [cursor=pointer]: ‹
+            - button "Next image" [ref=e323] [cursor=pointer]: ›
+            - generic [ref=e324]:
+              - button "Show image 1" [ref=e325] [cursor=pointer]
+              - button "Show image 2" [ref=e326] [cursor=pointer]
+          - generic [ref=e327]:
+            - 'heading "Tourbot Alerts: Pre-Computed Cache Architecture" [level=3] [ref=e328]'
+            - generic [ref=e329]:
+              - paragraph [ref=e330]: An architectural rework of Tourbot's internal alerts page - a screen staff hit constantly throughout the day - that moves alert computation off the request path entirely. A background PHP daemon pre-computes every alert into a dedicated cache table, so the page just reads pre-shaped rows - cutting load times from 5-10 seconds to under 1 second.
+              - generic [ref=e331]:
+                - strong [ref=e332]: Problem
+                - generic [ref=e333]: The alerts page recalculated every alert from scratch on each request, fanning out into 100+ MySQL queries against the same booking, item, and product-alert tables with no reuse across users. With staff hitting it many times a day, 5-10 second loads were normal and the slowness was eroding trust in the rest of Tourbot.
+              - generic [ref=e334]:
+                - strong [ref=e335]: What I Built
+                - generic [ref=e336]: "Profiled the request path and hit the worst offenders first: composite indexes on the booking / item / product-alert joins, and per-reservation loops rewritten as batched IN (…) queries to kill the N+1 pattern. Then went further - pre-computed the alerts into a dedicated MySQL cache table populated by a background PHP daemon, so the page just reads pre-shaped rows. Invalidation is layered: writes trigger per-reservation recomputes, page loads refresh stale caches against a one-hour window, and a nightly cron rebuilds fully. Visible behavior didn't change."
+              - generic [ref=e337]:
+                - strong [ref=e338]: Result
+                - generic [ref=e339]: Page loads dropped from 5-10 seconds to under 1 second and per-page queries from 100+ to a handful, with most of the work now off the request path. The same cache table later became the read source for the SPM group page and the sales dashboard, so the win rippled outward.
+            - button "Read more" [ref=e340] [cursor=pointer]
+            - generic [ref=e341]:
+              - generic [ref=e342]: PHP
+              - generic [ref=e343]: MySQL
+              - generic [ref=e344]: Caching
+              - generic [ref=e345]: Query Optimization
+              - generic [ref=e346]: Performance
+            - link "Organization" [ref=e348] [cursor=pointer]:
+              - /url: https://github.com/Educational-Travel-Adventures
+        - article [ref=e351]:
+          - button [ref=e352]:
+            - img "Grafana MySQL Overview dashboard monitoring the production MySQL database" [ref=e353]
+          - generic [ref=e354]:
+            - heading "Fleet Observability & Measured Database Tuning" [level=3] [ref=e355]
+            - generic [ref=e356]:
+              - paragraph [ref=e357]: A Prometheus, Grafana, and Alertmanager stack on a dedicated Terraform-provisioned droplet, instrumenting Educational Travel Adventures' 14-host fleet - followed by a measurement-driven tuning pass that removed ~80% of the production database's query load.
+              - generic [ref=e358]:
+                - strong [ref=e359]: Problem
+                - generic [ref=e360]: "The bespoke status prober answered \"is it up?\" but not \"why is database CPU at 65%?\" - no metrics history, no capacity trends, and paging logic embedded in a dashboard rather than a dedicated alert pipeline. Performance work was anecdotal: pages felt slow, but nothing measured where the query time actually went."
+              - generic [ref=e361]:
+                - strong [ref=e362]: What I Built
+                - generic [ref=e363]:
+                  - text: Node, mysqld, and blackbox exporters across all 14 hosts - covering host metrics, MySQL replication health, public-endpoint uptime, and TLS certificate expiry - scraped by Prometheus on a dedicated monitoring droplet provisioned with Terraform, visualized in Grafana, and paged through Alertmanager via email and Twilio SMS. The full rule-to-SMS chain was verified end to end with a live test alert before the old dashboard pager was switched off, so there was never a coverage gap. Then, with the database instrumented, a
+                  - code [ref=e364]: performance_schema
+                  - text: "-driven pass ranked 27 days of production queries by total time: three full-table-scan hot queries dominated, and three composite indexes - applied with online DDL (INPLACE, LOCK=NONE), EXPLAIN-verified before and after, rollback written first - eliminated them. The remaining load was diagnosed as application-level N+1 call volume and deliberately left for an app-layer fix rather than papered over with infrastructure."
+              - generic [ref=e365]:
+                - strong [ref=e366]: Result
+                - generic [ref=e367]: One paging pipeline with a single source of alerting truth; capacity questions answered from dashboards instead of SSH sessions; and ~80% of measured production query time (~404K of ~500K query-seconds) removed by three indexes that took under a second each to apply, with zero downtime. "It got faster" became a before/after with a graph behind it.
+            - button "Read more" [ref=e368] [cursor=pointer]
+            - generic [ref=e369]:
+              - generic [ref=e370]: Prometheus
+              - generic [ref=e371]: Grafana
+              - generic [ref=e372]: Alertmanager
+              - generic [ref=e373]: Terraform
+              - generic [ref=e374]: MySQL
+              - generic [ref=e375]: performance_schema
+            - 'link "ADR 0011: why a metrics stack →" [ref=e377] [cursor=pointer]':
+              - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0011-instrumented-metrics-stack-over-bespoke-prober.md
+        - article [ref=e378]:
+          - button [ref=e379]:
+            - img "Diagram of PHP 5 to PHP 8 and MySQL 5.7 to 8.4 modernization" [ref=e380]
+          - generic [ref=e381]:
+            - 'heading "Legacy Modernization: PHP 5 → 8, MySQL 5.7 → 8.4, CentOS → Rocky" [level=3] [ref=e382]'
+            - generic [ref=e383]:
+              - paragraph [ref=e384]: A multi-year, codebase-wide modernization of Educational Travel Adventures' platform - PHP 5.6 to PHP 8, MySQL 5.7 to MySQL 8.4 LTS, and CentOS 7 to Rocky Linux 9 - done in production, without freezing the company.
+              - generic [ref=e385]:
+                - strong [ref=e386]: Problem
+                - generic [ref=e387]: "A 40-person travel business was running on a stack whose support runway was visibly running out: PHP 5.6 long past EOL, MySQL 5.7 past its window, CentOS 7 aging out. Every other piece of the platform - payments, ACH, the customer portal, internal Tourbot, the guides PWA - had to keep shipping throughout."
+              - generic [ref=e388]:
+                - strong [ref=e389]: What I Built
+                - generic [ref=e390]:
+                  - text: "Executed an enterprise-wide PHP 5 → 8 migration across the codebase: removed magic quotes and deprecated"
+                  - code [ref=e391]: mysql_*
+                  - text: calls, declared properties on long-lived models, tightened type signatures. Shipped the MySQL 5.7 → 8.4 migration plan and the CentOS 7 → Rocky Linux 9 cutover, with deployment notes, schema-compatibility audits, and per-server runbooks. Coordinated cross-database export/import for customer accounts, dual-running old and new database servers during transition. Mentored the developer working alongside me on the same codebase.
+              - generic [ref=e392]:
+                - strong [ref=e393]: Result
+                - generic [ref=e394]: "No one's workday was interrupted by the upgrade: a current, supported stack - PHP 8, MySQL 8.4 LTS, Rocky Linux 9 - now runs across the production fleet, completed without an outage customers or staff would have noticed. The same migration also unblocked downstream work: Docker-based Manager Sandboxes, an AI-agent orchestrator, and the modernized customer portal all assume the new baseline."
+            - button "Read more" [ref=e395] [cursor=pointer]
+            - generic [ref=e396]:
+              - generic [ref=e397]: PHP 8
+              - generic [ref=e398]: MySQL 8.4
+              - generic [ref=e399]: Rocky Linux
+              - generic [ref=e400]: CentOS
+              - generic [ref=e401]: Migration
+              - generic [ref=e402]: Refactoring
+              - generic [ref=e403]: Production Ops
+            - link "Organization" [ref=e405] [cursor=pointer]:
+              - /url: https://github.com/Educational-Travel-Adventures
+    - generic [ref=e408]:
+      - generic [ref=e409]:
+        - heading "Client Work" [level=2] [ref=e410]
+        - paragraph [ref=e411]: Focused builds for payments, publishing, and straightforward business visibility.
+      - generic [ref=e412]:
+        - article [ref=e413]:
+          - button [ref=e414]:
+            - img "Chester County Life subscription website" [ref=e415]
+          - generic [ref=e416]:
+            - heading "Chester County Life" [level=3] [ref=e417]
+            - generic [ref=e418]:
+              - paragraph [ref=e419]: A subscription payment system with Stripe integration for recurring revenue and secure transaction handling.
+              - generic [ref=e420]:
+                - strong [ref=e421]: Problem
+                - generic [ref=e422]: The site needed reliable recurring billing, not just a brochure.
+              - generic [ref=e423]:
+                - strong [ref=e424]: What I Built
+                - generic [ref=e425]: PCI-conscious subscription flows and payment infrastructure tied into Stripe.
+              - generic [ref=e426]:
+                - strong [ref=e427]: Result
+                - generic [ref=e428]: A site that collects and manages recurring revenue, not just describes the offering.
+            - button "Read more" [ref=e429] [cursor=pointer]
+            - generic [ref=e430]:
+              - generic [ref=e431]: PHP
+              - generic [ref=e432]: Stripe
+              - generic [ref=e433]: Subscriptions
+            - generic [ref=e434]:
+              - link "Visit Site" [ref=e435] [cursor=pointer]:
+                - /url: https://chestercounty-life.com
+              - link "GitHub" [ref=e436] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/chestercounty-life-wordpress-theme
+        - article [ref=e439]:
+          - button [ref=e440]:
+            - img "Wadadli Flare Catering website" [ref=e441]
+          - generic [ref=e442]:
+            - heading "Wadadli Flare Catering" [level=3] [ref=e443]
+            - generic [ref=e444]:
+              - paragraph [ref=e445]: A marketing site for a catering business - clear presentation, service visibility, and lead generation.
+              - generic [ref=e446]:
+                - strong [ref=e447]: Problem
+                - generic [ref=e448]: The business needed a web presence that communicated the offering quickly and drove customer inquiries.
+              - generic [ref=e449]:
+                - strong [ref=e450]: What I Built
+                - generic [ref=e451]: A polished service site with clear structure, strong visual presentation, and direct paths for interested customers.
+              - generic [ref=e452]:
+                - strong [ref=e453]: Result
+                - generic [ref=e454]: A credible online front door and a better platform for discovery and inquiries.
+            - button "Read more" [ref=e455] [cursor=pointer]
+            - generic [ref=e456]:
+              - generic [ref=e457]: Frontend
+              - generic [ref=e458]: Brand Presence
+              - generic [ref=e459]: Lead Generation
+            - generic [ref=e460]:
+              - link "Visit Site" [ref=e461] [cursor=pointer]:
+                - /url: https://wadadliflarecatering.com
+              - link "GitHub" [ref=e462] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/wadadliflarecatering.com
+        - article [ref=e465]:
+          - button [ref=e466]:
+            - img "Coach's Call coach-mentoring website" [ref=e467]
+          - generic [ref=e468]:
+            - heading "Coach's Call" [level=3] [ref=e469]
+            - generic [ref=e470]:
+              - paragraph [ref=e471]: A marketing and contact site for a faith-centered coach-mentoring practice - presenting one-on-one mentoring, seminars, and consulting for coaches at Christian athletic programs.
+              - generic [ref=e472]:
+                - strong [ref=e473]: Problem
+                - generic [ref=e474]: The practice needed a credible web presence to communicate its offering and make it easy for coaches across the country to get in touch.
+              - generic [ref=e475]:
+                - strong [ref=e476]: What I Built
+                - generic [ref=e477]: A React/Gatsby site with About, Work, and Contact sections and a working contact flow. When Gatsby Cloud shut down, I migrated the build onto a PHP/Apache host without disrupting the front-end.
+              - generic [ref=e478]:
+                - strong [ref=e479]: Result
+                - generic [ref=e480]: A stable, self-hosted site that survived its original platform's end-of-life and keeps driving coach inquiries.
+            - button "Read more" [ref=e481] [cursor=pointer]
+            - generic [ref=e482]:
+              - generic [ref=e483]: React
+              - generic [ref=e484]: Gatsby
+              - generic [ref=e485]: PHP
+              - generic [ref=e486]: Brand Presence
+            - generic [ref=e487]:
+              - link "Visit Site" [ref=e488] [cursor=pointer]:
+                - /url: https://coachscall.org
+              - link "GitHub" [ref=e489] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/coachs-call-website
+    - generic [ref=e492]:
+      - generic [ref=e493]:
+        - heading "Personal Projects" [level=2] [ref=e494]
+        - paragraph [ref=e495]:
+          - text: A curated set of personal builds, selected for relevance to platform and AI-infrastructure work. The full shelf of published apps lives at
+          - link "stephens.page/apps" [ref=e496] [cursor=pointer]:
+            - /url: /apps.html
+          - text: .
+      - generic [ref=e497]:
+        - article [ref=e498]:
+          - button [ref=e499]:
+            - 'img "Diagram of Tracewake: handover label, Selector cycle, microVM run under a Termination Contract, draft-PR proposal, human merge gate" [ref=e500]'
+          - generic [ref=e501]:
+            - heading "Tracewake" [level=3] [ref=e502]
+            - generic [ref=e503]:
+              - paragraph [ref=e504]: Turns a labeled GitHub issue into a reviewable draft pull request, unattended. A coding agent runs in a fresh microVM under a Termination Contract. The only output is a Proposal. Nothing merges itself.
+              - generic [ref=e505]:
+                - strong [ref=e506]: Why it matters
+                - generic [ref=e507]: Same problem OpenAI's Symphony poses - issue to merged code without sitting in the loop - with the opposite bets. Unattended agents that land their own work are a blast-radius machine; the human merge gate is the product. This is the public factory whose private cousin is the ETA Software Factory above.
+              - generic [ref=e508]:
+                - strong [ref=e509]: What stands out
+                - generic [ref=e510]:
+                  - text: The operator hands over at a
+                  - code [ref=e511]: ready-for-agent
+                  - text: label, not a workflow state. One Run at a time, a fresh microVM per Iteration, a Termination Contract of five declared bounds (the model's "I'm done" is advisory), proposal-only output, and configuration that lives entirely outside the target repo so the codebase never knows Tracewake exists. The public SPEC states those bets side by side with Symphony; 29 ADRs record why.
+            - button "Read more" [ref=e512] [cursor=pointer]
+            - generic [ref=e513]:
+              - generic [ref=e514]: Python
+              - generic [ref=e515]: FastAPI
+              - generic [ref=e516]: PostgreSQL
+              - generic [ref=e517]: systemd
+              - generic [ref=e518]: microVM
+              - generic [ref=e519]: AI Agents
+            - generic [ref=e520]:
+              - link "SPEC" [ref=e521] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/tracewake/blob/main/SPEC.md
+              - link "ADRs" [ref=e522] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/tracewake/tree/main/docs/adr
+              - link "GitHub" [ref=e523] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/tracewake
+        - article [ref=e526]:
+          - button [ref=e527]:
+            - 'img "vaulted-agent: terminal launching va claude with vault-resolved secrets" [ref=e528]'
+          - generic [ref=e529]:
+            - heading "vaulted-agent" [level=3] [ref=e530]
+            - generic [ref=e531]:
+              - paragraph [ref=e532]:
+                - text: A Rust launcher (
+                - code [ref=e533]: va
+                - text: ) that gives Claude Code, Codex, Grok, Kimi, Muse, and Antigravity real vault credentials in-process - Bitwarden Secrets Manager, 1Password, pass, or sops - with per-agent manifests and optional prompt auth so the vault master token never has to live on disk.
+              - generic [ref=e534]:
+                - strong [ref=e535]: Why it matters
+                - generic [ref=e536]:
+                  - text: AI coding agents need API keys and DB passwords, but a pile of
+                  - code [ref=e537]: .env
+                  - text: files on every host is a secrets-management failure waiting to happen. Centralizing resolution in a launcher means rotation is one vault change, and a mis-scoped manifest is visible before the agent starts.
+              - generic [ref=e538]:
+                - strong [ref=e539]: What stands out
+                - generic [ref=e540]:
+                  - text: Publishing the pattern found five production bugs - including one that handed every agent the credential that unlocks the whole vault. The fix is fail-closed manifests, scrub-then-exec so the child never inherits the manager token, and an honest threat model about what still lives on disk when auth is file-based. One curl install,
+                  - code [ref=e541]: va setup
+                  - text: ","
+                  - code [ref=e542]: va claude
+                  - text: .
+            - button "Read more" [ref=e543] [cursor=pointer]
+            - generic [ref=e544]:
+              - generic [ref=e545]: Rust
+              - generic [ref=e546]: 1Password
+              - generic [ref=e547]: Bitwarden SM
+              - generic [ref=e548]: AI Agents
+              - generic [ref=e549]: Secrets
+            - generic [ref=e550]:
+              - link "Product page" [ref=e551] [cursor=pointer]:
+                - /url: https://vaultedagent.com/
+              - link "Write-up →" [ref=e552] [cursor=pointer]:
+                - /url: /blog/one-vault-three-agents-writing-the-pattern-down-found-five-bugs/
+              - link "GitHub" [ref=e553] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/vaulted-agent
+        - article [ref=e556]:
+          - button [ref=e557]:
+            - 'img "muxboard product site: live browser attach to a chart35 coding-agent session on jacob@stephens droplet" [ref=e558]'
+          - generic [ref=e559]:
+            - heading "muxboard" [level=3] [ref=e560]
+            - generic [ref=e561]:
+              - paragraph [ref=e562]: A Flask blueprint that puts a web dashboard over tmux - across one host or a whole fleet - with a live in-browser terminal, built default-deny with attach caps and a documented threat model for handing out remote-shell access over the web.
+              - generic [ref=e563]:
+                - strong [ref=e564]: Why it matters
+                - generic [ref=e565]: Babysitting a long-running agent or build session from a browser tab beats SSHing into each box and remembering which tmux socket belongs to which service account. The single-host case is just the n=1 instance of the same fleet inventory model - there is no separate code path for "just my laptop."
+              - generic [ref=e566]:
+                - strong [ref=e567]: What stands out
+                - generic [ref=e568]: "Security-first design for an inherently dangerous capability: default-deny authorization, per-principal and global caps on concurrent attaches, a type-the-name kill confirmation, an SSH-backed inventory refreshed off the request path, and an honest threat model that treats a misconfigured gate as a root shell for a stranger."
+            - button "Read more" [ref=e569] [cursor=pointer]
+            - generic [ref=e570]:
+              - generic [ref=e571]: Python
+              - generic [ref=e572]: Flask
+              - generic [ref=e573]: WebSocket
+              - generic [ref=e574]: xterm.js
+              - generic [ref=e575]: tmux
+              - generic [ref=e576]: SSH
+            - generic [ref=e577]:
+              - link "Visit Site" [ref=e578] [cursor=pointer]:
+                - /url: https://muxboard.dev
+              - link "GitHub" [ref=e579] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/muxboard
+        - article [ref=e582]:
+          - button [ref=e583]:
+            - 'img "Open-source pull request: MySQL 8.4 binlog auth fix" [ref=e584]'
+          - generic [ref=e585]:
+            - 'heading "Open-Source Fix: MySQL 8.4 Binlog Auth" [level=3] [ref=e586]'
+            - generic [ref=e587]:
+              - paragraph [ref=e588]: A pull request to the php-mysql-replication library so its binlog client can complete the handshake against MySQL 8.4, whose default caching_sha2_password plugin left the existing code two packets out of sync.
+              - generic [ref=e589]:
+                - strong [ref=e590]: Why it matters
+                - generic [ref=e591]: MySQL 8.x defaults to caching_sha2_password; without draining the extra auth packets it sends, the client desynchronizes and crashes on the first event as a malformed packet. The fix unblocks anyone using this library for change-data-capture against a modern MySQL.
+              - generic [ref=e592]:
+                - strong [ref=e593]: What stands out
+                - generic [ref=e594]: "Protocol-level debugging against the MySQL authentication-exchange spec: drain the AuthMoreData and OK packets on the fast-auth path, fail loudly with a clear exception when the server demands full authentication (unsupported without TLS), and guard the event consumer against short packets - submitted with unit and integration tests."
+            - button "Read more" [ref=e595] [cursor=pointer]
+            - generic [ref=e596]:
+              - generic [ref=e597]: PHP
+              - generic [ref=e598]: MySQL
+              - generic [ref=e599]: Binlog / CDC
+              - generic [ref=e600]: Protocol
+              - generic [ref=e601]: Open Source
+            - link "View pull request" [ref=e603] [cursor=pointer]:
+              - /url: https://github.com/krowinski/php-mysql-replication/pull/148
+        - article [ref=e606]:
+          - button [ref=e607]:
+            - 'img "DNS-as-code architecture diagram: four registrars delegate to Cloudflare (9 zones, 221 records), which points at a DigitalOcean droplet; managed by Terraform, AWS S3 remote state, Ansible, and GitHub Actions CI" [ref=e608]'
+          - generic [ref=e609]:
+            - heading "DNS as Code (Terraform + Cloudflare)" [level=3] [ref=e610]
+            - generic [ref=e611]:
+              - paragraph [ref=e612]: "Infrastructure-as-code for a personal web fleet of ~70 hostnames across 10 domains: DNS consolidated from four registrars onto Cloudflare and held as ~220 Terraform-managed records, with AWS S3 remote state, Ansible provisioning, and a plan-only disaster-recovery blueprint."
+              - generic [ref=e613]:
+                - strong [ref=e614]: Problem
+                - generic [ref=e615]: DNS for ten domains was scattered across four registrars - name.com, Porkbun, Bluehost, GoDaddy - with no version control, no review, and no way to reproduce it. One registrar (Bluehost) had no API at all, so the records there could not be managed as code without first moving them.
+              - generic [ref=e616]:
+                - strong [ref=e617]: What I Built
+                - generic [ref=e618]:
+                  - text: Consolidated every domain's nameservers onto Cloudflare, then brought ~220 records across 9 zones (A, CNAME, MX, TXT, SRV) under Terraform by
+                  - emphasis [ref=e619]: importing the live records
+                  - text: rather than recreating them - reconciling the configuration to production until
+                  - code [ref=e620]: terraform plan
+                  - text: reported zero changes, so no traffic-serving record was ever dropped or duplicated. Kept the state in AWS S3, deliberately off the compute provider, so a DigitalOcean outage cannot destroy both the box and the state that rebuilds it (S3-native locking, no DynamoDB). Wrote Ansible roles for one-command subdomain provisioning (Apache vhost plus Let's Encrypt, ordered so DNS resolves before the certbot challenge) and for rebuilding the base stack on a fresh host. Added a separate, plan-only Terraform module describing the droplet, volume, and firewall for disaster recovery, plus GitHub Actions running fmt, validate, and plan-on-PR.
+              - generic [ref=e621]:
+                - strong [ref=e622]: Result
+                - generic [ref=e623]: DNS is now changed by pull request instead of by clicking, with a reviewable diff and a no-op baseline plan that makes any real change visible. The decisions are written up as Architecture Decision Records, and the full repo is published as a sanitized public mirror.
+            - button "Read more" [ref=e624] [cursor=pointer]
+            - generic [ref=e625]:
+              - generic [ref=e626]: Terraform
+              - generic [ref=e627]: Cloudflare
+              - generic [ref=e628]: AWS S3
+              - generic [ref=e629]: Ansible
+              - generic [ref=e630]: GitHub Actions
+              - generic [ref=e631]: DNS
+              - generic [ref=e632]: IaC
+            - generic [ref=e633]:
+              - link "Public repo" [ref=e634] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/terraform-cloudflare-dns
+              - link "Decision records" [ref=e637] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/infrastructure-patterns/blob/main/adr/0014-import-live-dns-over-recreating-it.md
+        - article [ref=e640]:
+          - generic [ref=e641]:
+            - button [ref=e642]:
+              - 'img "Live k3s-demo page during a load test: 6 of 6 app pods, CPU at 485% of request, a chart of CPU vs the 70% target and the pod count, a Download CSV button, and a concepts glossary" [ref=e643]'
+            - button "Previous image" [ref=e644] [cursor=pointer]: ‹
+            - button "Next image" [ref=e645] [cursor=pointer]: ›
+            - generic [ref=e646]:
+              - button "Show image 1" [ref=e647] [cursor=pointer]
+              - button "Show image 2" [ref=e648] [cursor=pointer]
+          - generic [ref=e649]:
+            - 'heading "Kubernetes Demo: Single-Node k3s" [level=3] [ref=e650]'
+            - generic [ref=e651]:
+              - paragraph [ref=e652]: The Kubernetes Demo is a separate single-node k3s learning and portfolio environment, not ETA production. It runs a live, HTTPS-secured two-tier app - a stateless web Deployment in front of a Redis StatefulSet - provisioned end to end by Terraform and cloud-init.
+              - generic [ref=e653]:
+                - strong [ref=e654]: Problem
+                - generic [ref=e655]: "I wanted genuine, running Kubernetes evidence without implying that ETA's production platform uses Kubernetes. Keeping the Kubernetes Demo separate makes the boundary explicit: Manager Sandboxes run in Docker containers, Factory Workers run in Firecracker microVMs, and neither runs on this k3s node."
+              - generic [ref=e656]:
+                - strong [ref=e657]: What I Built
+                - generic [ref=e658]:
+                  - text: A small stateless Go service (static binary in a multi-stage, non-root
+                  - code [ref=e659]: FROM scratch
+                  - text: "image) fronting a Redis StatefulSet with a PersistentVolumeClaim, with production-grade manifests: a rolling-update Deployment with liveness/readiness probes, CPU/memory limits, a hardened securityContext (non-root, read-only root filesystem, dropped capabilities), ConfigMap and Secret injected via envFrom, a HorizontalPodAutoscaler, a Traefik ingress, and kustomize. Terraform plus cloud-init provision an AWS EC2 node and bootstrap k3s and the app; cert-manager and Let's Encrypt issue TLS. The manifests are schema-validated with kubeconform in CI, and a five-rule OPA Gatekeeper admission layer (non-root, resource limits, no"
+                  - code [ref=e660]: :latest
+                  - text: ", the hardening triad, required probes) enforces the same posture at the API server - rejected-if-violated, not trusted-by-convention - with one rule re-expressed as a built-in ValidatingAdmissionPolicy in CEL to make the engine choice legible."
+              - generic [ref=e661]:
+                - strong [ref=e662]: Result
+                - generic [ref=e663]:
+                  - text: A clickable, TLS-secured demo where
+                  - code [ref=e664]: /count
+                  - text: increments a counter held in Redis and shared across both app pods - the whole path from
+                  - code [ref=e665]: terraform apply
+                  - text: to a running, HTTPS-terminated cluster, as code.
+            - button "Read more" [ref=e666] [cursor=pointer]
+            - generic [ref=e667]:
+              - generic [ref=e668]: Kubernetes
+              - generic [ref=e669]: k3s
+              - generic [ref=e670]: Terraform
+              - generic [ref=e671]: AWS EC2
+              - generic [ref=e672]: Docker
+              - generic [ref=e673]: cert-manager
+              - generic [ref=e674]: OPA Gatekeeper
+              - generic [ref=e675]: Redis
+            - generic [ref=e676]:
+              - link "Live site" [ref=e677] [cursor=pointer]:
+                - /url: https://k3s-demo.stephens.page
+              - link "Repo" [ref=e678] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/k3s-demo
+        - article [ref=e681]:
+          - generic [ref=e682]:
+            - button [ref=e683]:
+              - 'img "Sotto web app: a markdown input box, a voice selector, sample voice players, and a Convert to audio button" [ref=e684]'
+            - button "Previous image" [ref=e685] [cursor=pointer]: ‹
+            - button "Next image" [ref=e686] [cursor=pointer]: ›
+            - generic [ref=e687]:
+              - button "Show image 1" [ref=e688] [cursor=pointer]
+              - button "Show image 2" [ref=e689] [cursor=pointer]
+          - generic [ref=e690]:
+            - heading "Sotto" [level=3] [ref=e691]
+            - generic [ref=e692]:
+              - paragraph [ref=e693]: A Flask web app that turns a Markdown document into an MP3 you can listen to, narrated by a neural text-to-speech model running entirely on my own server - no third-party API, and no text or audio ever leaves the box.
+              - generic [ref=e694]:
+                - strong [ref=e695]: Problem
+                - generic [ref=e696]: I wanted to listen to long Markdown notes and documents as audio, but the obvious route - a hosted TTS API - means shipping the full text to a third party and paying per character. I wanted the same result with the text never leaving a server I control.
+              - generic [ref=e697]:
+                - strong [ref=e698]: What I Built
+                - generic [ref=e699]:
+                  - text: Paste Markdown (or upload a
+                  - code [ref=e700]: .md
+                  - text: ), pick a voice, and convert to a downloadable MP3. Synthesis runs on a self-hosted Kokoro-82M (ONNX) model in its own loopback-bound service, so no text or audio leaves the server and there is no external AI dependency or per-use cost. A Library keeps each rendering alongside its source-Markdown sidecar; sharing is via revocable capability-URL tokens (
+                  - code [ref=e701]: /share/<token>
+                  - text: ") - the only thing ever made public is a link you create and can revoke. Built as a seven-boundary safety demo: it never emails, posts, or acts on your behalf."
+              - generic [ref=e702]:
+                - strong [ref=e703]: Result
+                - generic [ref=e704]: A private, self-hosted "listen to your documents" tool with no third-party data exposure and no recurring API bill, published as a public reference for the seven-boundary approach to running a model safely.
+            - button "Read more" [ref=e705] [cursor=pointer]
+            - generic [ref=e706]:
+              - generic [ref=e707]: Flask
+              - generic [ref=e708]: Python
+              - generic [ref=e709]: Kokoro-82M
+              - generic [ref=e710]: ONNX
+              - generic [ref=e711]: Self-hosted AI
+              - generic [ref=e712]: Capability URLs
+            - generic [ref=e713]:
+              - link "Live site" [ref=e714] [cursor=pointer]:
+                - /url: https://sotto.stephens.page
+              - link "Repo" [ref=e715] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/sotto
+        - article [ref=e718]:
+          - generic [ref=e719]:
+            - button [ref=e720]:
+              - img "Chart35 application" [ref=e721]
+            - button "Previous image" [ref=e722] [cursor=pointer]: ‹
+            - button "Next image" [ref=e723] [cursor=pointer]: ›
+            - generic [ref=e724]:
+              - button "Show image 1" [ref=e725] [cursor=pointer]
+              - button "Show image 2" [ref=e726] [cursor=pointer]
+              - button "Show image 3" [ref=e727] [cursor=pointer]
+              - button "Show image 4" [ref=e728] [cursor=pointer]
+          - generic [ref=e729]:
+            - heading "Chart35" [level=3] [ref=e730]
+            - generic [ref=e731]:
+              - paragraph [ref=e732]: A privacy-first fertility-cycle charting app for the Creighton Model - local-first and offline, with auto-computed CrMS stamps, end-to-end encrypted sync, and provider sharing.
+              - generic [ref=e733]:
+                - strong [ref=e734]: Why it matters
+                - generic [ref=e735]: Product thinking around a sensitive, real-world workflow where accuracy, offline access, and long-term usability are non-negotiable. 83 iOS + 17 Android installs, 52 web accounts (40 verified, 47 synced) - App Store / Play / TestFlight, growth via organic search alone.
+              - generic [ref=e736]:
+                - strong [ref=e737]: What stands out
+                - generic [ref=e738]: Local-first IndexedDB source of truth, end-to-end encrypted sync (the server stores ciphertext only), and faithful CrMS domain logic - not generic CRUD.
+            - button "Read more" [ref=e739] [cursor=pointer]
+            - generic [ref=e740]:
+              - generic [ref=e741]: TypeScript
+              - generic [ref=e742]: Vite
+              - generic [ref=e743]: IndexedDB
+              - generic [ref=e744]: Web Crypto
+              - generic [ref=e745]: PWA
+              - generic [ref=e746]: Capacitor
+            - generic [ref=e747]:
+              - link "Read the case study" [ref=e748] [cursor=pointer]:
+                - /url: /blog/a-privacy-first-fertility-chart-encrypted-on-your-device/
+              - link "Visit Site" [ref=e749] [cursor=pointer]:
+                - /url: https://chart35.com
+              - link "Architecture" [ref=e750] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/chart35-showcase
+              - link "webcrypto-envelope" [ref=e753] [cursor=pointer]:
+                - /url: https://www.npmjs.com/package/@stephenspage/webcrypto-envelope
+        - article [ref=e754]:
+          - generic [ref=e755]:
+            - button [ref=e756]:
+              - img "Cascade waterfall white-noise player" [ref=e757]
+            - button "Previous image" [ref=e758] [cursor=pointer]: ‹
+            - button "Next image" [ref=e759] [cursor=pointer]: ›
+            - generic [ref=e760]:
+              - button "Show image 1" [ref=e761] [cursor=pointer]
+              - button "Show image 2" [ref=e762] [cursor=pointer]
+              - button "Show image 3" [ref=e763] [cursor=pointer]
+              - button "Show image 4" [ref=e764] [cursor=pointer]
+              - button "Show image 5" [ref=e765] [cursor=pointer]
+              - button "Show image 6" [ref=e766] [cursor=pointer]
+              - button "Show image 7" [ref=e767] [cursor=pointer]
+          - generic [ref=e768]:
+            - heading "Cascade" [level=3] [ref=e769]
+            - generic [ref=e770]:
+              - paragraph [ref=e771]: A waterfall white-noise player for focus and sleep - one headless Rust core driving 2 shipped shells (Web PWA, Android), with 4 architected to extend (macOS, Windows, iOS, watchOS).
+              - generic [ref=e772]:
+                - strong [ref=e773]: Why it matters
+                - generic [ref=e774]: "A daily-use focus/sleep sound app, and an architecture kata: prove a single Rust core can power genuinely native UIs across platforms without a web wrapper. The core owns all behavior - state, pomodoro/sleep timers, custom durations, volume, persisted settings, and time via explicit tick events - and never touches an audio API."
+              - generic [ref=e775]:
+                - strong [ref=e776]: What stands out
+                - generic [ref=e777]:
+                  - text: A coarse
+                  - code [ref=e778]: "dispatch(command) → {snapshot, effects}"
+                  - text: boundary serialized as one JSON wire shape, so every shell is a thin native UI over shared Rust logic. 2 shipped shells (Web PWA via wasm-bindgen, Android via UniFFI/Kotlin) share the same core; macOS, Windows, iOS, and watchOS are architected to extend over that boundary.
+            - button "Read more" [ref=e779] [cursor=pointer]
+            - generic [ref=e780]:
+              - generic [ref=e781]: Rust
+              - generic [ref=e782]: WebAssembly
+              - generic [ref=e783]: React
+              - generic [ref=e784]: UniFFI
+              - generic [ref=e785]: Jetpack Compose
+              - generic [ref=e786]: SwiftUI
+              - generic [ref=e787]: WinUI 3
+              - generic [ref=e788]: PWA
+            - generic [ref=e789]:
+              - link "Visit Site" [ref=e790] [cursor=pointer]:
+                - /url: https://cascade.stephens.page
+              - link "Source" [ref=e791] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/cascade
+        - article [ref=e794]:
+          - button [ref=e795]:
+            - img "Magisterium MCP Server website" [ref=e796]
+          - generic [ref=e797]:
+            - heading "Magisterium MCP Server" [level=3] [ref=e798]
+            - generic [ref=e799]:
+              - paragraph [ref=e800]: An MCP server that gives AI assistants access to the Magisterium API, returning Church teaching with source citations.
+              - generic [ref=e801]:
+                - strong [ref=e802]: Why it matters
+                - generic [ref=e803]: Bridges a meaningful content domain with emerging AI tooling in a practical, technically current way.
+              - generic [ref=e804]:
+                - strong [ref=e805]: What stands out
+                - generic [ref=e806]: MCP integration, source-aware responses, and a clean bridge between authoritative data and assistant workflows.
+            - button "Read more" [ref=e807] [cursor=pointer]
+            - generic [ref=e808]:
+              - generic [ref=e809]: TypeScript
+              - generic [ref=e810]: Node.js
+              - generic [ref=e811]: MCP
+              - generic [ref=e812]: AI Tooling
+            - generic [ref=e813]:
+              - link "Visit Site" [ref=e814] [cursor=pointer]:
+                - /url: https://magisterium.stephens.page/
+              - link "GitHub" [ref=e815] [cursor=pointer]:
+                - /url: https://github.com/JacobStephens2/magisterium-mcp-server
+  - contentinfo [ref=e818]: © 2026 Jacob Stephens

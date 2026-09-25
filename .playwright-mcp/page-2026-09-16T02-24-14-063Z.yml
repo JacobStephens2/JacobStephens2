@@ -1,0 +1,2381 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Skip to content" [ref=f3e4] [cursor=pointer]:
+        - /url: "#start-of-content"
+      - banner [ref=f3e9]:
+        - heading "Navigation Menu" [level=2] [ref=f3e10]
+        - generic [ref=f3e11]:
+          - link "Homepage" [ref=f3e13] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f3e16]:
+            - navigation "Global" [ref=f3e17]:
+              - list [ref=f3e18]:
+                - listitem [ref=f3e19]:
+                  - button "Platform" [ref=f3e21] [cursor=pointer]
+                - listitem [ref=f3e24]:
+                  - button "Solutions" [ref=f3e26] [cursor=pointer]
+                - listitem [ref=f3e29]:
+                  - button "Resources" [ref=f3e31] [cursor=pointer]
+                - listitem [ref=f3e34]:
+                  - button "Open Source" [ref=f3e36] [cursor=pointer]
+                - listitem [ref=f3e39]:
+                  - button "Enterprise" [ref=f3e41] [cursor=pointer]
+                - listitem [ref=f3e44]:
+                  - link "Pricing" [ref=f3e45] [cursor=pointer]:
+                    - /url: https://github.com/pricing
+            - generic [ref=f3e46]:
+              - button "Search or jump to, type / to search" [ref=f3e48] [cursor=pointer]
+              - link "Sign in" [ref=f3e55] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FJacobStephens2%2Fvaulted-agent
+              - link "Sign up" [ref=f3e58] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=JacobStephens2%2Fvaulted-agent
+              - button "Appearance settings" [ref=f3e61] [cursor=pointer]
+    - main [ref=f3e68]:
+      - generic [ref=f3e69]:
+        - generic [ref=f3e70]:
+          - generic [ref=f3e72]:
+            - link "JacobStephens2" [ref=f3e76] [cursor=pointer]:
+              - /url: /JacobStephens2
+            - generic [ref=f3e77]: /
+            - strong [ref=f3e78]:
+              - link "vaulted-agent" [ref=f3e79] [cursor=pointer]:
+                - /url: /JacobStephens2/vaulted-agent
+            - generic [ref=f3e80]: Public
+          - generic [ref=f3e81]:
+            - list:
+              - listitem [ref=f3e82]:
+                - link "You must be signed in to change notification settings" [ref=f3e83] [cursor=pointer]:
+                  - /url: /login?return_to=%2FJacobStephens2%2Fvaulted-agent
+                  - text: Notifications
+              - listitem [ref=f3e86]:
+                - link "Fork 0" [ref=f3e87] [cursor=pointer]:
+                  - /url: /login?return_to=%2FJacobStephens2%2Fvaulted-agent
+                  - text: Fork
+                  - generic "0" [ref=f3e90]
+              - listitem [ref=f3e91]:
+                - link "You must be signed in to star a repository" [ref=f3e93] [cursor=pointer]:
+                  - /url: /login?return_to=%2FJacobStephens2%2Fvaulted-agent
+                  - text: Star
+                  - generic "0 users starred this repository" [ref=f3e96]: "0"
+        - navigation "Repository" [ref=f3e97]:
+          - list [ref=f3e98]:
+            - listitem [ref=f3e99]:
+              - link "Code" [ref=f3e100] [cursor=pointer]:
+                - /url: /JacobStephens2/vaulted-agent
+            - listitem [ref=f3e104]:
+              - link "Issues 9" [ref=f3e105] [cursor=pointer]:
+                - /url: /JacobStephens2/vaulted-agent/issues
+                - generic [ref=f3e109]: Issues
+                - generic "9" [ref=f3e110]
+            - listitem [ref=f3e111]:
+              - link "Pull requests" [ref=f3e112] [cursor=pointer]:
+                - /url: /JacobStephens2/vaulted-agent/pulls
+            - listitem [ref=f3e116]:
+              - link "Actions" [ref=f3e117] [cursor=pointer]:
+                - /url: /JacobStephens2/vaulted-agent/actions
+            - listitem [ref=f3e121]:
+              - link "Projects" [ref=f3e122] [cursor=pointer]:
+                - /url: /JacobStephens2/vaulted-agent/projects
+            - listitem [ref=f3e126]:
+              - link "Security and quality" [ref=f3e127] [cursor=pointer]:
+                - /url: /JacobStephens2/vaulted-agent/security
+            - listitem [ref=f3e131]:
+              - link "Insights" [ref=f3e132] [cursor=pointer]:
+                - /url: /JacobStephens2/vaulted-agent/pulse
+      - generic [ref=f3e149]:
+        - generic [ref=f3e152]:
+          - generic [ref=f3e153]:
+            - generic [ref=f3e154]:
+              - button "main branch" [ref=f3e156] [cursor=pointer]:
+                - generic [ref=f3e157]: main
+              - generic [ref=f3e161]:
+                - link [ref=f3e162] [cursor=pointer]:
+                  - /url: /JacobStephens2/vaulted-agent/branches
+                  - generic [ref=f3e165]:
+                    - strong [ref=f3e166]: "9"
+                    - text: Branches
+                - link [ref=f3e167] [cursor=pointer]:
+                  - /url: /JacobStephens2/vaulted-agent/tags
+                  - generic [ref=f3e170]:
+                    - strong [ref=f3e171]: "31"
+                    - text: Tags
+            - generic [ref=f3e172]:
+              - combobox "Go to file" [ref=f3e180]
+              - button "Code" [ref=f3e181] [cursor=pointer]
+          - generic [ref=f3e184]:
+            - generic [ref=f3e185]:
+              - generic [ref=f3e187]:
+                - heading "Latest commit" [level=2] [ref=f3e188]
+                - generic [ref=f3e189]:
+                  - generic [ref=f3e191]:
+                    - link [ref=f3e192] [cursor=pointer]:
+                      - /url: /JacobStephens2
+                      - img "JacobStephens2" [ref=f3e193]
+                    - link "commits by JacobStephens2" [ref=f3e194] [cursor=pointer]:
+                      - /url: /JacobStephens2/vaulted-agent/commits?author=JacobStephens2
+                      - text: JacobStephens2
+                  - generic [ref=f3e195]:
+                    - generic [ref=f3e197]:
+                      - link "Merge pull request" [ref=f3e198] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/commit/430b726fd830f46caa8a78038503645ea0cb752d
+                      - link "#104" [ref=f3e199] [cursor=pointer]:
+                        - /url: https://github.com/JacobStephens2/vaulted-agent/pull/104
+                      - link "from JacobStephens2/fix/codex-harness-yolo-flag" [ref=f3e200] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/commit/430b726fd830f46caa8a78038503645ea0cb752d
+                    - button "Open commit details" [ref=f3e201] [cursor=pointer]
+                    - button "success" [ref=f3e204] [cursor=pointer]
+                - generic [ref=f3e207]:
+                  - generic [ref=f3e209]:
+                    - link "Commit 430b726" [ref=f3e210] [cursor=pointer]:
+                      - /url: /JacobStephens2/vaulted-agent/commit/430b726fd830f46caa8a78038503645ea0cb752d
+                      - text: 430b726
+                    - text: ·
+                    - generic "Sep 13, 2026, 12:10 PM EDT" [ref=f3e211]: Sep 13, 20262 days ago
+                  - generic [ref=f3e212]:
+                    - heading "History" [level=2] [ref=f3e213]
+                    - link "120 Commits" [ref=f3e214] [cursor=pointer]:
+                      - /url: /JacobStephens2/vaulted-agent/commits/main/
+              - heading "Folders and files" [level=2] [ref=f3e217]
+              - table "Folders and files" [ref=f3e218]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message"
+                    - columnheader "Last commit date"
+                - rowgroup [ref=f3e219]:
+                  - row ".agents/skills, (Directory)" [ref=f3e220]:
+                    - cell [ref=f3e221]:
+                      - link ".agents/skills, (Directory)" [ref=f3e228] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/tree/main/.agents/skills
+                        - text: .agents/skills
+                    - cell [ref=f3e229]
+                    - cell [ref=f3e231]
+                  - row ".claude/skills, (Directory)" [ref=f3e234]:
+                    - cell [ref=f3e235]:
+                      - link ".claude/skills, (Directory)" [ref=f3e242] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/tree/main/.claude/skills
+                        - text: .claude/skills
+                    - cell [ref=f3e243]
+                    - cell [ref=f3e245]
+                  - row ".github/workflows, (Directory)" [ref=f3e248]:
+                    - cell [ref=f3e249]:
+                      - link ".github/workflows, (Directory)" [ref=f3e256] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/tree/main/.github/workflows
+                        - text: .github/workflows
+                    - cell [ref=f3e257]
+                    - cell [ref=f3e259]
+                  - row "docs, (Directory)" [ref=f3e262]:
+                    - cell [ref=f3e263]:
+                      - link "docs, (Directory)" [ref=f3e270] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/tree/main/docs
+                        - text: docs
+                    - cell [ref=f3e271]
+                    - cell [ref=f3e273]
+                  - row "etc, (Directory)" [ref=f3e276]:
+                    - cell [ref=f3e277]:
+                      - link "etc, (Directory)" [ref=f3e284] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/tree/main/etc
+                        - text: etc
+                    - cell [ref=f3e285]
+                    - cell [ref=f3e287]
+                  - row "src, (Directory)" [ref=f3e290]:
+                    - cell [ref=f3e291]:
+                      - link "src, (Directory)" [ref=f3e298] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/tree/main/src
+                        - text: src
+                    - cell [ref=f3e299]
+                    - cell [ref=f3e301]
+                  - row "tests, (Directory)" [ref=f3e304]:
+                    - cell [ref=f3e305]:
+                      - link "tests, (Directory)" [ref=f3e312] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/tree/main/tests
+                        - text: tests
+                    - cell [ref=f3e313]
+                    - cell [ref=f3e315]
+                  - row ".gitignore, (File)" [ref=f3e318]:
+                    - cell [ref=f3e319]:
+                      - link ".gitignore, (File)" [ref=f3e326] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/.gitignore
+                        - text: .gitignore
+                    - cell [ref=f3e327]
+                    - cell [ref=f3e329]
+                  - row "AGENTS.md, (File)" [ref=f3e332]:
+                    - cell [ref=f3e333]:
+                      - link "AGENTS.md, (File)" [ref=f3e340] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/AGENTS.md
+                        - text: AGENTS.md
+                    - cell [ref=f3e341]
+                    - cell [ref=f3e343]
+                  - row "CONTEXT.md, (File)" [ref=f3e346]:
+                    - cell [ref=f3e347]:
+                      - link "CONTEXT.md, (File)" [ref=f3e354] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/CONTEXT.md
+                        - text: CONTEXT.md
+                    - cell [ref=f3e355]
+                    - cell [ref=f3e357]
+                  - row "Cargo.lock, (File)" [ref=f3e360]:
+                    - cell [ref=f3e361]:
+                      - link "Cargo.lock, (File)" [ref=f3e368] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/Cargo.lock
+                        - text: Cargo.lock
+                    - cell [ref=f3e369]
+                    - cell [ref=f3e371]
+                  - row "Cargo.toml, (File)" [ref=f3e374]:
+                    - cell [ref=f3e375]:
+                      - link "Cargo.toml, (File)" [ref=f3e382] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/Cargo.toml
+                        - text: Cargo.toml
+                    - cell [ref=f3e383]
+                    - cell [ref=f3e385]
+                  - row "LICENSE, (File)" [ref=f3e388]:
+                    - cell [ref=f3e389]:
+                      - link "LICENSE, (File)" [ref=f3e396] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/LICENSE
+                        - text: LICENSE
+                    - cell [ref=f3e397]
+                    - cell [ref=f3e399]
+                  - row "MIGRATION.md, (File)" [ref=f3e402]:
+                    - cell [ref=f3e403]:
+                      - link "MIGRATION.md, (File)" [ref=f3e410] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/MIGRATION.md
+                        - text: MIGRATION.md
+                    - cell [ref=f3e411]
+                    - cell [ref=f3e413]
+                  - row "README.md, (File)" [ref=f3e416]:
+                    - cell [ref=f3e417]:
+                      - link "README.md, (File)" [ref=f3e424] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/README.md
+                        - text: README.md
+                    - cell [ref=f3e425]
+                    - cell [ref=f3e427]
+                  - row "build.rs, (File)" [ref=f3e430]:
+                    - cell [ref=f3e431]:
+                      - link "build.rs, (File)" [ref=f3e438] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/build.rs
+                        - text: build.rs
+                    - cell [ref=f3e439]
+                    - cell [ref=f3e441]
+                  - row "install-remote.sh, (File)" [ref=f3e444]:
+                    - cell [ref=f3e445]:
+                      - link "install-remote.sh, (File)" [ref=f3e452] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/install-remote.sh
+                        - text: install-remote.sh
+                    - cell [ref=f3e453]
+                    - cell [ref=f3e455]
+                  - row "install.sh, (File)" [ref=f3e458]:
+                    - cell [ref=f3e459]:
+                      - link "install.sh, (File)" [ref=f3e466] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/install.sh
+                        - text: install.sh
+                    - cell [ref=f3e467]
+                    - cell [ref=f3e469]
+                  - row "skills-lock.json, (File)" [ref=f3e472]:
+                    - cell [ref=f3e473]:
+                      - link "skills-lock.json, (File)" [ref=f3e480] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/skills-lock.json
+                        - text: skills-lock.json
+                    - cell [ref=f3e481]
+                    - cell [ref=f3e483]
+            - generic [ref=f3e487]:
+              - generic [ref=f3e488]:
+                - heading "Repository files navigation" [level=2] [ref=f3e489]
+                - navigation "Repository files" [ref=f3e490]:
+                  - list [ref=f3e491]:
+                    - listitem [ref=f3e492]:
+                      - link "README" [ref=f3e493] [cursor=pointer]:
+                        - /url: "#"
+                    - listitem [ref=f3e495]:
+                      - link "MIT license" [ref=f3e496] [cursor=pointer]:
+                        - /url: "#"
+                - button "Outline" [ref=f3e498] [cursor=pointer]
+              - article [ref=f3e502]:
+                - generic [ref=f3e503]:
+                  - heading "vaulted-agent" [level=1] [ref=f3e504]
+                  - 'link "Permalink: vaulted-agent" [ref=f3e505] [cursor=pointer]':
+                    - /url: "#vaulted-agent"
+                - paragraph [ref=f3e508]:
+                  - link [ref=f3e509] [cursor=pointer]:
+                    - /url: https://github.com/JacobStephens2/vaulted-agent/actions/workflows/ci.yml
+                    - img "CI" [ref=f3e510]
+                  - link [ref=f3e511] [cursor=pointer]:
+                    - /url: https://github.com/JacobStephens2/vaulted-agent/releases/latest
+                    - img "Release" [ref=f3e512]
+                - paragraph [ref=f3e513]:
+                  - text: Give Claude Code, Codex, Grok, Kimi Code, Antigravity, and Muse Code real vault credentials
+                  - strong [ref=f3e514]: in-process
+                  - text: "- without leaving a pile of"
+                  - code [ref=f3e515]: .env
+                  - text: files on disk. (Kimi Code 0.33+ currently needs
+                  - code [ref=f3e516]: env = KIMI_CODE_LEGACY_FLAG = 1
+                  - text: on the harness until
+                  - link "kimi-code#2746" [ref=f3e517] [cursor=pointer]:
+                    - /url: https://github.com/MoonshotAI/kimi-code/pull/2746
+                  - text: ships; see
+                  - link "AGENTS.md" [ref=f3e518] [cursor=pointer]:
+                    - /url: /JacobStephens2/vaulted-agent/blob/main/AGENTS.md
+                  - text: "and issue #70.)"
+                - paragraph [ref=f3e519]:
+                  - text: One launcher (
+                  - code [ref=f3e520]: va
+                  - text: ), one secrets backend (1Password, Bitwarden Secrets Manager, pass, sops, …),
+                  - strong [ref=f3e521]: per-agent manifests
+                  - text: for blast radius. Optional
+                  - strong [ref=f3e522]: prompt auth
+                  - text: ": paste the vault token at each launch so even the manager token need not live on disk. Same scrub/resolve/exec path for one-shot tools via"
+                  - code [ref=f3e523]: va run
+                  - text: .
+                - paragraph [ref=f3e524]:
+                  - strong [ref=f3e525]: macOS and Linux.
+                  - text: "Product page:"
+                  - link "vaultedagent.com" [ref=f3e526] [cursor=pointer]:
+                    - /url: https://vaultedagent.com/
+                  - text: "· Latest:"
+                  - link "v0.4.24" [ref=f3e527] [cursor=pointer]:
+                    - /url: https://github.com/JacobStephens2/vaulted-agent/releases/tag/v0.4.24
+                  - text: (Rust runtime; Bash retired — see
+                  - link "MIGRATION.md" [ref=f3e528] [cursor=pointer]:
+                    - /url: /JacobStephens2/vaulted-agent/blob/main/MIGRATION.md
+                  - text: )
+                - generic [ref=f3e529]:
+                  - heading "Contents" [level=2] [ref=f3e530]
+                  - 'link "Permalink: Contents" [ref=f3e531] [cursor=pointer]':
+                    - /url: "#contents"
+                - list [ref=f3e534]:
+                  - listitem [ref=f3e535]:
+                    - link "Quick start" [ref=f3e536] [cursor=pointer]:
+                      - /url: "#quick-start"
+                    - text: ·
+                    - link "Everyday commands" [ref=f3e537] [cursor=pointer]:
+                      - /url: "#everyday-commands"
+                  - listitem [ref=f3e538]:
+                    - link "How it works" [ref=f3e539] [cursor=pointer]:
+                      - /url: "#how-it-works"
+                    - text: ·
+                    - link "Honest claim" [ref=f3e540] [cursor=pointer]:
+                      - /url: "#the-honest-claim"
+                  - listitem [ref=f3e541]:
+                    - link "Install details" [ref=f3e542] [cursor=pointer]:
+                      - /url: "#install-details"
+                    - text: ·
+                    - link "Configuration" [ref=f3e543] [cursor=pointer]:
+                      - /url: "#configuration"
+                    - text: ·
+                    - link "Backends" [ref=f3e544] [cursor=pointer]:
+                      - /url: "#backends"
+                  - listitem [ref=f3e545]:
+                    - link "Uninstall" [ref=f3e546] [cursor=pointer]:
+                      - /url: "#uninstall"
+                    - text: ·
+                    - link "MIGRATION.md" [ref=f3e547] [cursor=pointer]:
+                      - /url: /JacobStephens2/vaulted-agent/blob/main/MIGRATION.md
+                    - text: ·
+                    - strong [ref=f3e548]:
+                      - link "AGENTS.md" [ref=f3e549] [cursor=pointer]:
+                        - /url: /JacobStephens2/vaulted-agent/blob/main/AGENTS.md
+                    - text: (agent-oriented contract)
+                - generic [ref=f3e550]:
+                  - heading "Quick start" [level=2] [ref=f3e551]
+                  - 'link "Permalink: Quick start" [ref=f3e552] [cursor=pointer]':
+                    - /url: "#quick-start"
+                - paragraph [ref=f3e555]: Three steps. Rust binary on macOS and Linux.
+                - generic [ref=f3e556]:
+                  - heading "1. Install" [level=3] [ref=f3e557]
+                  - 'link "Permalink: 1. Install" [ref=f3e558] [cursor=pointer]':
+                    - /url: "#1-install"
+                - generic [ref=f3e561]:
+                  - generic [ref=f3e562]: curl -fsSL https://vaultedagent.com/install.sh | bash
+                  - button "Copy code to clipboard" [ref=f3e564] [cursor=pointer]
+                - paragraph [ref=f3e568]:
+                  - text: Installs
+                  - code [ref=f3e569]: vaulted-agent
+                  - text: and
+                  - code [ref=f3e570]: va
+                  - text: ", detects agents on PATH ("
+                  - code [ref=f3e571]: claude
+                  - text: ","
+                  - code [ref=f3e572]: codex
+                  - text: ","
+                  - code [ref=f3e573]: grok
+                  - text: ","
+                  - code [ref=f3e574]: kimi
+                  - text: ","
+                  - code [ref=f3e575]: agy
+                  - text: ","
+                  - code [ref=f3e576]: muse
+                  - text: ) and
+                  - code [ref=f3e577]: bash
+                  - text: ", and can ask for a vault backend + auth mode. Pin:"
+                  - code [ref=f3e578]: VAULTED_AGENT_VERSION=v0.4.24
+                  - text: (or
+                  - code [ref=f3e579]: latest
+                  - text: ).
+                - generic [ref=f3e580]:
+                  - heading "2. Wire a vault" [level=3] [ref=f3e581]
+                  - 'link "Permalink: 2. Wire a vault" [ref=f3e582] [cursor=pointer]':
+                    - /url: "#2-wire-a-vault"
+                - generic [ref=f3e585]:
+                  - generic [ref=f3e586]:
+                    - text: va setup
+                    - generic [ref=f3e587]: "# auth mode, who agents run as, start directory, vault backend"
+                    - text: va doctor
+                    - generic [ref=f3e588]: "# health check as the account a launch would use"
+                  - button "Copy code to clipboard" [ref=f3e590] [cursor=pointer]
+                - paragraph [ref=f3e594]:
+                  - code [ref=f3e595]: va setup
+                  - text: (interactive) also asks
+                  - strong [ref=f3e596]: who agents run as
+                  - text: (you vs a
+                  - code [ref=f3e597]: service_user
+                  - text: ) and
+                  - strong [ref=f3e598]: where they start
+                  - text: (
+                  - code [ref=f3e599]: workdir = caller
+                  - text: vs a fixed path), and warns when those two combine on a locked-down home. Non-interactive setup leaves existing choices alone.
+                - paragraph [ref=f3e600]:
+                  - text: Day-one harnesses start with
+                  - strong [ref=f3e601]: no vault secrets
+                  - text: "until you set them up. Bitwarden:"
+                  - code [ref=f3e602]: va setup bitwarden
+                  - text: builds a refs file (env var → secret
+                  - emphasis [ref=f3e603]: reference
+                  - text: only). Point harnesses at it, or use
+                  - code [ref=f3e604]: va run -m …
+                  - text: .
+                - generic [ref=f3e605]:
+                  - heading "3. Launch" [level=3] [ref=f3e606]
+                  - 'link "Permalink: 3. Launch" [ref=f3e607] [cursor=pointer]':
+                    - /url: "#3-launch"
+                - generic [ref=f3e610]:
+                  - generic [ref=f3e611]:
+                    - text: va claude va codex va grok va kimi
+                    - generic [ref=f3e612]: "# --auto; vault inject OPENAI_API_KEY (by provider type); see AGENTS.md"
+                    - text: va agy
+                    - generic [ref=f3e613]: "# bare AGY; native permissions, authentication, and conversation args"
+                    - text: va muse
+                    - generic [ref=f3e614]: "# bare Muse Code; preserves Muse's configured permissions"
+                    - text: va muse --yolo
+                    - generic [ref=f3e615]: "# inject the manifest, then launch Muse in native yolo mode"
+                    - text: va bash
+                    - generic [ref=f3e616]: "# secrets-injected shell; extra argv is appended"
+                    - text: va bash ./script.sh
+                  - button "Copy code to clipboard" [ref=f3e618] [cursor=pointer]
+                - paragraph [ref=f3e622]:
+                  - text: With
+                  - code [ref=f3e623]: auth_mode=prompt
+                  - text: ", paste the vault manager token when asked (not written to disk). Force once on the"
+                  - code [ref=f3e624]: va
+                  - text: "path:"
+                  - code [ref=f3e625]: va grok -p
+                  - text: . Under a
+                  - code [ref=f3e626]: "*-conductor"
+                  - text: symlink,
+                  - code [ref=f3e627]: "-p"
+                  - text: is the agent's flag; use
+                  - code [ref=f3e628]: VAULTED_AGENT_PROMPT_AUTH=1
+                  - text: for prompt auth there.
+                - generic [ref=f3e629]:
+                  - heading "Everyday commands" [level=2] [ref=f3e630]
+                  - 'link "Permalink: Everyday commands" [ref=f3e631] [cursor=pointer]':
+                    - /url: "#everyday-commands"
+                - generic [ref=f3e634]:
+                  - generic [ref=f3e635]:
+                    - text: va
+                    - generic [ref=f3e636]: "# list harnesses"
+                    - text: va pick
+                    - generic [ref=f3e637]: "# interactive menu"
+                    - text: va -m readonly.env.tpl claude
+                    - generic [ref=f3e638]: "# this launch only, against another manifest"
+                    - text: va claude --resume <id>
+                    - generic [ref=f3e639]: "# agent args pass through; resume shape is normalized"
+                    - text: va agy --continue
+                    - generic [ref=f3e640]: "# AGY arguments pass through unchanged; short form: -c"
+                    - text: va agy --conversation <id> va muse resume --last
+                    - generic [ref=f3e641]: "# native Muse arguments pass through unchanged"
+                    - text: va bash
+                    - generic [ref=f3e642]: "# interactive shell with the harness manifest"
+                    - text: va bash ./script.sh
+                    - generic [ref=f3e643]: "# same env, run a script; not `va run`"
+                    - text: va doctor va secrets list
+                    - generic [ref=f3e644]: "# Bitwarden SM (same auth as launches)"
+                    - text: va secrets validate
+                    - generic [ref=f3e645]: "# resolves every ref in every manifest, against the vault"
+                    - text: va secrets validate --offline
+                    - generic [ref=f3e646]: "# syntax only, no token needed"
+                    - text: va refresh
+                    - generic [ref=f3e647]: "# build/update a refs file (Bitwarden or 1Password)"
+                    - text: va edit-manifest
+                    - generic [ref=f3e648]: "# open a refs file in $EDITOR; check on save"
+                    - text: va auth-mode prompt
+                    - generic [ref=f3e649]: "# or: file"
+                    - text: va update
+                    - generic [ref=f3e650]: "# update the binary and add missing detected Harnesses"
+                    - text: va update --sync-harnesses
+                    - generic [ref=f3e651]: "# add missing Harnesses without downloading a binary"
+                    - text: va update v0.4.24
+                    - generic [ref=f3e652]: "# pin; --check / --dry-run do not write"
+                    - text: sudo va uninstall
+                  - button "Copy code to clipboard" [ref=f3e654] [cursor=pointer]
+                - paragraph [ref=f3e658]:
+                  - text: AGY owns its login and settings under the launch account's home. A launch under
+                  - code [ref=f3e659]: service_user
+                  - text: does not inherit the invoking user's AGY login. Vaulted-agent injects the Harness manifest, but AGY uses an injected
+                  - code [ref=f3e660]: GEMINI_API_KEY
+                  - text: only when its own settings select
+                  - code [ref=f3e661]: modelProvider = gemini
+                  - text: ; see
+                  - link "AGENTS.md" [ref=f3e662] [cursor=pointer]:
+                    - /url: /JacobStephens2/vaulted-agent/blob/main/AGENTS.md
+                  - text: .
+                - paragraph [ref=f3e663]:
+                  - strong [ref=f3e664]: Building a refs file from 1Password.
+                  - code [ref=f3e665]: va refresh
+                  - text: lists the items the token can see and asks which to include; each chosen item's fields become
+                  - code [ref=f3e666]: VAR=op://VAULT/ITEM/FIELD
+                  - text: "lines. Only the items you pick are read, so the prompt appears immediately rather than after a call per item. Refresh output is meant to inject without hand-editing: notes fields are skipped, item titles"
+                  - code [ref=f3e667]: op
+                  - text: cannot parse fall back to the item id, and the generated header never contains a sample
+                  - code [ref=f3e668]: op://
+                  - text: that would abort inject. To hand-edit an existing refs file with the same checks doctor uses, run
+                  - code [ref=f3e669]: va edit-manifest
+                  - text: .
+                - generic [ref=f3e670]:
+                  - generic [ref=f3e671]:
+                    - text: va refresh
+                    - generic [ref=f3e672]: "# backend comes from your harnesses"
+                    - text: va refresh --backend onepassword
+                    - generic [ref=f3e673]: "# or say it explicitly"
+                    - text: va refresh --exclude
+                    - generic [ref=f3e674]: "'*_USERNAME'"
+                    - generic [ref=f3e675]: "# and never map these"
+                    - text: va refresh --all --prune
+                    - generic [ref=f3e676]: "# and remove mappings that resolve to nothing"
+                  - button "Copy code to clipboard" [ref=f3e678] [cursor=pointer]
+                - generic [ref=f3e682]:
+                  - code [ref=f3e684]: "Items visible to this token: 1) anthropic (Orchestrator) 2) mysql8.etadventures.com (Orchestrator) 3) github token (Orchestrator) Items to include (e.g. 1,4,7 - blank for all):"
+                  - button "Copy code to clipboard" [ref=f3e686] [cursor=pointer]
+                - paragraph [ref=f3e690]:
+                  - text: Fields in a section are referenced as
+                  - code [ref=f3e691]: op://VAULT/ITEM/SECTION/FIELD
+                  - text: ". That matters: one item can hold several fields with the same label in different sections - a host item with a top-level"
+                  - code [ref=f3e692]: password
+                  - text: plus one per section - and they are different secrets. Pick the items an agent actually needs; a manifest naming the whole vault hands every secret to every agent it launches, which is the opposite of what manifests are for.
+                - paragraph [ref=f3e693]:
+                  - text: "A section the operator named goes into the variable name, because the label alone is not unique within an item. The one 1Password supplies itself does not: fields added without choosing a section land in a section labelled"
+                  - code [ref=f3e694]: add more
+                  - text: ", and"
+                  - code [ref=f3e695]: ANTHROPIC_CONDUCTOR_API_KEY
+                  - text: is the name worth having.
+                - paragraph [ref=f3e696]:
+                  - strong [ref=f3e697]: Leaving fields out.
+                  - text: An item holds more than its credential - the
+                  - code [ref=f3e698]: username
+                  - text: beside the password, or a password field reading
+                  - code [ref=f3e699]: google
+                  - text: because the account signs in with Google.
+                  - code [ref=f3e700]: "--exclude"
+                  - text: takes a variable-name pattern (
+                  - code [ref=f3e701]: "*"
+                  - text: and
+                  - code [ref=f3e702]: "?"
+                  - text: ", whole name, case-insensitive), repeats, and is recorded in the manifest as an"
+                  - code [ref=f3e703]: "# exclude:"
+                  - text: line so later runs honour it without retyping. Excluded fields are listed on every run rather than dropped quietly. Delete the line to map them again.
+                - paragraph [ref=f3e704]:
+                  - strong [ref=f3e705]: Refs that no longer resolve.
+                  - text: An item renamed or deleted in the vault leaves a mapping behind, and
+                  - code [ref=f3e706]: op inject
+                  - text: fails the
+                  - emphasis [ref=f3e707]: whole manifest
+                  - text: on one such reference — so one stale line stops every launch through it.
+                  - code [ref=f3e708]: refresh
+                  - text: reports those on every run and removes them under
+                  - code [ref=f3e709]: "--prune"
+                  - text: (or an interactive
+                  - code [ref=f3e710]: "[y/N]"
+                  - text: ", defaulting to no), keeping every other byte of the file."
+                - paragraph [ref=f3e711]:
+                  - text: "What it can say depends on what the run fetched: items come from one"
+                  - code [ref=f3e712]: op item list
+                  - text: ", fields only for the items it expanded, so"
+                  - code [ref=f3e713]: "--all --prune"
+                  - text: gives full coverage and a narrow selection prunes narrowly. Mappings into items it did not open are listed as unchecked and never touched — including an item whose read failed, because a transient vault error is not evidence a secret is gone. An
+                  - code [ref=f3e714]: op://
+                  - text: line records no source id, so a renamed item cannot be told apart from a deleted one; both are removed rather than repaired, unlike the Bitwarden case below.
+                - paragraph [ref=f3e715]:
+                  - text: A mapping that still resolves but whose name matches a recorded
+                  - code [ref=f3e716]: "# exclude:"
+                  - text: is listed under its own heading and
+                  - strong [ref=f3e717]: kept
+                  - text: . Exclusion governs what
+                  - code [ref=f3e718]: refresh
+                  - text: adds; prune removes only what does not resolve. Delete the line with
+                  - code [ref=f3e719]: va edit-manifest
+                  - text: if you want the variable gone.
+                - paragraph [ref=f3e720]:
+                  - strong [ref=f3e721]: Launching against another manifest.
+                  - code [ref=f3e722]: va -m <manifest> <harness>
+                  - text: runs a harness against a manifest other than its configured one — useful for taking a narrower set of credentials into a session without editing config. It replaces the manifest rather than merging, errors if the file is missing, and prints which manifest it used. Also works with
+                  - code [ref=f3e723]: va -m <manifest> pick
+                  - text: .
+                - paragraph [ref=f3e724]:
+                  - text: It is a launcher flag, so it goes before the harness name. It is
+                  - strong [ref=f3e725]:
+                    - text: refused under a
+                    - code [ref=f3e726]: "*-conductor"
+                    - text: symlink
+                  - text: ", alongside"
+                  - code [ref=f3e727]: "-H"
+                  - text: ": that symlink is what lets a sudoers rule grant one harness and have it mean one set of credentials, and a flag naming the manifest would undo it. On the direct"
+                  - code [ref=f3e728]: va
+                  - text: path a caller can already reach
+                  - code [ref=f3e729]: va run -m
+                  - text: with any manifest, so there is nothing extra to protect.
+                - paragraph [ref=f3e730]:
+                  - text: With
+                  - code [ref=f3e731]: service_user
+                  - text: and a sudoers rule that only names
+                  - code [ref=f3e732]: vaulted-agent claude
+                  - text: ", a line that starts with"
+                  - code [ref=f3e733]: "-m"
+                  - text: will not match. Use conductor links for delegated grants, or add rules that allow the launcher flags before the harness name.
+                - paragraph [ref=f3e734]:
+                  - strong [ref=f3e735]:
+                    - code [ref=f3e736]: va doctor
+                  - text: runs as
+                  - code [ref=f3e737]: service_user
+                  - text: when configured (same hop as a launch) and reports token files as
+                  - code [ref=f3e738]: present
+                  - text: ","
+                  - code [ref=f3e739]: missing
+                  - text: ", or"
+                  - code [ref=f3e740]: unreadable
+                  - text: "- never collapsing permission denied into missing. For 1Password harnesses it also flags"
+                  - code [ref=f3e741]: op://
+                  - text: references the scanner cannot parse (plain literals are fine).
+                - paragraph [ref=f3e742]:
+                  - strong [ref=f3e743]: "One-shot (any command, no harness file):"
+                - generic [ref=f3e744]:
+                  - generic [ref=f3e745]:
+                    - text: va run -m openai.env.refs --backend bitwarden -p -- \ python gpt_image.py generate
+                    - generic [ref=f3e746]: "\"a lighthouse\""
+                    - text: "--output out.png"
+                  - button "Copy code to clipboard" [ref=f3e748] [cursor=pointer]
+                - paragraph [ref=f3e752]:
+                  - strong [ref=f3e753]: "When secrets change (Bitwarden SM):"
+                - table [ref=f3e755]:
+                  - rowgroup [ref=f3e756]:
+                    - row [ref=f3e757]:
+                      - columnheader "In Secrets Manager" [ref=f3e758]
+                      - columnheader "What to run" [ref=f3e759]
+                  - rowgroup [ref=f3e760]:
+                    - row [ref=f3e761]:
+                      - cell "Rotated a value" [ref=f3e762]
+                      - cell "Nothing — next launch fetches live" [ref=f3e763]
+                    - row [ref=f3e764]:
+                      - cell "Added a secret you want mapped" [ref=f3e765]
+                      - cell [ref=f3e766]:
+                        - code [ref=f3e767]: va refresh
+                        - text: (merge) or
+                        - code [ref=f3e768]: va refresh --replace --all
+                    - row [ref=f3e769]:
+                      - cell "Renamed or removed a secret" [ref=f3e770]
+                      - cell [ref=f3e771]:
+                        - code [ref=f3e772]: va refresh --prune
+                        - text: (removes mappings nothing resolves; repairs renamed ones on Bitwarden)
+                    - row [ref=f3e773]:
+                      - cell [ref=f3e774]:
+                        - text: Launch fails on a huge
+                        - code [ref=f3e775]: name:KEYOTHER=name:OTHER
+                        - text: ref
+                      - cell [ref=f3e776]:
+                        - code [ref=f3e777]: va refresh
+                        - text: (splits the bash 0.3.0 glued line)
+                    - row [ref=f3e778]:
+                      - cell "Removed or fixed a mapping" [ref=f3e779]
+                      - cell [ref=f3e780]:
+                        - code [ref=f3e781]: va edit-manifest
+                        - text: (checks on save) or edit the refs file by hand
+                - paragraph [ref=f3e782]:
+                  - strong [ref=f3e783]: Install options
+                  - text: "(clone, shared host, flags):"
+                  - link "Install details" [ref=f3e784] [cursor=pointer]:
+                    - /url: "#install-details"
+                  - text: .
+                  - strong [ref=f3e785]: "Auth / backends / harness format:"
+                  - link "Configuration" [ref=f3e786] [cursor=pointer]:
+                    - /url: "#configuration"
+                  - text: ·
+                  - link "Backends" [ref=f3e787] [cursor=pointer]:
+                    - /url: "#backends"
+                  - text: .
+                - generic [ref=f3e788]:
+                  - heading "How it works" [level=2] [ref=f3e789]
+                  - 'link "Permalink: How it works" [ref=f3e790] [cursor=pointer]':
+                    - /url: "#how-it-works"
+                - generic [ref=f3e793]:
+                  - code [ref=f3e795]: "you $ va claude --resume <session-id> │ │ first argument selects the harness; rest → agent ▼ /usr/local/bin/vaulted-agent (alias: va) │ ├─ optional sudo -u <service> become the service account ├─ cd workdir caller cwd by default (sessions / resume) ├─ scrub environment allowlist only; nothing inherited rides along ├─ load vault auth op.env / bws.env, or prompt (auth_mode) ├─ resolve manifest refs op inject / bws secret get / … ├─ unset vault token the agent must not inherit the master key └─ exec claude … --resume <id> │ └─ secrets live here, in this process, until it exits"
+                  - button "Copy code to clipboard" [ref=f3e797] [cursor=pointer]
+                - paragraph [ref=f3e801]:
+                  - strong [ref=f3e802]: "Thesis:"
+                  - text: treat the agent as the unit of authorization. Manifests are blast-radius control, not containment.
+                - paragraph [ref=f3e803]:
+                  - text: "Writeup:"
+                  - link "One vault, three agents" [ref=f3e804] [cursor=pointer]:
+                    - /url: https://stephens.page/blog/one-vault-three-agents-writing-the-pattern-down-found-five-bugs/
+                  - text: "· Latest:"
+                  - link "v0.4.24" [ref=f3e805] [cursor=pointer]:
+                    - /url: https://github.com/JacobStephens2/vaulted-agent/releases/tag/v0.4.24
+                - generic [ref=f3e806]:
+                  - heading "The honest claim" [level=2] [ref=f3e807]
+                  - 'link "Permalink: The honest claim" [ref=f3e808] [cursor=pointer]':
+                    - /url: "#the-honest-claim"
+                - paragraph [ref=f3e811]:
+                  - text: This is
+                  - strong [ref=f3e812]: not
+                  - text: automatically "no secrets on disk." With
+                  - code [ref=f3e813]: auth_mode=file
+                  - text: ", one credential stays on disk: the vault service-account token in"
+                  - code [ref=f3e814]: op.env
+                  - text: or
+                  - code [ref=f3e815]: bws.env
+                  - text: (mode
+                  - code [ref=f3e816]: "0640"
+                  - text: ", readable by the service account). With"
+                  - code [ref=f3e817]: auth_mode=prompt
+                  - text: ", the launcher never writes that token either - you paste it each launch."
+                  - strong [ref=f3e818]: Resolved secrets
+                  - text: (API keys, DB passwords) are never written by the launcher in either mode; they live only in the child process environment.
+                - paragraph [ref=f3e819]: "What you get for that trade:"
+                - list [ref=f3e820]:
+                  - listitem [ref=f3e821]:
+                    - strong [ref=f3e822]: One credential on disk instead of thirty
+                    - text: (or zero manager tokens on disk with prompt auth). A backup, a stray
+                    - code [ref=f3e823]: tar
+                    - text: ", a misconfigured sync, or a readable dotfile exposes one token, not the fleet."
+                  - listitem [ref=f3e824]:
+                    - strong [ref=f3e825]: Central revocation.
+                    - text: Rotate in the vault and every future launch picks it up. There is no scavenger hunt through
+                    - code [ref=f3e826]: .env
+                    - text: files.
+                  - listitem [ref=f3e827]:
+                    - strong [ref=f3e828]: A written answer to "which agent could reach what."
+                    - text: Manifests are the answer, and they are diffable and reviewable.
+                  - listitem [ref=f3e829]:
+                    - strong [ref=f3e830]: Nothing on the command line
+                    - text: ", so"
+                    - code [ref=f3e831]: ps
+                    - text: shows nothing to any user on the box.
+                  - listitem [ref=f3e832]:
+                    - strong [ref=f3e833]:
+                      - code [ref=f3e834]: va run
+                    - text: for tools and scripts without inventing a harness per binary.
+                  - listitem [ref=f3e835]:
+                    - strong [ref=f3e836]: Fail-closed manifests
+                    - text: "- placeholders and bad UUIDs never reach the vault."
+                - paragraph [ref=f3e837]:
+                  - text: What it does
+                  - strong [ref=f3e838]: not
+                  - text: "protect against, stated plainly because a repo about credential handling should not leave you to discover these:"
+                - list [ref=f3e839]:
+                  - listitem [ref=f3e840]:
+                    - strong [ref=f3e841]: The agent can read its own environment
+                    - text: ", and so can anything running as the same user, via"
+                    - code [ref=f3e842]: /proc/<pid>/environ
+                    - text: ". This is unavoidable: the agent needs the credentials to do the work. The mitigations are a dedicated service account with no other processes, and a narrow manifest."
+                  - listitem [ref=f3e843]:
+                    - strong [ref=f3e844]: The agent can exfiltrate what it holds.
+                    - text: It has a shell. A prompt injection that reaches a tool call can use every credential in its manifest. A narrow manifest limits how much that costs you; nothing here prevents it.
+                  - listitem [ref=f3e845]:
+                    - strong [ref=f3e846]: A harness can read past its own manifest
+                    - text: when the vault token is on disk (
+                    - code [ref=f3e847]: auth_mode=file
+                    - text: ). The launcher runs as the same account it hands off to; that account can read
+                    - code [ref=f3e848]: bws.env
+                    - text: /
+                    - code [ref=f3e849]: op.env
+                    - text: and query the vault directly. Dropping the token before
+                    - code [ref=f3e850]: exec
+                    - text: stops it being
+                    - emphasis [ref=f3e851]: inherited
+                    - text: ", which rules out accidents and casual reuse by tools that read"
+                    - code [ref=f3e852]: OP_SERVICE_ACCOUNT_TOKEN
+                    - text: or
+                    - code [ref=f3e853]: BWS_ACCESS_TOKEN
+                    - text: on sight - but it is not a wall against an agent that goes looking. Treat manifests as blast radius control, not as containment. Making them containment needs privilege separation; see below. Prompt auth removes the on-disk token file but does not stop an agent that already holds resolved secrets.
+                  - listitem [ref=f3e854]:
+                    - strong [ref=f3e855]: No TTY for a token prompt
+                    - text: when one agent shells out to another. Use
+                    - code [ref=f3e856]: auth_mode=file
+                    - text: ", or export the vault token in the parent before"
+                    - code [ref=f3e857]: va …
+                    - text: . The launcher’s error text says this explicitly.
+                  - listitem [ref=f3e858]:
+                    - strong [ref=f3e859]: The vault token is a master key
+                    - text: for whatever it can read. Scope the service account to a single vault, and only the items an agent needs.
+                  - listitem [ref=f3e860]:
+                    - strong [ref=f3e861]: Root can read everything.
+                    - text: Nothing here defends against a compromised host.
+                - generic [ref=f3e862]:
+                  - heading "Install details" [level=2] [ref=f3e863]
+                  - 'link "Permalink: Install details" [ref=f3e864] [cursor=pointer]':
+                    - /url: "#install-details"
+                - paragraph [ref=f3e867]: "If you already have the tree (clone, release tarball, or the remote bootstrap's temp dir), the real installer is:"
+                - generic [ref=f3e868]:
+                  - generic [ref=f3e869]: sudo ./install.sh
+                  - button "Copy code to clipboard" [ref=f3e871] [cursor=pointer]
+                - paragraph [ref=f3e875]:
+                  - text: By default agents run as
+                  - strong [ref=f3e876]: you
+                  - text: "- the user who invoked"
+                  - code [ref=f3e877]: install.sh
+                  - text: "- and the command is symlinked into your"
+                  - code [ref=f3e878]: ~/.local/bin
+                  - text: so it is on your PATH. That is the right default on a personal machine and needs no setup.
+                - paragraph [ref=f3e879]:
+                  - strong [ref=f3e880]: "On a shared host, use a dedicated account instead:"
+                - generic [ref=f3e881]:
+                  - generic [ref=f3e882]: sudo useradd --system --home-dir /srv/agent --create-home --shell /bin/bash agent sudo ./install.sh --user agent --allow-user alice
+                  - button "Copy code to clipboard" [ref=f3e884] [cursor=pointer]
+                - paragraph [ref=f3e888]:
+                  - text: "The reason is the threat model above: everything running as the agent's user can read the agent's environment through"
+                  - code [ref=f3e889]: /proc/<pid>/environ
+                  - text: . When that user is you, that is your shell, your editor, and anything else you happen to be running. A dedicated account with nothing else in it makes "the same user" as small a set as possible, and makes the audit trail say "the agent did this" rather than naming a person. Running as root is refused outright.
+                - paragraph [ref=f3e890]:
+                  - code [ref=f3e891]: install.sh
+                  - text: installs the Rust binary and writes machine defaults to
+                  - code [ref=f3e892]: defaults.conf
+                  - text: "(never sed-patches a shell script). It never overwrites a config file you have edited. Useful flags:"
+                - table [ref=f3e894]:
+                  - rowgroup [ref=f3e895]:
+                    - row [ref=f3e896]:
+                      - columnheader "flag" [ref=f3e897]
+                      - columnheader [ref=f3e898]
+                  - rowgroup [ref=f3e899]:
+                    - row [ref=f3e900]:
+                      - cell [ref=f3e901]:
+                        - code [ref=f3e902]: "--user NAME"
+                      - cell [ref=f3e903]:
+                        - text: the service account to run agents as; defaults to you (writes
+                        - code [ref=f3e904]: service_user
+                        - text: in defaults.conf when explicit)
+                    - row [ref=f3e905]:
+                      - cell [ref=f3e906]:
+                        - code [ref=f3e907]: "--no-link"
+                      - cell [ref=f3e908]:
+                        - text: skip the default
+                        - code [ref=f3e909]: ~/.local/bin
+                        - text: symlink
+                    - row [ref=f3e910]:
+                      - cell [ref=f3e911]:
+                        - code [ref=f3e912]: "--no-va"
+                      - cell [ref=f3e913]:
+                        - text: skip the short
+                        - code [ref=f3e914]: va
+                        - text: alias (default is to install it)
+                    - row [ref=f3e915]:
+                      - cell [ref=f3e916]:
+                        - code [ref=f3e917]: "--no-auto-harness"
+                      - cell "do not detect claude/codex/grok/kimi/agy/muse/bash or write live harnesses" [ref=f3e918]
+                    - row [ref=f3e919]:
+                      - cell [ref=f3e920]:
+                        - code [ref=f3e921]: "--no-setup"
+                      - cell "skip interactive vault backend questions" [ref=f3e922]
+                    - row [ref=f3e923]:
+                      - cell [ref=f3e924]:
+                        - code [ref=f3e925]: "--backend NAME"
+                      - cell [ref=f3e926]:
+                        - code [ref=f3e927]: onepassword
+                        - text: ","
+                        - code [ref=f3e928]: bitwarden
+                        - text: ","
+                        - code [ref=f3e929]: pass
+                        - text: ","
+                        - code [ref=f3e930]: sops
+                        - text: ", or"
+                        - code [ref=f3e931]: skip
+                        - text: . Sets
+                        - code [ref=f3e932]: default_backend
+                        - text: in
+                        - code [ref=f3e933]: defaults.conf
+                        - text: and the summary’s token path (
+                        - code [ref=f3e934]: bws.env
+                        - text: vs
+                        - code [ref=f3e935]: op.env
+                        - text: )
+                    - row [ref=f3e936]:
+                      - cell [ref=f3e937]:
+                        - code [ref=f3e938]: "--auth-mode MODE"
+                      - cell [ref=f3e939]:
+                        - code [ref=f3e940]: file
+                        - text: (token on disk) or
+                        - code [ref=f3e941]: prompt
+                        - text: (paste each launch; default
+                        - code [ref=f3e942]: file
+                        - text: )
+                    - row [ref=f3e943]:
+                      - cell [ref=f3e944]:
+                        - code [ref=f3e945]: "--op-token-file PATH"
+                      - cell [ref=f3e946]:
+                        - text: write OP_SERVICE_ACCOUNT_TOKEN from this file (not argv); ignored when
+                        - code [ref=f3e947]: "--auth-mode prompt"
+                    - row [ref=f3e948]:
+                      - cell [ref=f3e949]:
+                        - code [ref=f3e950]: "--bws-token-file PATH"
+                      - cell [ref=f3e951]:
+                        - text: write BWS_ACCESS_TOKEN from this file; ignored when
+                        - code [ref=f3e952]: "--auth-mode prompt"
+                    - row [ref=f3e953]:
+                      - cell [ref=f3e954]:
+                        - code [ref=f3e955]: "--workdir DIR"
+                      - cell "working directory; defaults to that account's home" [ref=f3e956]
+                - paragraph [ref=f3e957]:
+                  - text: "|"
+                  - code [ref=f3e958]: "--op-env FILE"
+                  - text: "| reuse a backend credential that already exists elsewhere | |"
+                  - code [ref=f3e959]: "--links a,b,c"
+                  - text: "| also create"
+                  - code [ref=f3e960]: a-conductor
+                  - text: ","
+                  - code [ref=f3e961]: b-conductor
+                  - text: ", … symlinks | |"
+                  - code [ref=f3e962]: "--allow-user NAME"
+                  - text: "| write a sudoers rule letting NAME launch any harness | |"
+                  - code [ref=f3e963]: "--link-user NAME"
+                  - text: "| symlink into NAME's"
+                  - code [ref=f3e964]: ~/.local/bin
+                  - text: ", so the command is on their PATH | |"
+                  - code [ref=f3e965]: "--force"
+                  - text: "| replace a pre-existing path that is not our symlink | |"
+                  - code [ref=f3e966]: "--dry-run"
+                  - text: "| print what it would do |"
+                - paragraph [ref=f3e967]:
+                  - text: If a symlink path is already taken by something that is not ours, it stops rather than replacing it. A box that already has launchers of its own using those names keeps them unless you pass
+                  - code [ref=f3e968]: "--force"
+                  - text: .
+                - paragraph [ref=f3e969]:
+                  - strong [ref=f3e970]:
+                    - text: If
+                    - code [ref=f3e971]: vaulted-agent
+                    - text: comes back "command not found" afterwards
+                  - text: ","
+                  - code [ref=f3e972]: /usr/local/bin
+                  - text: is not on your PATH - which is common enough to be worth expecting. Either re-run with
+                  - code [ref=f3e973]: "--link-user <you>"
+                  - text: ", or link it yourself:"
+                - generic [ref=f3e974]:
+                  - generic [ref=f3e975]: mkdir -p ~/.local/bin && ln -s /usr/local/bin/vaulted-agent ~/.local/bin/vaulted-agent
+                  - button "Copy code to clipboard" [ref=f3e977] [cursor=pointer]
+                - paragraph [ref=f3e981]:
+                  - text: The link can live in any directory on your PATH. The sudo re-exec always rebuilds the path as
+                  - code [ref=f3e982]: /usr/local/bin/vaulted-agent
+                  - text: ", so your sudoers rule matches either way."
+                - paragraph [ref=f3e983]:
+                  - code [ref=f3e984]: install.sh
+                  - text: "warns when it can prove the command is unreachable, but it cannot prove the opposite:"
+                  - code [ref=f3e985]: $PATH
+                  - text: under sudo is root's
+                  - code [ref=f3e986]: secure_path
+                  - text: ", and"
+                  - code [ref=f3e987]: su -l
+                  - text: synthesizes one from
+                  - code [ref=f3e988]: /etc/login.defs
+                  - text: . Both routinely contain
+                  - code [ref=f3e989]: /usr/local/bin
+                  - text: when your interactive shell does not. So it also prints
+                  - code [ref=f3e990]: command -v vaulted-agent
+                  - text: for you to run in your own shell, where the answer is real.
+                - paragraph [ref=f3e991]: "That is enough to run it as the service account:"
+                - generic [ref=f3e992]:
+                  - generic [ref=f3e993]:
+                    - text: $
+                    - generic [ref=f3e994]:
+                      - text: sudo -u agent vaulted-agent
+                      - generic [ref=f3e995]: "# lists the configured harnesses"
+                    - text: $ sudo -u agent vaulted-agent claude
+                  - button "Copy code to clipboard" [ref=f3e997] [cursor=pointer]
+                - paragraph [ref=f3e1001]: "Or choose one interactively:"
+                - generic [ref=f3e1002]:
+                  - generic [ref=f3e1003]: "$ vaulted-agent pick 1) claude claude --permission-mode auto full.env.tpl 2) claude-ro claude --permission-mode auto readonly.env.tpl 3) codex codex -s danger-full-access limited.env.tpl 4) grok grok readonly.env.tpl harness [1-4, q to quit]: 2"
+                  - button "Copy code to clipboard" [ref=f3e1005] [cursor=pointer]
+                - paragraph [ref=f3e1009]:
+                  - text: Picking resolves to a concrete harness and then re-execs as though you had typed
+                  - code [ref=f3e1010]: vaulted-agent claude-ro
+                  - text: ", so per-harness sudoers rules still apply and you are never authorized for more by choosing from a menu."
+                  - code [ref=f3e1011]: pick
+                  - text: is reserved unless a harness of that name genuinely exists.
+                - generic [ref=f3e1012]:
+                  - heading "Letting people launch without a password prompt" [level=3] [ref=f3e1013]
+                  - 'link "Permalink: Letting people launch without a password prompt" [ref=f3e1014] [cursor=pointer]':
+                    - /url: "#letting-people-launch-without-a-password-prompt"
+                - paragraph [ref=f3e1017]: Two ways, and the choice is really about how precisely you need to authorize.
+                - paragraph [ref=f3e1018]:
+                  - strong [ref=f3e1019]: If everyone who can launch an agent may launch every harness
+                  - text: ", one rule is enough:"
+                - generic [ref=f3e1020]:
+                  - code [ref=f3e1022]: "# /etc/sudoers.d/vaulted-agent alice ALL=(agent) NOPASSWD: /usr/local/bin/vaulted-agent"
+                  - button "Copy code to clipboard" [ref=f3e1024] [cursor=pointer]
+                - paragraph [ref=f3e1028]:
+                  - text: Then
+                  - code [ref=f3e1029]: vaulted-agent claude
+                  - text: and
+                  - code [ref=f3e1030]: vaulted-agent codex
+                  - text: "both work, and adding a harness needs no sudoers change. Note what this grants:"
+                  - emphasis [ref=f3e1031]: any
+                  - text: harness, including ones added later.
+                - paragraph [ref=f3e1032]:
+                  - strong [ref=f3e1033]: If different people get different harnesses
+                  - text: ", install a symlink per harness and name each path:"
+                - generic [ref=f3e1034]:
+                  - generic [ref=f3e1035]: sudo ln -s /usr/local/bin/vaulted-agent /usr/local/bin/claude-conductor sudo ln -s /usr/local/bin/vaulted-agent /usr/local/bin/codex-conductor sudo ln -s /usr/local/bin/vaulted-agent /usr/local/bin/grok-conductor
+                  - button "Copy code to clipboard" [ref=f3e1037] [cursor=pointer]
+                - generic [ref=f3e1041]:
+                  - code [ref=f3e1043]: "alice ALL=(agent) NOPASSWD: /usr/local/bin/claude-conductor alice ALL=(agent) NOPASSWD: /usr/local/bin/codex-conductor bob ALL=(agent) NOPASSWD: /usr/local/bin/grok-conductor"
+                  - button "Copy code to clipboard" [ref=f3e1045] [cursor=pointer]
+                - paragraph [ref=f3e1049]:
+                  - text: Invoked through a link the link name is authoritative and
+                  - code [ref=f3e1050]: "-H"
+                  - text: "is refused, so Bob cannot reach Alice's harnesses. This is the form to prefer, because it needs no argument matching: each rule is a plain path."
+                - paragraph [ref=f3e1051]:
+                  - text: You
+                  - emphasis [ref=f3e1052]: can
+                  - text: authorize the positional form per harness instead, and the launcher refuses
+                  - code [ref=f3e1053]: vaulted-agent grok -H claude
+                  - text: "specifically so that this holds:"
+                - generic [ref=f3e1054]:
+                  - code [ref=f3e1056]: "bob ALL=(agent) NOPASSWD: /usr/local/bin/vaulted-agent grok bob ALL=(agent) NOPASSWD: /usr/local/bin/vaulted-agent grok *"
+                  - button "Copy code to clipboard" [ref=f3e1058] [cursor=pointer]
+                - paragraph [ref=f3e1062]: Both lines are needed, since the first matches only the bare invocation. Two rules with a wildcard is more to get right than one path, which is why the symlinks stay the recommendation for this case.
+                - paragraph [ref=f3e1063]:
+                  - text: "Every rule above names this launcher because that is the command the re-exec hands to sudo. It matters that nothing is prefixed to it: an earlier version put"
+                  - code [ref=f3e1064]: env KEY=val …
+                  - text: in front, so the command sudo matched was
+                  - code [ref=f3e1065]: /usr/bin/env
+                  - text: and a rule naming the launcher never matched at all. It looked like it worked, because the people testing it already held blanket sudo. If you are carrying such a rule forward from before v0.4.3, check it actually matches —
+                  - code [ref=f3e1066]: sudo -l -U alice
+                  - text: .
+                - generic [ref=f3e1067]:
+                  - heading [level=3] [ref=f3e1068]:
+                    - code [ref=f3e1069]: run
+                    - text: and delegation
+                  - 'link "Permalink: run and delegation" [ref=f3e1070] [cursor=pointer]':
+                    - /url: "#run-and-delegation"
+                - paragraph [ref=f3e1073]:
+                  - code [ref=f3e1074]: run
+                  - text: takes its command from the caller rather than from a
+                  - code [ref=f3e1075]: command =
+                  - text: line that root wrote, so it is the one subcommand that turns this launcher into a general executor. Granting someone
+                  - code [ref=f3e1076]: vaulted-agent
+                  - text: for one harness would otherwise also grant them
+                  - code [ref=f3e1077]: run -- /bin/sh
+                  - text: as the service account.
+                - paragraph [ref=f3e1078]:
+                  - text: So
+                  - code [ref=f3e1079]: run
+                  - text: is
+                  - strong [ref=f3e1080]:
+                    - text: disabled whenever
+                    - code [ref=f3e1081]: service_user
+                    - text: is set
+                  - text: ", which is the signal that the launcher is delegated. On a single-operator machine with no service account it is unchanged, since there it grants nothing the caller did not already have. To restore it deliberately:"
+                - generic [ref=f3e1082]:
+                  - generic [ref=f3e1083]:
+                    - generic [ref=f3e1084]: "# /etc/vaulted-agent/defaults.conf"
+                    - text: allow_run = yes
+                  - button "Copy code to clipboard" [ref=f3e1086] [cursor=pointer]
+                - paragraph [ref=f3e1090]:
+                  - text: For the same reason
+                  - code [ref=f3e1091]: VAULTED_AGENT_CONFIG_DIR
+                  - text: is
+                  - strong [ref=f3e1092]: not
+                  - text: carried across the hop. A caller-chosen config directory would let anyone entitled to one harness supply their own harness file — and a harness file names its own
+                  - code [ref=f3e1093]: command =
+                  - text: . The elevated side always reads the machine config directory. Point
+                  - code [ref=f3e1094]: VAULTED_AGENT_CONFIG_DIR
+                  - text: at a test tree and it still works exactly as before when no elevation happens.
+                - paragraph [ref=f3e1095]:
+                  - text: Finally, resist giving the service account broad sudo. It is the account your agent runs as, and
+                  - code [ref=f3e1096]: "agent ALL=(ALL) NOPASSWD: ALL"
+                  - text: makes every manifest boundary above it decorative — and turns each of the paragraphs above from a hardening measure into the only thing standing between a harness grant and root.
+                - paragraph [ref=f3e1097]:
+                  - text: "Maintainers: the"
+                  - code [ref=f3e1098]: curl … | bash
+                  - text: one-liner serves
+                  - code [ref=f3e1099]: install-remote.sh
+                  - text: from this repo, and refreshing it has an ordering constraint worth knowing before you cut a release - see
+                  - link "docs/hosting-the-installer.md" [ref=f3e1100] [cursor=pointer]:
+                    - /url: /JacobStephens2/vaulted-agent/blob/main/docs/hosting-the-installer.md
+                  - text: .
+                - generic [ref=f3e1101]:
+                  - heading "Updating" [level=2] [ref=f3e1102]
+                  - 'link "Permalink: Updating" [ref=f3e1103] [cursor=pointer]':
+                    - /url: "#updating"
+                - paragraph [ref=f3e1106]:
+                  - code [ref=f3e1107]: va update
+                  - text: installs the requested release, then uses that release's automatic defaults (shared with the installer) to add missing Harnesses for detected agents (including Muse). Existing profiles are preserved, including custom commands and Manifest choices. The updater does not run
+                  - code [ref=f3e1108]: install.sh
+                  - text: ", resolve vault secrets, or rewrite defaults, token files, or existing Manifests."
+                - paragraph [ref=f3e1109]:
+                  - text: When all existing Harnesses agree on a Backend and Manifest, new Harnesses use that pair. If they disagree, cannot be read, or none exist, new Harnesses start with
+                  - code [ref=f3e1110]: plainfile
+                  - text: and a verified empty
+                  - code [ref=f3e1111]: empty.env
+                  - text: ; output tells you to configure their Backend and Manifest. Existing nonempty
+                  - code [ref=f3e1112]: empty.env
+                  - text: files are refused as starters. Agent-specific aliases and permission settings from other profiles are not copied. New Harnesses use the installer’s default command and caller directory.
+                - paragraph [ref=f3e1113]:
+                  - text: Root-owned machine configuration triggers a sudo retry. Discovery considers the configured Service user (or the invoking user under sudo), their local binary directories, and existing Harness
+                  - code [ref=f3e1114]: bin
+                  - text: directories. Custom config directories must be writable by the caller; their paths are not forwarded through sudo.
+                - paragraph [ref=f3e1115]:
+                  - code [ref=f3e1116]: va update --sync-harnesses
+                  - text: adds missing Harnesses without downloading or replacing the binary.
+                  - code [ref=f3e1117]: "--check"
+                  - text: and
+                  - code [ref=f3e1118]: "--dry-run"
+                  - text: leave installed files and configuration unchanged. Downgrading to a release without Harness sync support preserves configuration and reports that sync was skipped.
+                - paragraph [ref=f3e1119]:
+                  - strong [ref=f3e1120]: "First upgrade from v0.4.23 or earlier:"
+                  - text: the old updater only replaces the binary. Once the new binary is installed, run
+                  - code [ref=f3e1121]: va update --sync-harnesses
+                  - text: (or
+                  - code [ref=f3e1122]: va update
+                  - text: again) to add missing profiles. Subsequent updates handle both steps in one command.
+                - generic [ref=f3e1123]:
+                  - heading "Uninstall" [level=2] [ref=f3e1124]
+                  - 'link "Permalink: Uninstall" [ref=f3e1125] [cursor=pointer]':
+                    - /url: "#uninstall"
+                - paragraph [ref=f3e1128]:
+                  - text: Remove it the same way you run agents - uninstall lives
+                  - strong [ref=f3e1129]: in the installed binary
+                  - text: ", so you do not need the git tree (works after a"
+                  - code [ref=f3e1130]: curl | bash
+                  - text: "install):"
+                - generic [ref=f3e1131]:
+                  - generic [ref=f3e1132]:
+                    - text: sudo vaulted-agent uninstall
+                    - generic [ref=f3e1133]: "# interactive; keeps config"
+                    - text: sudo vaulted-agent uninstall --purge
+                    - generic [ref=f3e1134]: "# also remove config"
+                    - text: sudo vaulted-agent uninstall --dry-run
+                    - generic [ref=f3e1135]: "# show the plan only"
+                    - text: sudo vaulted-agent uninstall --yes
+                    - generic [ref=f3e1136]: "# no prompts (scripts/cron)"
+                    - generic [ref=f3e1137]: "# short alias:"
+                    - text: sudo va uninstall --purge
+                  - button "Copy code to clipboard" [ref=f3e1139] [cursor=pointer]
+                - paragraph [ref=f3e1143]: It prompts when a terminal is present, lists the exact paths it would remove, and asks once more before deleting. A symlink is only removed when it resolves to this launcher; anything else at those paths is left alone (“not ours”).
+                - paragraph [ref=f3e1144]:
+                  - text: Config is kept without
+                  - code [ref=f3e1145]: "--purge"
+                  - text: ", since harness files are usually hand-written."
+                  - strong [ref=f3e1146]: Backend credentials are never removed
+                  - text: "-"
+                  - code [ref=f3e1147]: op.env
+                  - text: ","
+                  - code [ref=f3e1148]: bws.env
+                  - text: and
+                  - code [ref=f3e1149]: age.key
+                  - text: may be shared with other tooling. Delete those yourself if you want them gone.
+                - paragraph [ref=f3e1150]:
+                  - text: Add
+                  - code [ref=f3e1151]: "--link-user NAME"
+                  - text: to also remove that user's
+                  - code [ref=f3e1152]: ~/.local/bin
+                  - text: symlink; the user who invoked sudo is checked automatically.
+                - paragraph [ref=f3e1153]:
+                  - text: From a checkout (no installed binary yet), the same logic is also reachable as
+                  - code [ref=f3e1154]: sudo ./install.sh --uninstall …
+                  - text: .
+                - generic [ref=f3e1155]:
+                  - heading "Configuration" [level=2] [ref=f3e1156]
+                  - 'link "Permalink: Configuration" [ref=f3e1157] [cursor=pointer]':
+                    - /url: "#configuration"
+                - paragraph [ref=f3e1160]:
+                  - text: One file per harness in
+                  - code [ref=f3e1161]: harnesses.d/
+                  - text: ", named for the harness."
+                  - code [ref=f3e1162]: claude.conf
+                  - text: is what
+                  - code [ref=f3e1163]: claude-conductor
+                  - text: "launches:"
+                - generic [ref=f3e1164]:
+                  - generic [ref=f3e1165]:
+                    - generic [ref=f3e1166]: "# /etc/vaulted-agent/harnesses.d/claude.conf"
+                    - text: bin = $HOME/.local/bin manifest = full.env.tpl labels = yes command = claude --permission-mode auto
+                  - button "Copy code to clipboard" [ref=f3e1168] [cursor=pointer]
+                - table [ref=f3e1173]:
+                  - rowgroup [ref=f3e1174]:
+                    - row [ref=f3e1175]:
+                      - columnheader "key" [ref=f3e1176]
+                      - columnheader "meaning" [ref=f3e1177]
+                  - rowgroup [ref=f3e1178]:
+                    - row [ref=f3e1179]:
+                      - cell [ref=f3e1180]:
+                        - code [ref=f3e1181]: backend
+                      - cell [ref=f3e1182]:
+                        - code [ref=f3e1183]: onepassword
+                        - text: ","
+                        - code [ref=f3e1184]: bitwarden
+                        - text: ","
+                        - code [ref=f3e1185]: sops
+                        - text: ","
+                        - code [ref=f3e1186]: pass
+                        - text: ", or"
+                        - code [ref=f3e1187]: plainfile
+                    - row [ref=f3e1188]:
+                      - cell [ref=f3e1189]:
+                        - code [ref=f3e1190]: manifest
+                      - cell [ref=f3e1191]:
+                        - text: the secrets to load.
+                        - strong [ref=f3e1192]: This is the blast radius.
+                    - row [ref=f3e1193]:
+                      - cell [ref=f3e1194]:
+                        - code [ref=f3e1195]: bin
+                      - cell [ref=f3e1196]:
+                        - text: prepended to
+                        - code [ref=f3e1197]: PATH
+                        - text: before exec;
+                        - code [ref=f3e1198]: $HOME
+                        - text: expands
+                    - row [ref=f3e1199]:
+                      - cell [ref=f3e1200]:
+                        - code [ref=f3e1201]: workdir
+                      - cell [ref=f3e1202]:
+                        - text: "agent cwd: unset → install default;"
+                        - code [ref=f3e1203]: caller
+                        - text: → your shell’s directory (needed for
+                        - code [ref=f3e1204]: "--resume"
+                        - text: / project sessions); or an absolute/
+                        - code [ref=f3e1205]: $HOME
+                        - text: path
+                    - row [ref=f3e1206]:
+                      - cell [ref=f3e1207]:
+                        - code [ref=f3e1208]: labels
+                      - cell [ref=f3e1209]:
+                        - text: map non-UUID
+                        - code [ref=f3e1210]: "--resume"
+                        - text: /
+                        - code [ref=f3e1211]: "--session-id"
+                        - text: values to a stable UUIDv5
+                    - row [ref=f3e1212]:
+                      - cell [ref=f3e1213]:
+                        - code [ref=f3e1214]: keep
+                      - cell "extra variables surviving the environment scrub, comma separated" [ref=f3e1215]
+                    - row [ref=f3e1216]:
+                      - cell [ref=f3e1217]:
+                        - code [ref=f3e1218]: alias
+                      - cell [ref=f3e1219]:
+                        - text: "repeatable:"
+                        - code [ref=f3e1220]: TARGET = SOURCE
+                        - text: "— copy an injected secret onto another name in this harness's child env only (fail closed if SOURCE missing; see issue #66)"
+                    - row [ref=f3e1221]:
+                      - cell [ref=f3e1222]:
+                        - code [ref=f3e1223]: env
+                      - cell [ref=f3e1224]:
+                        - text: "repeatable:"
+                        - code [ref=f3e1225]: NAME = value
+                        - text: — non-secret child env (not vault material; e.g. temporary
+                        - code [ref=f3e1226]: KIMI_CODE_LEGACY_FLAG
+                        - text: "on kimi.conf, issue #70)"
+                    - row [ref=f3e1227]:
+                      - cell [ref=f3e1228]:
+                        - code [ref=f3e1229]: command
+                      - cell "the command line, split on whitespace" [ref=f3e1230]
+                    - row [ref=f3e1231]:
+                      - cell [ref=f3e1232]:
+                        - code [ref=f3e1233]: arg
+                      - cell "one further argument, verbatim. Repeatable, and the only way to pass one containing a space" [ref=f3e1234]
+                - paragraph [ref=f3e1235]:
+                  - text: See
+                  - link "Resume sessions" [ref=f3e1236] [cursor=pointer]:
+                    - /url: "#resume-sessions"
+                  - text: above for
+                  - code [ref=f3e1237]: va claude|codex|grok|kimi|agy|muse
+                  - text: resume examples. Native CLIs still differ without
+                  - code [ref=f3e1238]: va
+                  - text: ": Claude/Grok use"
+                  - code [ref=f3e1239]: "--resume"
+                  - text: ; Codex uses the
+                  - code [ref=f3e1240]: resume
+                  - text: subcommand; Kimi Code uses
+                  - code [ref=f3e1241]: "--continue"
+                  - text: /
+                  - code [ref=f3e1242]: "--session"
+                  - text: (and accepts
+                  - code [ref=f3e1243]: "--resume"
+                  - text: as an alias). AGY keeps its native
+                  - code [ref=f3e1244]: "--continue"
+                  - text: /
+                  - code [ref=f3e1245]: "-c"
+                  - text: and
+                  - code [ref=f3e1246]: "--conversation <id>"
+                  - text: arguments unchanged under
+                  - code [ref=f3e1247]: va
+                  - text: .
+                - paragraph [ref=f3e1248]:
+                  - text: Whitespace around the key, the
+                  - code [ref=f3e1249]: =
+                  - text: ", and the value is ignored, so align them however you like. Your own arguments are appended after the configured ones."
+                - paragraph [ref=f3e1250]:
+                  - text: Manifests say what each harness may reach.
+                  - strong [ref=f3e1251]: 1Password
+                  - text: (
+                  - code [ref=f3e1252]: op://
+                  - text: "refs):"
+                - generic [ref=f3e1253]:
+                  - code [ref=f3e1255]: APP_DB_HOST=op://AgentVault/app-database/hostname APP_DB_USER=op://AgentVault/app-database/mysql/username APP_DB_PASS=op://AgentVault/app-database/mysql/password GH_TOKEN=op://AgentVault/github/fine-grained-token
+                  - button "Copy code to clipboard" [ref=f3e1257] [cursor=pointer]
+                - paragraph [ref=f3e1261]:
+                  - strong [ref=f3e1262]: Bitwarden
+                  - text: (UUID /
+                  - code [ref=f3e1263]: "name:"
+                  - text: /
+                  - code [ref=f3e1264]: "project:"
+                  - text: ; see
+                  - link "Bitwarden Secrets Manager" [ref=f3e1265] [cursor=pointer]:
+                    - /url: "#bitwarden-secrets-manager"
+                  - text: "):"
+                - generic [ref=f3e1266]:
+                  - code [ref=f3e1268]: OPENAI_API_KEY=name:openai-api-key GH_TOKEN=project:tools/github-token
+                  - button "Copy code to clipboard" [ref=f3e1270] [cursor=pointer]
+                - paragraph [ref=f3e1274]:
+                  - text: A refs manifest holds references, never values, so it is safe to commit and safe to leave world-readable. Adding a secret is one line plus a vault entry; the next launch has it. Syntax is checked before resolve (
+                  - code [ref=f3e1275]: va secrets validate
+                  - text: ","
+                  - code [ref=f3e1276]: va doctor
+                  - text: ", every launch)."
+                - paragraph [ref=f3e1277]:
+                  - text: "The same agent can appear more than once:"
+                  - code [ref=f3e1278]: claude.conf
+                  - text: and
+                  - code [ref=f3e1279]: claude-ro.conf
+                  - text: run the identical command against different manifests. Separate files and separate symlinks are what let the sudoers file distinguish who may launch it with credentials that can change production and who gets the read-only set.
+                - paragraph [ref=f3e1280]:
+                  - strong [ref=f3e1281]: Why this format.
+                  - text: Config is
+                  - emphasis [ref=f3e1282]: parsed
+                  - text: ", never sourced. That is the whole of the safety argument, and it would hold just as well for JSON or a whitespace-aligned table. Sourcing is what would be unsafe - it turns the config file into arbitrary shell executed as the account holding the vault token - and it is what most shell projects do."
+                - paragraph [ref=f3e1283]:
+                  - text: Given that, the choice among safe formats is about editing failure modes, and drop-in
+                  - code [ref=f3e1284]: key = value
+                  - text: "files win on three:"
+                - list [ref=f3e1285]:
+                  - listitem [ref=f3e1286]:
+                    - text: A structured format (JSON, YAML, TOML) needs a parser. In bash that means shelling out to
+                    - code [ref=f3e1287]: python3
+                    - text: or
+                    - code [ref=f3e1288]: jq
+                    - text: in the launch path, then getting values back into the shell without
+                    - code [ref=f3e1289]: eval
+                    - text: . It is doable, but adding an interpreter to the critical path of a credential launcher is a poor trade for syntax. JSON also has no comments, and the config deserves them.
+                  - listitem [ref=f3e1290]: An aligned table makes column position load-bearing. Someone tidying the alignment can shift a field, and a value can never contain a space.
+                  - listitem [ref=f3e1291]:
+                    - text: Drop-in files make adding a harness a new file rather than an edit to a shared one, which is how
+                    - code [ref=f3e1292]: sudoers.d
+                    - text: and
+                    - code [ref=f3e1293]: systemd
+                    - text: units already work, and they map one-to-one onto the symlink and the sudoers line.
+                - paragraph [ref=f3e1294]: "So: yes, the spacing in the examples is purely cosmetic, and no, the free-form-ness was never what made it safe."
+                - generic [ref=f3e1295]:
+                  - heading "Manifests nothing launches from" [level=3] [ref=f3e1296]
+                  - 'link "Permalink: Manifests nothing launches from" [ref=f3e1297] [cursor=pointer]':
+                    - /url: "#manifests-nothing-launches-from"
+                - paragraph [ref=f3e1300]:
+                  - text: "A machine usually reads more manifests than it launches from: a refs file that systemd units, a deploy script, or a status page resolve for themselves. No harness names it, so"
+                  - code [ref=f3e1301]: va secrets validate
+                  - text: "— the check you run after touching the vault — never looked at it, and reported every harness green while the units reading that file were down. That is what happened on 2026-09-03: a deleted vault item took four units out for six hours, and the documented gate said everything was fine."
+                - paragraph [ref=f3e1302]: "Record those files, repeatably, and validate covers them:"
+                - generic [ref=f3e1303]:
+                  - generic [ref=f3e1304]:
+                    - generic [ref=f3e1305]: "# /etc/vaulted-agent/defaults.conf"
+                    - text: extra_manifest = /srv/orchestration/env.tpl extra_manifest = /etc/other/refs.env = plainfile
+                  - button "Copy code to clipboard" [ref=f3e1307] [cursor=pointer]
+                - paragraph [ref=f3e1311]:
+                  - text: A relative path resolves against the manifest directory; the backend defaults to
+                  - code [ref=f3e1312]: default_backend
+                  - text: and may be named per entry.
+                  - code [ref=f3e1313]: va secrets validate
+                  - text: "then names every file it checked, pass or fail, and exits non-zero on any reference it could not resolve — so it is usable from a timer:"
+                - generic [ref=f3e1314]:
+                  - code [ref=f3e1316]: "claude (/etc/vaulted-agent/manifests/full.env.tpl): ok (252 variable(s) resolved) /srv/orchestration/env.tpl: FAIL (…) CLOUD_BEAVER_DB_ADMIN_PASSWORD op://Orchestrator/db-admin/password"
+                  - button "Copy code to clipboard" [ref=f3e1318] [cursor=pointer]
+                - paragraph [ref=f3e1322]:
+                  - text: An extra manifest is validated and nothing else. It has no command, does not appear in
+                  - code [ref=f3e1323]: va
+                  - text: or
+                  - code [ref=f3e1324]: va pick
+                  - text: ", and cannot be launched — see"
+                  - link "ADR-0006" [ref=f3e1325] [cursor=pointer]:
+                    - /url: /JacobStephens2/vaulted-agent/blob/main/docs/adr/0006-validate-every-manifest-the-machine-reads.md
+                  - text: ". A recorded path that is missing, or a line that cannot be parsed, is a failure rather than a skip: an operator who lists a file believes it is being checked."
+                - paragraph [ref=f3e1326]:
+                  - text: This covers references in
+                  - emphasis [ref=f3e1327]: manifests
+                  - text: . A script that calls
+                  - code [ref=f3e1328]: op read
+                  - text: directly is outside any manifest and outside this check.
+                - generic [ref=f3e1329]:
+                  - heading "Backends" [level=2] [ref=f3e1330]
+                  - 'link "Permalink: Backends" [ref=f3e1331] [cursor=pointer]':
+                    - /url: "#backends"
+                - paragraph [ref=f3e1334]:
+                  - text: Set per harness with
+                  - code [ref=f3e1335]: backend =
+                  - text: ", or set machine default"
+                  - code [ref=f3e1336]: default_backend
+                  - text: in
+                  - code [ref=f3e1337]: /etc/vaulted-agent/defaults.conf
+                  - text: (install
+                  - code [ref=f3e1338]: "--backend"
+                  - text: ", or edit the file)."
+                - table [ref=f3e1340]:
+                  - rowgroup [ref=f3e1341]:
+                    - row [ref=f3e1342]:
+                      - columnheader "backend" [ref=f3e1343]
+                      - columnheader "manifest is" [ref=f3e1344]
+                      - columnheader "on-disk credential" [ref=f3e1345]
+                      - columnheader "resolves" [ref=f3e1346]
+                  - rowgroup [ref=f3e1347]:
+                    - row [ref=f3e1348]:
+                      - cell [ref=f3e1349]:
+                        - code [ref=f3e1350]: onepassword
+                      - cell [ref=f3e1351]:
+                        - code [ref=f3e1352]: VAR=op://vault/item/field
+                      - cell [ref=f3e1353]:
+                        - code [ref=f3e1354]: op.env
+                        - text: (
+                        - code [ref=f3e1355]: OP_SERVICE_ACCOUNT_TOKEN
+                        - text: ) when
+                        - code [ref=f3e1356]: auth_mode=file
+                      - cell [ref=f3e1357]:
+                        - text: whole file, one
+                        - code [ref=f3e1358]: op inject
+                    - row [ref=f3e1359]:
+                      - cell [ref=f3e1360]:
+                        - code [ref=f3e1361]: bitwarden
+                      - cell [ref=f3e1362]:
+                        - code [ref=f3e1363]: VAR=<uuid|uuid:…|name:KEY|project:P/KEY>
+                        - text: (optional trailing
+                        - code [ref=f3e1364]: "# uuid:…"
+                        - text: )
+                      - cell [ref=f3e1365]:
+                        - code [ref=f3e1366]: bws.env
+                        - text: (
+                        - code [ref=f3e1367]: BWS_ACCESS_TOKEN
+                        - text: ) when
+                        - code [ref=f3e1368]: auth_mode=file
+                      - cell [ref=f3e1369]:
+                        - text: one
+                        - code [ref=f3e1370]: bws secret get
+                        - text: per line (names resolved via
+                        - code [ref=f3e1371]: bws secret list
+                        - text: )
+                    - row [ref=f3e1372]:
+                      - cell [ref=f3e1373]:
+                        - code [ref=f3e1374]: pass
+                      - cell [ref=f3e1375]:
+                        - code [ref=f3e1376]: VAR=store/entry/path
+                      - cell "the service account's GPG key" [ref=f3e1377]
+                      - cell [ref=f3e1378]:
+                        - text: one
+                        - code [ref=f3e1379]: pass show
+                        - text: per line
+                    - row [ref=f3e1380]:
+                      - cell [ref=f3e1381]:
+                        - code [ref=f3e1382]: sops
+                      - cell "a sops-encrypted dotenv" [ref=f3e1383]
+                      - cell [ref=f3e1384]:
+                        - code [ref=f3e1385]: age.key
+                      - cell [ref=f3e1386]:
+                        - text: whole file, one
+                        - code [ref=f3e1387]: sops --decrypt
+                    - row [ref=f3e1388]:
+                      - cell [ref=f3e1389]:
+                        - code [ref=f3e1390]: plainfile
+                      - cell "a plain dotenv" [ref=f3e1391]
+                      - cell "the manifest itself" [ref=f3e1392]
+                      - cell "nothing to resolve" [ref=f3e1393]
+                - generic [ref=f3e1394]:
+                  - heading [level=3] [ref=f3e1395]:
+                    - text: Auth mode (
+                    - code [ref=f3e1396]: file
+                    - text: vs
+                    - code [ref=f3e1397]: prompt
+                    - text: )
+                  - 'link "Permalink: Auth mode (file vs prompt)" [ref=f3e1398] [cursor=pointer]':
+                    - /url: "#auth-mode-file-vs-prompt"
+                - paragraph [ref=f3e1401]:
+                  - text: Machine-wide default lives in
+                  - code [ref=f3e1402]: /etc/vaulted-agent/defaults.conf
+                  - text: (
+                  - code [ref=f3e1403]: auth_mode = file|prompt
+                  - text: ). This controls
+                  - strong [ref=f3e1404]: where the vault manager token comes from
+                  - text: ", not where resolved secrets are stored (those are never written)."
+                - table [ref=f3e1406]:
+                  - rowgroup [ref=f3e1407]:
+                    - row [ref=f3e1408]:
+                      - columnheader "mode" [ref=f3e1409]
+                      - columnheader "Token provision" [ref=f3e1410]
+                      - columnheader "On disk" [ref=f3e1411]
+                  - rowgroup [ref=f3e1412]:
+                    - row [ref=f3e1413]:
+                      - cell [ref=f3e1414]:
+                        - code [ref=f3e1415]: file
+                      - cell "Read from dotenv at launch" [ref=f3e1416]
+                      - cell [ref=f3e1417]:
+                        - text: "1Password:"
+                        - code [ref=f3e1418]: /etc/vaulted-agent/op.env
+                        - text: (
+                        - code [ref=f3e1419]: OP_SERVICE_ACCOUNT_TOKEN=…
+                        - text: "). Bitwarden:"
+                        - code [ref=f3e1420]: /etc/vaulted-agent/bws.env
+                        - text: (
+                        - code [ref=f3e1421]: BWS_ACCESS_TOKEN=…
+                        - text: ). Mode
+                        - code [ref=f3e1422]: "0640"
+                        - text: ", root + service-user group."
+                    - row [ref=f3e1423]:
+                      - cell [ref=f3e1424]:
+                        - code [ref=f3e1425]: prompt
+                      - cell "Paste on a TTY each launch (or inherit if already exported)" [ref=f3e1426]
+                      - cell [ref=f3e1427]:
+                        - strong [ref=f3e1428]: Nothing
+                        - text: written by the launcher.
+                - paragraph [ref=f3e1429]:
+                  - text: Set at install (interactive question, or
+                  - code [ref=f3e1430]: "--auth-mode"
+                  - text: "), or later:"
+                - generic [ref=f3e1431]:
+                  - generic [ref=f3e1432]:
+                    - text: vaulted-agent auth-mode
+                    - generic [ref=f3e1433]: "# interactive (TTY) or print current"
+                    - text: vaulted-agent auth-mode prompt
+                    - generic [ref=f3e1434]: "# nothing on disk"
+                    - text: vaulted-agent auth-mode file
+                    - generic [ref=f3e1435]: "# use op.env / bws.env"
+                    - text: va claude -p
+                    - generic [ref=f3e1436]: "# force prompt for this launch only"
+                  - button "Copy code to clipboard" [ref=f3e1438] [cursor=pointer]
+                - paragraph [ref=f3e1442]:
+                  - strong [ref=f3e1443]: How the token is chosen on a single launch
+                  - text: "(first match wins for “prompt this launch”):"
+                - list [ref=f3e1444]:
+                  - listitem [ref=f3e1445]:
+                    - code [ref=f3e1446]: "-p"
+                    - text: /
+                    - code [ref=f3e1447]: "--prompt-auth"
+                  - listitem [ref=f3e1448]:
+                    - code [ref=f3e1449]: VAULTED_AGENT_PROMPT_AUTH=1
+                  - listitem [ref=f3e1450]:
+                    - code [ref=f3e1451]: VAULTED_AGENT_AUTH_MODE=prompt|file
+                  - listitem [ref=f3e1452]:
+                    - code [ref=f3e1453]: defaults.conf
+                    - code [ref=f3e1454]: auth_mode
+                  - listitem [ref=f3e1455]:
+                    - text: built-in default
+                    - code [ref=f3e1456]: file
+                - paragraph [ref=f3e1457]:
+                  - text: Within a launch, if the token is already in the environment, that wins over file and prompt. If
+                  - code [ref=f3e1458]: auth_mode=file
+                  - text: but the file is
+                  - strong [ref=f3e1459]: missing
+                  - text: and a TTY exists, the launcher offers a one-shot “this launch only” paste. If the file is
+                  - strong [ref=f3e1460]: present but unreadable
+                  - text: (typical when it is
+                  - code [ref=f3e1461]: root:service_user
+                  - text: mode
+                  - code [ref=f3e1462]: "0640"
+                  - text: and this process is not that user), the launcher
+                  - strong [ref=f3e1463]: fails closed
+                  - text: with a message that names the effective user and points at
+                  - code [ref=f3e1464]: service_user
+                  - text: "- it does not pretend the file is missing or invite you to paste a vault service-account token."
+                - paragraph [ref=f3e1465]:
+                  - strong [ref=f3e1466]:
+                    - code [ref=f3e1467]: va setup
+                    - text: and the token file.
+                  - text: On a TTY, setup first asks how vault manager tokens should be supplied (same menu as install /
+                  - code [ref=f3e1468]: auth-mode
+                  - text: "):"
+                - generic [ref=f3e1469]:
+                  - code [ref=f3e1471]: How should vault tokens be supplied at launch? 1) file — store once in op.env / bws.env (no prompt each run) 2) prompt — paste token each launch; nothing stored on disk
+                  - button "Copy code to clipboard" [ref=f3e1473] [cursor=pointer]
+                - paragraph [ref=f3e1477]:
+                  - text: That choice is written to
+                  - code [ref=f3e1478]: defaults.conf
+                  - text: before backend work. Non-interactive setup leaves the existing
+                  - code [ref=f3e1479]: auth_mode
+                  - text: alone.
+                - paragraph [ref=f3e1480]:
+                  - strong [ref=f3e1481]: Token capture.
+                  - text: When
+                  - code [ref=f3e1482]: auth_mode=file
+                  - text: ", there is no token file yet and none is exported, setup obtains the token itself rather than leaving you to hand-edit"
+                  - code [ref=f3e1483]: op.env
+                  - text: /
+                  - code [ref=f3e1484]: bws.env
+                  - text: . On a TTY it prints the vault console URL (it never opens a browser - setup runs under
+                  - code [ref=f3e1485]: sudo
+                  - text: on servers) and reads the paste with echo off; an empty paste skips with a "write it later" note. The paste is shape-checked first, so a master password or a login API key is caught before it reaches the vault, and then
+                  - strong [ref=f3e1486]: verified live
+                  - text: (
+                  - code [ref=f3e1487]: bws secret list
+                  - text: /
+                  - code [ref=f3e1488]: op whoami
+                  - text: ) - an invalid token never lands on disk. A rejected paste is re-prompted once.
+                - paragraph [ref=f3e1489]:
+                  - text: Without a terminal, pipe it under
+                  - code [ref=f3e1490]: "--set-token"
+                  - text: ":"
+                - generic [ref=f3e1491]:
+                  - generic [ref=f3e1492]:
+                    - text: printf %s
+                    - generic [ref=f3e1493]: "\"$TOKEN\""
+                    - text: "| sudo vaulted-agent setup bitwarden --set-token printf %s"
+                    - generic [ref=f3e1494]: "\"$TOKEN\""
+                    - text: "| sudo vaulted-agent setup onepassword --set-token"
+                  - button "Copy code to clipboard" [ref=f3e1496] [cursor=pointer]
+                - paragraph [ref=f3e1500]:
+                  - code [ref=f3e1501]: "--set-token"
+                  - text: is also how you
+                  - strong [ref=f3e1502]: rotate
+                  - text: ": stdin outranks an exported token, so a rotation cannot silently re-store the stale value that is still in your shell. A leading"
+                  - code [ref=f3e1503]: BWS_ACCESS_TOKEN=
+                  - text: /
+                  - code [ref=f3e1504]: OP_SERVICE_ACCOUNT_TOKEN=
+                  - text: is stripped, so a line copied out of a token file works; embedded newlines, a stray
+                  - code [ref=f3e1505]: =
+                  - text: ", and empty input are refused rather than stored. The piped value is"
+                  - strong [ref=f3e1506]: not
+                  - text: shape-checked - a pipe is deliberate, and the live verify is the authority on whether the token works. Verification failure exits non-zero with nothing written. Running
+                  - code [ref=f3e1507]: "--set-token"
+                  - text: "with stdin still attached to a terminal is an error, not a wait: it tells you to pipe it, or to drop the flag and paste interactively."
+                - paragraph [ref=f3e1508]:
+                  - text: Capture never fires for a token file that exists but
+                  - strong [ref=f3e1509]: cannot be read
+                  - text: "- that is a permissions fault, and overwriting it would clobber a working credential and hide the fault. It never runs on the launch path either: stdin there belongs to the agent."
+                - paragraph [ref=f3e1510]:
+                  - text: "Then, for the vault backend: 1Password setup writes"
+                  - code [ref=f3e1511]: op.env
+                  - text: and Bitwarden writes
+                  - code [ref=f3e1512]: bws.env
+                  - strong [ref=f3e1513]: only when
+                  - code [ref=f3e1514]: auth_mode=file
+                  - text: . Under
+                  - code [ref=f3e1515]: auth_mode=prompt
+                  - text: ", setup uses the token only in-process for"
+                  - code [ref=f3e1516]: bws secret list
+                  - text: "/ refs building, then exits — nothing persisted. It prints:"
+                - generic [ref=f3e1517]:
+                  - code [ref=f3e1519]: "auth_mode=prompt — token not written to disk (good). To store it anyway: vaulted-agent auth-mode file, then re-run setup."
+                  - button "Copy code to clipboard" [ref=f3e1521] [cursor=pointer]
+                - paragraph [ref=f3e1525]:
+                  - text: The split that matters is not which vendor, it is
+                  - strong [ref=f3e1526]: reference versus payload
+                  - text: .
+                - paragraph [ref=f3e1527]:
+                  - text: With
+                  - code [ref=f3e1528]: onepassword
+                  - text: ","
+                  - code [ref=f3e1529]: bitwarden
+                  - text: and
+                  - code [ref=f3e1530]: pass
+                  - text: ", the manifest names secrets it does not contain. It is safe to commit, safe to leave world-readable, and reviewing a change to it tells you exactly which credentials an agent gained or lost. Rotation happens in the vault and the next launch picks it up."
+                - paragraph [ref=f3e1531]:
+                  - text: With
+                  - code [ref=f3e1532]: sops
+                  - text: and
+                  - code [ref=f3e1533]: plainfile
+                  - text: ", the manifest"
+                  - emphasis [ref=f3e1534]: is
+                  - text: the secrets. Per-harness scoping then means maintaining a separate encrypted file per harness, and rotation means re-encrypting and redeploying every one of them.
+                  - code [ref=f3e1535]: sops
+                  - text: at least keeps them encrypted at rest and diffable in git;
+                  - code [ref=f3e1536]: plainfile
+                  - text: is a 0600 dotenv with none of the benefits this repo argues for, included so the pattern can be demonstrated without signing up for anything. Do not reach for it in production.
+                - paragraph [ref=f3e1537]: "Per-key backends cost a round trip per variable, which is slower on a large manifest. They buy something in return: a value containing a newline cannot run over into the next variable, because each one is fetched and exported on its own rather than parsed out of a shared document."
+                - paragraph [ref=f3e1538]:
+                  - text: Adding a sixth backend is one
+                  - code [ref=f3e1539]: case
+                  - text: arm in
+                  - code [ref=f3e1540]: resolve
+                  - text: ", which is also how you would swap in"
+                  - code [ref=f3e1541]: vault
+                  - text: ","
+                  - code [ref=f3e1542]: chamber
+                  - text: ","
+                  - code [ref=f3e1543]: aws-vault
+                  - text: ", or"
+                  - code [ref=f3e1544]: gopass
+                  - text: .
+                - generic [ref=f3e1545]:
+                  - heading "Bitwarden Secrets Manager" [level=3] [ref=f3e1546]
+                  - 'link "Permalink: Bitwarden Secrets Manager" [ref=f3e1547] [cursor=pointer]':
+                    - /url: "#bitwarden-secrets-manager"
+                - paragraph [ref=f3e1550]:
+                  - text: The
+                  - code [ref=f3e1551]: bitwarden
+                  - text: backend is
+                  - strong [ref=f3e1552]: Secrets Manager
+                  - text: (
+                  - code [ref=f3e1553]: bws
+                  - text: ), not the personal vault CLI (
+                  - code [ref=f3e1554]: bw
+                  - text: ).
+                - table [ref=f3e1556]:
+                  - rowgroup [ref=f3e1557]:
+                    - row [ref=f3e1558]:
+                      - columnheader [ref=f3e1559]
+                      - columnheader [ref=f3e1560]
+                  - rowgroup [ref=f3e1561]:
+                    - row [ref=f3e1562]:
+                      - cell "Credential" [ref=f3e1563]
+                      - cell [ref=f3e1564]:
+                        - code [ref=f3e1565]: BWS_ACCESS_TOKEN
+                        - text: "- a"
+                        - strong [ref=f3e1566]: Machine Account access token
+                        - text: (Machine Accounts → Access Tokens)
+                    - row [ref=f3e1567]:
+                      - cell "Not valid" [ref=f3e1568]
+                      - cell "personal vault master password, login API key, session tokens" [ref=f3e1569]
+                    - row [ref=f3e1570]:
+                      - cell [ref=f3e1571]:
+                        - text: On disk (
+                        - code [ref=f3e1572]: auth_mode=file
+                        - text: )
+                      - cell [ref=f3e1573]:
+                        - code [ref=f3e1574]: /etc/vaulted-agent/bws.env
+                        - text: →
+                        - code [ref=f3e1575]: BWS_ACCESS_TOKEN=…
+                        - text: (
+                        - code [ref=f3e1576]: "0640"
+                        - text: )
+                    - row [ref=f3e1577]:
+                      - cell [ref=f3e1578]:
+                        - text: On disk (
+                        - code [ref=f3e1579]: auth_mode=prompt
+                        - text: )
+                      - cell "none - paste each launch" [ref=f3e1580]
+                - paragraph [ref=f3e1581]: Wrong token types fail with errors such as “Doesn't contain a decryption key.”
+                - paragraph [ref=f3e1582]:
+                  - strong [ref=f3e1583]: Reference forms
+                  - text: "in a refs manifest (no secret values in the file):"
+                - table [ref=f3e1585]:
+                  - rowgroup [ref=f3e1586]:
+                    - row [ref=f3e1587]:
+                      - columnheader "Form" [ref=f3e1588]
+                      - columnheader "Example" [ref=f3e1589]
+                  - rowgroup [ref=f3e1590]:
+                    - row [ref=f3e1591]:
+                      - cell "UUID" [ref=f3e1592]
+                      - cell [ref=f3e1593]:
+                        - code [ref=f3e1594]: OPENAI_API_KEY=6a1c0e94-…
+                    - row [ref=f3e1595]:
+                      - cell [ref=f3e1596]:
+                        - code [ref=f3e1597]: "uuid:"
+                      - cell [ref=f3e1598]:
+                        - code [ref=f3e1599]: OPENAI_API_KEY=uuid:6a1c0e94-…
+                    - row [ref=f3e1600]:
+                      - cell [ref=f3e1601]:
+                        - code [ref=f3e1602]: "name:"
+                      - cell [ref=f3e1603]:
+                        - code [ref=f3e1604]: OPENAI_API_KEY=name:openai-api-key
+                    - row [ref=f3e1605]:
+                      - cell [ref=f3e1606]:
+                        - code [ref=f3e1607]: project:/
+                      - cell [ref=f3e1608]:
+                        - code [ref=f3e1609]: OPENAI_API_KEY=project:tools/openai-api-key
+                - paragraph [ref=f3e1610]:
+                  - text: Names and project-qualified references share one
+                  - code [ref=f3e1611]: bws secret list
+                  - text: per manifest resolution. UUID-only and empty manifests need no listing. Lookup metadata is kept only for that resolution; each launch fetches current vault state and still runs one
+                  - code [ref=f3e1612]: bws secret get
+                  - text: per mapping. No lookup data or secret values are cached between launches. Prefer
+                  - code [ref=f3e1613]: vaulted-agent secrets list
+                  - text: /
+                  - code [ref=f3e1614]: vaulted-agent setup
+                  - text: over raw
+                  - code [ref=f3e1615]: bws
+                  - text: so auth matches launches.
+                - paragraph [ref=f3e1616]:
+                  - strong [ref=f3e1617]: Refs file (what setup / refresh write).
+                  - text: After listing secrets, setup (or
+                  - code [ref=f3e1618]: va refresh
+                  - text: ) can write a
+                  - strong [ref=f3e1619]: refs file
+                  - text: under
+                  - code [ref=f3e1620]: /etc/vaulted-agent/manifests/
+                  - text: (default name
+                  - code [ref=f3e1621]: openai.env.refs
+                  - text: ). That is only a filename for lines like
+                  - code [ref=f3e1622]: OPENAI_API_KEY=name:…
+                  - text: "- not a secret, not the access token. Point a harness at it with"
+                  - code [ref=f3e1623]: backend = bitwarden
+                  - text: and
+                  - code [ref=f3e1624]: manifest = openai.env.refs
+                  - text: ", or:"
+                - generic [ref=f3e1625]:
+                  - generic [ref=f3e1626]: va run -m openai.env.refs --backend bitwarden -p -- your-command
+                  - button "Copy code to clipboard" [ref=f3e1628] [cursor=pointer]
+                - paragraph [ref=f3e1632]:
+                  - text: When you
+                  - strong [ref=f3e1633]: add
+                  - text: "secrets in Secrets Manager later (same process as setup’s refs builder, on an existing file):"
+                - generic [ref=f3e1634]:
+                  - generic [ref=f3e1635]:
+                    - text: va refresh openai.env.refs
+                    - generic [ref=f3e1636]: "# merge: show what’s new, append picks"
+                    - text: va refresh openai.env.refs --all
+                    - generic [ref=f3e1637]: "# append every not-yet-mapped secret"
+                    - text: va refresh openai.env.refs --replace --all
+                    - generic [ref=f3e1638]: "# rewrite file from scratch"
+                    - text: va refresh openai.env.refs --prune
+                    - generic [ref=f3e1639]: "# also fix mappings that resolve to nothing"
+                  - button "Copy code to clipboard" [ref=f3e1641] [cursor=pointer]
+                - paragraph [ref=f3e1645]:
+                  - strong [ref=f3e1646]: Renaming
+                  - text: a secret is the case merge alone cannot finish. Lines
+                  - code [ref=f3e1647]: setup
+                  - text: and
+                  - code [ref=f3e1648]: refresh
+                  - text: "generate record which secret they came from, as a trailing comment:"
+                - generic [ref=f3e1649]:
+                  - code [ref=f3e1651]: "ASSEMBLY_AI_API_KEY=name:ASSEMBLY_AI_API_KEY # uuid:ea6db86f-e103-4153-a71e-b4b100c30b65"
+                  - button "Copy code to clipboard" [ref=f3e1653] [cursor=pointer]
+                - paragraph [ref=f3e1657]:
+                  - text: With that recording present, a rename is reported as a
+                  - strong [ref=f3e1658]: rename
+                  - text: "and repaired:"
+                  - code [ref=f3e1659]: refresh
+                  - text: rewrites the reference on that one line and
+                  - strong [ref=f3e1660]: keeps the variable name
+                  - text: ", so an agent — or a harness"
+                  - code [ref=f3e1661]: alias =
+                  - text: — reading
+                  - code [ref=f3e1662]: ASSEMBLY_API_KEY
+                  - text: keeps working. The recording is metadata; it is stripped before the reference is resolved, and it never carries secret material.
+                - paragraph [ref=f3e1663]:
+                  - text: Without a recording — any line written before this existed, or one you pinned by hand — the old mapping stays behind as a
+                  - strong [ref=f3e1664]: dangling ref
+                  - text: that fails every launch through that manifest.
+                  - code [ref=f3e1665]: refresh
+                  - text: never backfills recordings onto lines already on disk, so those keep exactly their old behaviour.
+                - paragraph [ref=f3e1666]:
+                  - text: Either way
+                  - code [ref=f3e1667]: refresh
+                  - text: reports what it found on every run and changes the file only under
+                  - code [ref=f3e1668]: "--prune"
+                  - text: (or an interactive
+                  - code [ref=f3e1669]: "[y/N]"
+                  - text: ", defaulting to no). The edit is surgical — comments, blank lines, ordering, and UUID-form refs all survive, which"
+                  - code [ref=f3e1670]: "--replace"
+                  - text: cannot promise. Changed lines print verbatim, and there is no backup file, so keep the scrollback.
+                - paragraph [ref=f3e1671]:
+                  - text: Rotating a secret’s
+                  - strong [ref=f3e1672]: value
+                  - text: in SM needs no refresh - the next launch fetches it live. Placeholder values (
+                  - code [ref=f3e1673]: REPLACE_…
+                  - text: ", all-zero UUIDs, …) are rejected by"
+                  - code [ref=f3e1674]: secrets validate
+                  - text: ","
+                  - code [ref=f3e1675]: doctor
+                  - text: ", and every launch before talking to the vault."
+                - generic [ref=f3e1676]:
+                  - heading "Making the manifest a real boundary" [level=2] [ref=f3e1677]
+                  - 'link "Permalink: Making the manifest a real boundary" [ref=f3e1678] [cursor=pointer]':
+                    - /url: "#making-the-manifest-a-real-boundary"
+                - paragraph [ref=f3e1681]:
+                  - text: As shipped, the launcher runs as the service account, reads the backend credential as that account, and
+                  - code [ref=f3e1682]: exec
+                  - text: s the agent as that same account. The agent can therefore read the credential file itself. Manifests bound what each harness is
+                  - emphasis [ref=f3e1683]: handed
+                  - text: ", not what it can"
+                  - emphasis [ref=f3e1684]: obtain
+                  - text: .
+                - paragraph [ref=f3e1685]: "If you need the stronger property, separate the two roles:"
+                - generic [ref=f3e1686]:
+                  - code [ref=f3e1688]: you --sudo--> root reads the token (0600 root:root) resolves the manifest into its own environment drops the token, scrubs the environment setpriv --reuid=agent --regid=agent --init-groups --> exec the agent, which now cannot read the token
+                  - button "Copy code to clipboard" [ref=f3e1690] [cursor=pointer]
+                - paragraph [ref=f3e1694]:
+                  - code [ref=f3e1695]: setpriv
+                  - text: "from util-linux preserves the environment across the privilege drop, which is what makes this work: the resolved secrets survive, the credential that produced them does not, and"
+                  - code [ref=f3e1696]: agent
+                  - text: never had permission to read it in the first place.
+                - paragraph [ref=f3e1697]: The cost is that the launcher briefly runs as root, so a bug in it is worth more. That is the usual privilege-separation trade, and it is why the launcher is small enough to read in one sitting.
+                - paragraph [ref=f3e1698]: This is not wired up here yet. If you adopt the pattern and need containment rather than blast-radius control, this is the shape to build.
+                - generic [ref=f3e1699]:
+                  - heading "Seven, actually" [level=2] [ref=f3e1700]
+                  - 'link "Permalink: Seven, actually" [ref=f3e1701] [cursor=pointer]':
+                    - /url: "#seven-actually"
+                - paragraph [ref=f3e1704]:
+                  - strong [ref=f3e1705]: 7. Exported shell functions survive a variable scrub.
+                  - text: Removing every exported variable not on an allowlist looks like it produces a clean environment. It does not. Bash carries exported functions in the environment as
+                  - code [ref=f3e1706]: "BASH_FUNC_name%%=() { ... }"
+                  - text: and rebuilds them in the child, and they are invisible to
+                  - code [ref=f3e1707]: compgen -e
+                  - text: ", so a loop over exported"
+                  - emphasis [ref=f3e1708]: variables
+                  - text: never sees them and
+                  - code [ref=f3e1709]: unset NAME
+                  - text: "would not remove them anyway:"
+                - generic [ref=f3e1710]:
+                  - generic [ref=f3e1711]:
+                    - text: $
+                    - generic [ref=f3e1712]:
+                      - text: vaulted-agent claude
+                      - generic [ref=f3e1713]: "# before the fix"
+                    - text: BASH_FUNC_which%% BASH_FUNC_module%% BASH_FUNC_scl%% BASH_FUNC_ml%%
+                  - button "Copy code to clipboard" [ref=f3e1715] [cursor=pointer]
+                - paragraph [ref=f3e1719]:
+                  - text: Harmless-looking, and on most systems those come from
+                  - code [ref=f3e1720]: /etc/profile.d
+                  - text: ". But the mechanism is the point: a caller can export a function named"
+                  - code [ref=f3e1721]: git
+                  - text: ","
+                  - code [ref=f3e1722]: curl
+                  - text: ", or"
+                  - code [ref=f3e1723]: ssh
+                  - text: ", and the agent calls it instead of the binary it meant to run. The fix is a second pass with"
+                  - code [ref=f3e1724]: declare -Fx
+                  - text: and
+                  - code [ref=f3e1725]: unset -f
+                  - text: .
+                - paragraph [ref=f3e1726]:
+                  - text: This one is easy to miss if you only inspect
+                  - code [ref=f3e1727]: compgen -e
+                  - text: "or a success banner: inspect what the agent process actually received ("
+                  - code [ref=f3e1728]: /proc/<pid>/environ
+                  - text: ", or a one-shot harness that prints env) after a scrub."
+                - generic [ref=f3e1729]:
+                  - heading "Dependencies" [level=2] [ref=f3e1730]
+                  - 'link "Permalink: Dependencies" [ref=f3e1731] [cursor=pointer]':
+                    - /url: "#dependencies"
+                - paragraph [ref=f3e1734]:
+                  - strong [ref=f3e1735]: Runtime
+                  - text: is a single Rust binary (
+                  - code [ref=f3e1736]: vaulted-agent
+                  - text: /
+                  - code [ref=f3e1737]: va
+                  - text: ). Normal install uses a GitHub release asset (or
+                  - code [ref=f3e1738]: VAULTED_AGENT_BIN
+                  - text: ); source install needs
+                  - code [ref=f3e1739]: cargo
+                  - text: "once to build. Host tools by backend:"
+                - paragraph [ref=f3e1740]:
+                  - text: The Linux assets are statically linked against musl, so there is no minimum glibc and no shared-library requirement — the same binary runs on RHEL/Rocky 9, Debian, Ubuntu, and Alpine. See
+                  - link "ADR 0001" [ref=f3e1741] [cursor=pointer]:
+                    - /url: /JacobStephens2/vaulted-agent/blob/main/docs/adr/0001-static-musl-linux-releases.md
+                  - text: for why, and before changing it.
+                - blockquote [ref=f3e1742]:
+                  - paragraph [ref=f3e1743]:
+                    - text: Installed from a release up to v0.4.0 on a distro older than Ubuntu 24.04 and got
+                    - code [ref=f3e1744]: "va: /lib64/libc.so.6: version 'GLIBC_2.39' not found (required by va)"
+                    - text: "? Those assets were glibc-linked and built on a newer runner, so"
+                    - code [ref=f3e1745]: ld.so
+                    - text: refuses to load them. Re-run the installer at v0.4.1 or later, or build on the host (
+                    - code [ref=f3e1746]: cargo build --release --locked
+                    - text: then
+                    - code [ref=f3e1747]: sudo ./install.sh
+                    - text: ). Nothing needs to change on the machine — installing glibc 2.39 under RHEL 9 is not a supported operation, and the binary does not actually use anything from it.
+                - table [ref=f3e1749]:
+                  - rowgroup [ref=f3e1750]:
+                    - row [ref=f3e1751]:
+                      - columnheader "feature" [ref=f3e1752]
+                      - columnheader "needs on PATH" [ref=f3e1753]
+                  - rowgroup [ref=f3e1754]:
+                    - row [ref=f3e1755]:
+                      - cell [ref=f3e1756]:
+                        - code [ref=f3e1757]: backend = bitwarden
+                      - cell [ref=f3e1758]:
+                        - code [ref=f3e1759]: bws
+                        - text: (JSON parsed in-process; no python3)
+                    - row [ref=f3e1760]:
+                      - cell [ref=f3e1761]:
+                        - code [ref=f3e1762]: backend = onepassword
+                      - cell [ref=f3e1763]:
+                        - code [ref=f3e1764]: op
+                    - row [ref=f3e1765]:
+                      - cell [ref=f3e1766]:
+                        - code [ref=f3e1767]: backend = pass
+                      - cell [ref=f3e1768]:
+                        - code [ref=f3e1769]: pass
+                    - row [ref=f3e1770]:
+                      - cell [ref=f3e1771]:
+                        - code [ref=f3e1772]: backend = sops
+                      - cell [ref=f3e1773]:
+                        - code [ref=f3e1774]: sops
+                    - row [ref=f3e1775]:
+                      - cell [ref=f3e1776]:
+                        - code [ref=f3e1777]: labels = yes
+                      - cell "nothing extra (UUIDv5 in-process)" [ref=f3e1778]
+                - paragraph [ref=f3e1779]:
+                  - code [ref=f3e1780]: pick
+                  - text: is a numbered menu on
+                  - code [ref=f3e1781]: /dev/tty
+                  - text: ", not"
+                  - code [ref=f3e1782]: fzf
+                  - text: . See
+                  - link "MIGRATION.md" [ref=f3e1783] [cursor=pointer]:
+                    - /url: /JacobStephens2/vaulted-agent/blob/main/MIGRATION.md
+                  - text: for Bash → Rust notes.
+                - generic [ref=f3e1784]:
+                  - heading "Six things that are easy to get wrong" [level=2] [ref=f3e1785]
+                  - 'link "Permalink: Six things that are easy to get wrong" [ref=f3e1786] [cursor=pointer]':
+                    - /url: "#six-things-that-are-easy-to-get-wrong"
+                - paragraph [ref=f3e1789]: These are the bugs this launcher exists to not have. Each one was found in a working implementation of this pattern.
+                - paragraph [ref=f3e1790]:
+                  - strong [ref=f3e1791]:
+                    - text: "1."
+                    - code [ref=f3e1792]: <<<
+                    - text: writes your secrets to
+                    - code [ref=f3e1793]: /tmp
+                    - text: .
+                  - text: "The natural way to walk the resolved output is a here-string:"
+                - generic [ref=f3e1794]:
+                  - generic [ref=f3e1795]:
+                    - text: injected=
+                    - generic [ref=f3e1796]:
+                      - text: $(op inject -i
+                      - generic [ref=f3e1797]: "\"$manifest\""
+                      - text: )
+                    - text: while IFS= read -r line; do export
+                    - generic [ref=f3e1798]: "\"$line\""
+                    - text: ; done <<<
+                    - generic [ref=f3e1799]: "\"$injected\""
+                    - generic [ref=f3e1800]: "# DO NOT"
+                  - button "Copy code to clipboard" [ref=f3e1802] [cursor=pointer]
+                - paragraph [ref=f3e1806]:
+                  - text: Bash serves a here-string from a pipe only while it fits in the pipe buffer, and spills to a
+                  - code [ref=f3e1807]: /tmp/sh-thd.XXXXXX
+                  - text: "file above it. On Linux that threshold is 64 KiB, and the pipe optimisation only arrived in bash 5.1 - earlier versions write the file unconditionally. So this code is correct until your manifest grows, and then it silently writes every secret to disk. Check for yourself:"
+                - generic [ref=f3e1808]:
+                  - generic [ref=f3e1809]:
+                    - text: $
+                    - generic [ref=f3e1810]:
+                      - text: bash -c
+                      - generic [ref=f3e1811]: "'readlink /proc/self/fd/0'"
+                      - text: <<<
+                      - generic [ref=f3e1812]: "\"small\""
+                    - text: pipe:[112050729] $
+                    - generic [ref=f3e1813]:
+                      - text: big=
+                      - generic [ref=f3e1814]:
+                        - text: $(head -c 100000 /dev/zero | tr
+                        - generic [ref=f3e1815]: "'\\0'"
+                        - text: a)
+                    - text: $
+                    - generic [ref=f3e1816]:
+                      - text: bash -c
+                      - generic [ref=f3e1817]: "'readlink /proc/self/fd/0'"
+                      - text: <<<
+                      - generic [ref=f3e1818]: "\"$big\""
+                    - text: /tmp/sh-thd.PJd9QD (deleted)
+                  - button "Copy code to clipboard" [ref=f3e1820] [cursor=pointer]
+                - paragraph [ref=f3e1824]:
+                  - code [ref=f3e1825]: vaulted-agent
+                  - text: walks the string with parameter expansion instead. It never leaves memory, it keeps
+                  - code [ref=f3e1826]: op inject
+                  - text: "'s exit status, and it runs in the current shell so the exports survive."
+                - paragraph [ref=f3e1827]:
+                  - strong [ref=f3e1828]: 2. The vault token rides along into the agent.
+                  - text: Sourcing the token file with
+                  - code [ref=f3e1829]: set -a
+                  - text: exports it, and
+                  - code [ref=f3e1830]: exec
+                  - text: "ing the agent hands it over:"
+                - generic [ref=f3e1831]:
+                  - generic [ref=f3e1832]:
+                    - text: set -a; . op.env; set +a
+                    - generic [ref=f3e1833]: "# exports OP_SERVICE_ACCOUNT_TOKEN"
+                    - text: ... exec claude
+                    - generic [ref=f3e1834]: "# which now inherits it"
+                  - button "Copy code to clipboard" [ref=f3e1836] [cursor=pointer]
+                - paragraph [ref=f3e1840]:
+                  - text: The agent is now holding the credential that unlocks the whole vault, so it can read every item, not just the ones in its manifest. Per-harness manifests are decorative until you
+                  - code [ref=f3e1841]: unset OP_SERVICE_ACCOUNT_TOKEN
+                  - text: before the handoff.
+                - paragraph [ref=f3e1842]:
+                  - strong [ref=f3e1843]: 3. Injection only adds; you must also subtract.
+                  - text: A narrow manifest constrains nothing if the process inherits a wide environment.
+                  - code [ref=f3e1844]: sudo
+                  - text: "resets the environment on the cross-user hop, which makes this look handled - but the launcher also runs with no sudo hop at all: from cron as the service account, from a service-account login shell, and above all when"
+                  - strong [ref=f3e1845]: one agent shells out to another
+                  - text: ", which is the whole point of running several. In that path the child inherits the parent's full set and the manifest describes a boundary that does not exist."
+                  - code [ref=f3e1846]: vaulted-agent
+                  - text: scrubs to an allowlist before injecting, so the agent receives exactly its manifest plus
+                  - code [ref=f3e1847]: PASSTHROUGH_VARS
+                  - text: .
+                - paragraph [ref=f3e1848]:
+                  - strong [ref=f3e1849]:
+                    - text: "4."
+                    - code [ref=f3e1850]: readlink -f "$0"
+                    - text: breaks per-path sudoers.
+                  - text: With symlink dispatch, the reflex when re-execing under
+                  - code [ref=f3e1851]: sudo
+                  - text: is to resolve
+                  - code [ref=f3e1852]: $0
+                  - text: to the real script. Do that and every invocation re-execs as
+                  - code [ref=f3e1853]: /usr/local/bin/vaulted-agent
+                  - text: ", matching none of the per-harness sudoers rules, and quietly requiring the caller to be entitled to the launcher itself. Re-exec through the path that was"
+                  - emphasis [ref=f3e1854]: invoked
+                  - text: .
+                - paragraph [ref=f3e1855]:
+                  - strong [ref=f3e1856]:
+                    - text: "5."
+                    - code [ref=f3e1857]: eval
+                    - text: mangles perfectly legal secrets.
+                  - text: Passwords contain
+                  - code [ref=f3e1858]: $
+                  - text: ", backticks, quotes and spaces."
+                  - code [ref=f3e1859]: eval "$line"
+                  - text: re-expands them, which corrupts some values and executes others.
+                  - code [ref=f3e1860]: export "$line"
+                  - text: assigns the whole string as
+                  - code [ref=f3e1861]: name=value
+                  - text: with no further expansion.
+                - paragraph [ref=f3e1862]:
+                  - strong [ref=f3e1863]:
+                    - text: 6. Your comments come back through
+                    - code [ref=f3e1864]: op inject
+                    - text: .
+                  - text: The manifest is a template, so comment lines survive substitution and land in the loop with everything else. A documentation line like
+                - generic [ref=f3e1865]:
+                  - code [ref=f3e1867]: "# KEY=op://<vault>/<item>/<field>"
+                  - button "Copy code to clipboard" [ref=f3e1869] [cursor=pointer]
+                - paragraph [ref=f3e1873]:
+                  - text: contains an
+                  - code [ref=f3e1874]: =
+                  - text: ", and a skip test that only rejects blank lines will hand it to"
+                  - code [ref=f3e1875]: export
+                  - text: ", which fails with"
+                  - code [ref=f3e1876]: not a valid identifier
+                  - text: and takes the launch down with it. Beware also that in bash,
+                  - code [ref=f3e1877]: "[[ \"$line\" == [[:space:]]*\"#\"* ]]"
+                  - text: does
+                  - emphasis [ref=f3e1878]: not
+                  - text: match a line that starts with
+                  - code [ref=f3e1879]: "#"
+                  - text: at column one. Trim the line first, then test its first character.
+                - generic [ref=f3e1880]:
+                  - heading "Non-interactive use" [level=2] [ref=f3e1881]
+                  - 'link "Permalink: Non-interactive use" [ref=f3e1882] [cursor=pointer]':
+                    - /url: "#non-interactive-use"
+                - paragraph [ref=f3e1885]: "The same pattern works for a daemon that needs vault secrets, with one difference: there is no process to inject into until systemd starts it, so the resolved values have to land somewhere the unit can read."
+                - paragraph [ref=f3e1886]:
+                  - text: Render them into a tmpfs under
+                  - code [ref=f3e1887]: RuntimeDirectory=
+                  - text: ", never onto persistent disk, and let the token stay in the"
+                  - code [ref=f3e1888]: ExecStartPre
+                  - text: "script rather than the service environment:"
+                - generic [ref=f3e1889]:
+                  - generic [ref=f3e1890]: "[Service] RuntimeDirectory=myservice RuntimeDirectoryMode=0750 ExecStartPre=/usr/local/bin/render-env EnvironmentFile=/run/myservice/env"
+                  - button "Copy code to clipboard" [ref=f3e1892] [cursor=pointer]
+                - paragraph [ref=f3e1896]:
+                  - code [ref=f3e1897]: /run
+                  - text: is tmpfs, so the file is gone on reboot and never hits the block device. It is a genuine step down in protection from the interactive case - the values exist as a file, readable by that unit's user, for the lifetime of the service. Prefer the launcher where you can.
+                - generic [ref=f3e1898]:
+                  - heading "Prior art, and what this is not" [level=2] [ref=f3e1899]
+                  - 'link "Permalink: Prior art, and what this is not" [ref=f3e1900] [cursor=pointer]':
+                    - /url: "#prior-art-and-what-this-is-not"
+                - paragraph [ref=f3e1903]:
+                  - text: "Runtime secret injection is not new:"
+                  - code [ref=f3e1904]: op run
+                  - text: ","
+                  - code [ref=f3e1905]: sops exec-env
+                  - text: ","
+                  - code [ref=f3e1906]: vault agent
+                  - text: ","
+                  - code [ref=f3e1907]: chamber exec
+                  - text: ", and"
+                  - code [ref=f3e1908]: aws-vault exec
+                  - text: all do a version of it, and any of them drops into the
+                  - code [ref=f3e1909]: case
+                  - text: statement alongside the five here.
+                - paragraph [ref=f3e1910]:
+                  - text: What is specific to this repo is treating
+                  - strong [ref=f3e1911]: the agent as the unit of authorization
+                  - text: ". An AI agent holding a shell is not a normal program: it improvises, it acts on text handed to it by other systems, and you may not extend the same trust to every vendor's. This is a way to give several of them credentials from one vault while writing down, per agent, exactly which credentials those are."
+                - generic [ref=f3e1912]:
+                  - heading "Provenance" [level=2] [ref=f3e1913]
+                  - 'link "Permalink: Provenance" [ref=f3e1914] [cursor=pointer]':
+                    - /url: "#provenance"
+                - paragraph [ref=f3e1917]: Generalized from a production setup where agents from three vendors share one vault, each carrying its own manifest.
+                - paragraph [ref=f3e1918]: Paths, account names, and vault layout in this repo deliberately differ from that deployment. Adapt the examples rather than copying them as a working configuration.
+                - generic [ref=f3e1919]:
+                  - heading "License" [level=2] [ref=f3e1920]
+                  - 'link "Permalink: License" [ref=f3e1921] [cursor=pointer]':
+                    - /url: "#license"
+                - paragraph [ref=f3e1924]: MIT.
+        - generic [ref=f3e1927]:
+          - generic [ref=f3e1928]:
+            - heading "About" [level=2] [ref=f3e1929]
+            - paragraph [ref=f3e1930]: Launch Claude Code, Codex, Muse, Grok, Kimi, or just bash with vault-resolved secrets in-process (1Password, Bitwarden SM, pass, sops). Per-agent blast radius, optional prompt auth. macOS + Linux.
+            - generic "https://vaultedagent.com" [ref=f3e1934]:
+              - link "vaultedagent.com" [ref=f3e1935] [cursor=pointer]:
+                - /url: https://vaultedagent.com
+            - heading "Topics" [level=3] [ref=f3e1936]
+            - generic [ref=f3e1937]:
+              - link "1password" [ref=f3e1938] [cursor=pointer]:
+                - /url: /topics/1password
+              - link "ai-agents" [ref=f3e1939] [cursor=pointer]:
+                - /url: /topics/ai-agents
+              - link "bitwarden" [ref=f3e1940] [cursor=pointer]:
+                - /url: /topics/bitwarden
+              - link "claude" [ref=f3e1941] [cursor=pointer]:
+                - /url: /topics/claude
+              - link "claude-code" [ref=f3e1942] [cursor=pointer]:
+                - /url: /topics/claude-code
+              - link "cli" [ref=f3e1943] [cursor=pointer]:
+                - /url: /topics/cli
+              - link "codex" [ref=f3e1944] [cursor=pointer]:
+                - /url: /topics/codex
+              - link "credentials" [ref=f3e1945] [cursor=pointer]:
+                - /url: /topics/credentials
+              - link "developer-tools" [ref=f3e1946] [cursor=pointer]:
+                - /url: /topics/developer-tools
+              - link "grok" [ref=f3e1947] [cursor=pointer]:
+                - /url: /topics/grok
+              - link "kimi" [ref=f3e1948] [cursor=pointer]:
+                - /url: /topics/kimi
+              - link "linux" [ref=f3e1949] [cursor=pointer]:
+                - /url: /topics/linux
+              - link "macos" [ref=f3e1950] [cursor=pointer]:
+                - /url: /topics/macos
+              - link "muse-code" [ref=f3e1951] [cursor=pointer]:
+                - /url: /topics/muse-code
+              - link "rust" [ref=f3e1952] [cursor=pointer]:
+                - /url: /topics/rust
+              - link "secrets-management" [ref=f3e1953] [cursor=pointer]:
+                - /url: /topics/secrets-management
+              - link "secrets-manager" [ref=f3e1954] [cursor=pointer]:
+                - /url: /topics/secrets-manager
+              - link "security" [ref=f3e1955] [cursor=pointer]:
+                - /url: /topics/security
+              - link "sops" [ref=f3e1956] [cursor=pointer]:
+                - /url: /topics/sops
+              - link "vault" [ref=f3e1957] [cursor=pointer]:
+                - /url: /topics/vault
+            - heading "Resources" [level=3] [ref=f3e1958]
+            - link "Readme" [ref=f3e1960] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+            - link "MIT license" [ref=f3e1964] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+            - link "Activity" [ref=f3e1968] [cursor=pointer]:
+              - /url: /JacobStephens2/vaulted-agent/activity
+            - heading "Stars" [level=3] [ref=f3e1971]
+            - generic [ref=f3e1973]:
+              - strong [ref=f3e1976]: "0"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=f3e1977]
+            - generic [ref=f3e1979]:
+              - strong [ref=f3e1982]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=f3e1983]
+            - link [ref=f3e1985] [cursor=pointer]:
+              - /url: /JacobStephens2/vaulted-agent/forks
+              - strong [ref=f3e1989]: "0"
+              - text: forks
+            - link "Report repository" [ref=f3e1991] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FJacobStephens2%2Fvaulted-agent&report=JacobStephens2+%28user%29
+          - generic [ref=f3e1992]:
+            - heading "Releases (31)" [level=2] [ref=f3e1993]:
+              - generic [ref=f3e1994]:
+                - link "Releases" [ref=f3e1995] [cursor=pointer]:
+                  - /url: /JacobStephens2/vaulted-agent/releases
+                - generic [aria-hidden] [ref=f3e1996]: "31"
+                - generic [ref=f3e1997]: (31)
+            - link "v0.4.24 — Add missing harnesses during updates Latest Sep 13, 20262 days ago" [ref=f3e1998] [cursor=pointer]:
+              - /url: /JacobStephens2/vaulted-agent/releases/tag/v0.4.24
+              - generic [ref=f3e2001]:
+                - generic [ref=f3e2002]:
+                  - generic "v0.4.24 — Add missing harnesses during updates" [ref=f3e2003]
+                  - generic [ref=f3e2004]: Latest
+                - generic [ref=f3e2005]: Sep 13, 20262 days ago
+            - link "+ 30 releases" [ref=f3e2007] [cursor=pointer]:
+              - /url: /JacobStephens2/vaulted-agent/releases
+          - generic [ref=f3e2008]:
+            - heading "Contributors (2)" [level=2] [ref=f3e2009]:
+              - generic [ref=f3e2010]:
+                - link "Contributors" [ref=f3e2011] [cursor=pointer]:
+                  - /url: /JacobStephens2/vaulted-agent/graphs/contributors
+                - generic [aria-hidden] [ref=f3e2012]: "2"
+                - generic [ref=f3e2013]: (2)
+            - list [ref=f3e2014]:
+              - listitem [ref=f3e2015]:
+                - link [ref=f3e2016] [cursor=pointer]:
+                  - /url: /JacobStephens2
+                  - img "@JacobStephens2" [ref=f3e2017]
+                - generic "JacobStephens2 Jacob Stephens" [ref=f3e2018]:
+                  - link [ref=f3e2019] [cursor=pointer]:
+                    - /url: /JacobStephens2
+                    - strong [ref=f3e2020]: JacobStephens2
+                    - text: Jacob Stephens
+              - listitem [ref=f3e2021]:
+                - link [ref=f3e2022] [cursor=pointer]:
+                  - /url: /claude
+                  - img "@claude" [ref=f3e2023]
+                - generic "claude Claude" [ref=f3e2024]:
+                  - link [ref=f3e2025] [cursor=pointer]:
+                    - /url: /claude
+                    - strong [ref=f3e2026]: claude
+                    - text: Claude
+          - generic [ref=f3e2027]:
+            - heading "Languages" [level=2] [ref=f3e2028]
+            - generic [ref=f3e2030]:
+              - 'progressbar "Rust: 89.6%" [ref=f3e2031]'
+              - 'progressbar "Shell: 9.8%" [ref=f3e2032]'
+              - 'progressbar "Smarty: 0.6%" [ref=f3e2033]'
+            - list [ref=f3e2034]:
+              - listitem [ref=f3e2035]:
+                - link "Rust 89.6%" [ref=f3e2036] [cursor=pointer]:
+                  - /url: /JacobStephens2/vaulted-agent/search?l=rust
+                  - generic [ref=f3e2038]: Rust
+                  - generic [ref=f3e2039]: 89.6%
+              - listitem [ref=f3e2040]:
+                - link "Shell 9.8%" [ref=f3e2041] [cursor=pointer]:
+                  - /url: /JacobStephens2/vaulted-agent/search?l=shell
+                  - generic [ref=f3e2043]: Shell
+                  - generic [ref=f3e2044]: 9.8%
+              - listitem [ref=f3e2045]:
+                - link "Smarty 0.6%" [ref=f3e2046] [cursor=pointer]:
+                  - /url: /JacobStephens2/vaulted-agent/search?l=smarty
+                  - generic [ref=f3e2048]: Smarty
+                  - generic [ref=f3e2049]: 0.6%
+    - contentinfo [ref=f3e2051]:
+      - heading "Footer" [level=2] [ref=f3e2052]
+      - generic [ref=f3e2053]:
+        - generic [ref=f3e2054]:
+          - link "GitHub Homepage" [ref=f3e2055] [cursor=pointer]:
+            - /url: https://github.com
+          - generic [ref=f3e2058]: © 2026 GitHub, Inc.
+        - navigation "Footer" [ref=f3e2059]:
+          - heading "Footer navigation" [level=3] [ref=f3e2060]
+          - list "Footer navigation" [ref=f3e2061]:
+            - listitem [ref=f3e2062]:
+              - link "Terms" [ref=f3e2063] [cursor=pointer]:
+                - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+            - listitem [ref=f3e2064]:
+              - link "Privacy" [ref=f3e2065] [cursor=pointer]:
+                - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+            - listitem [ref=f3e2066]:
+              - link "Security" [ref=f3e2067] [cursor=pointer]:
+                - /url: https://github.com/security
+            - listitem [ref=f3e2068]:
+              - link "Status" [ref=f3e2069] [cursor=pointer]:
+                - /url: https://www.githubstatus.com/
+            - listitem [ref=f3e2070]:
+              - link "Community" [ref=f3e2071] [cursor=pointer]:
+                - /url: https://github.community/
+            - listitem [ref=f3e2072]:
+              - link "Docs" [ref=f3e2073] [cursor=pointer]:
+                - /url: https://docs.github.com/
+            - listitem [ref=f3e2074]:
+              - link "Contact" [ref=f3e2075] [cursor=pointer]:
+                - /url: https://support.github.com?tags=dotcom-footer
+            - listitem [ref=f3e2076]:
+              - button "Manage cookies" [ref=f3e2078] [cursor=pointer]
+            - listitem [ref=f3e2079]:
+              - button "Do not share my personal information" [ref=f3e2081] [cursor=pointer]
+  - alert [ref=f3e2084]

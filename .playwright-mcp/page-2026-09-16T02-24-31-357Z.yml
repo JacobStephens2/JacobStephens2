@@ -1,0 +1,419 @@
+- generic [ref=f3e2]:
+  - generic [ref=f3e3]:
+    - link "← stephens.page" [ref=f3e4] [cursor=pointer]:
+      - /url: https://stephens.page/
+    - generic [ref=f3e5]:
+      - 'link "GitHub repository: JacobStephens2/vaulted-agent" [ref=f3e6] [cursor=pointer]':
+        - /url: https://github.com/JacobStephens2/vaulted-agent
+      - 'button "Theme: system (click for light)" [ref=f3e9] [cursor=pointer]'
+  - generic [ref=f3e10]: Open source · macOS · Linux · v0.4.24
+  - heading "vaulted-agent v0.4.24" [level=1] [ref=f3e11]:
+    - text: vaulted-agent
+    - generic [ref=f3e12]: v0.4.24
+  - paragraph [ref=f3e13]:
+    - text: AI coding agents need secret values (API keys and related credentials). Many setups put those values in local
+    - code [ref=f3e14]: .env
+    - text: files.
+    - strong [ref=f3e15]: vaulted-agent
+    - text: is a
+    - strong [ref=f3e16]: launcher
+    - text: (
+    - code [ref=f3e17]: va
+    - text: ). It is not a long-running daemon. You select a
+    - strong [ref=f3e18]: harness
+    - text: . The launcher resolves a
+    - strong [ref=f3e19]: manifest
+    - text: from a vault
+    - strong [ref=f3e20]: backend
+    - text: ", builds the"
+    - strong [ref=f3e21]: child environment
+    - text: ", and"
+    - code [ref=f3e22]: exec
+    - text: s the agent. Secret values stay in that process. They are not stored as a local secret file for each tool.
+  - figure [ref=f3e23]:
+    - 'img "Illustration: the vaulted-agent launcher resolves secret values from a vault into the child environment, then execs an agent" [ref=f3e24]'
+    - generic [ref=f3e25]:
+      - text: "Launch path: scrub → resolve → drop the manager token → exec. Illustration by"
+      - link "inkvoke" [ref=f3e26] [cursor=pointer]:
+        - /url: https://inkvoke.dev
+      - text: .
+  - navigation "On this page" [ref=f3e27]:
+    - link "Context" [ref=f3e28] [cursor=pointer]:
+      - /url: "#context"
+    - link "Install" [ref=f3e29] [cursor=pointer]:
+      - /url: "#quick-start"
+    - link "Recipes" [ref=f3e30] [cursor=pointer]:
+      - /url: "#recipes"
+    - link "Commands" [ref=f3e31] [cursor=pointer]:
+      - /url: "#commands"
+    - link "Launch path" [ref=f3e32] [cursor=pointer]:
+      - /url: "#what-it-does"
+    - link "Agents" [ref=f3e33] [cursor=pointer]:
+      - /url: /AGENTS.md
+  - heading "Context" [level=2] [ref=f3e34]
+  - paragraph [ref=f3e35]:
+    - text: A
+    - strong [ref=f3e36]: harness
+    - text: is a named launch profile (
+    - code [ref=f3e37]: harnesses.d/<name>.conf
+    - text: ). It names a
+    - strong [ref=f3e38]: backend
+    - text: ", a"
+    - strong [ref=f3e39]: manifest
+    - text: ", and a command. A"
+    - strong [ref=f3e40]: manifest
+    - text: is often a
+    - strong [ref=f3e41]: refs file
+    - text: ": lines such as"
+    - code [ref=f3e42]: VAR=reference
+    - text: with no secret values on disk. A
+    - strong [ref=f3e43]: manager token
+    - text: opens the vault (
+    - code [ref=f3e44]: BWS_ACCESS_TOKEN
+    - text: or
+    - code [ref=f3e45]: OP_SERVICE_ACCOUNT_TOKEN
+    - text: ). The launcher uses that token only to resolve secret values. The manager token must not appear in the child environment.
+    - strong [ref=f3e46]: Auth mode
+    - text: is
+    - code [ref=f3e47]: file
+    - text: (token on disk) or
+    - code [ref=f3e48]: prompt
+    - text: (paste on each launch). An optional
+    - strong [ref=f3e49]: service user
+    - text: runs the agent under
+    - code [ref=f3e50]: sudo -u
+    - text: ". Terms and invariants: repo"
+    - link "CONTEXT.md" [ref=f3e51] [cursor=pointer]:
+      - /url: https://github.com/JacobStephens2/vaulted-agent/blob/main/CONTEXT.md
+    - text: and
+    - link "AGENTS.md" [ref=f3e52] [cursor=pointer]:
+      - /url: /AGENTS.md
+    - text: .
+  - heading "Install and start" [level=2] [ref=f3e53]
+  - list [ref=f3e54]:
+    - listitem [ref=f3e55]:
+      - strong [ref=f3e56]: Install the launcher
+      - generic [ref=f3e57]:
+        - button "Copy install" [ref=f3e58] [cursor=pointer]
+        - code [ref=f3e63]: curl -fsSL https://vaultedagent.com/install.sh | bash
+      - paragraph [ref=f3e64]:
+        - text: "Supported systems: macOS and Linux. The install script pins release"
+        - code [ref=f3e65]: v0.4.24
+        - text: . Linux assets are static musl binaries. The installer can create harnesses for agents found on
+        - code [ref=f3e66]: PATH
+        - text: .
+    - listitem [ref=f3e67]:
+      - strong [ref=f3e68]: Configure a backend
+      - generic [ref=f3e69]:
+        - button "Copy setup" [ref=f3e70] [cursor=pointer]
+        - code [ref=f3e75]: va setup va doctor
+      - paragraph [ref=f3e76]:
+        - code [ref=f3e77]: va setup
+        - text: selects a backend (Bitwarden SM, 1Password, pass, or sops), auth mode, optional service user, and workdir (
+        - code [ref=f3e78]: caller
+        - text: or a fixed path).
+        - code [ref=f3e79]: va doctor
+        - text: checks the config as the same user a launch would use.
+        - code [ref=f3e80]: va refresh
+        - text: writes or updates a refs file for Bitwarden or 1Password. A refs file holds env var → reference lines only. Do not put secret values in a refs file. If the refs file is root-owned, refresh stops before vault work and prints
+        - code [ref=f3e81]: sudo /usr/local/bin/vaulted-agent refresh
+        - text: . Item menus accept ranges such as
+        - code [ref=f3e82]: 1-5, 9
+        - text: . Use
+        - code [ref=f3e83]: va refresh --exclude '*_USERNAME'
+        - text: to skip field names. To edit a refs file with checks, run
+        - code [ref=f3e84]: va edit-manifest
+        - text: (uses
+        - code [ref=f3e85]: sudoedit
+        - text: when you cannot write the file).
+    - listitem [ref=f3e86]:
+      - strong [ref=f3e87]: Start a harness
+      - generic [ref=f3e88]:
+        - button "Copy launch" [ref=f3e89] [cursor=pointer]
+        - code [ref=f3e94]: va claude va codex va grok va kimi va agy va muse va muse --yolo va bash
+      - paragraph [ref=f3e95]:
+        - text: Muse runs with its configured permissions by default;
+        - code [ref=f3e96]: va muse --yolo
+        - text: forwards Muse’s native flag unchanged. With auth mode
+        - code [ref=f3e97]: prompt
+        - text: ", paste the manager token when asked. Use"
+        - code [ref=f3e98]: va -p grok
+        - text: once to force prompt auth. A
+        - strong [ref=f3e99]: manifest override
+        - text: "for this launch only:"
+        - code [ref=f3e100]: va -m readonly.env.tpl claude
+        - text: (launcher flag before the harness name). A
+        - strong [ref=f3e101]: conductor link
+        - text: does not accept
+        - code [ref=f3e102]: "-m"
+        - text: or
+        - code [ref=f3e103]: "-H"
+        - text: . For prompt auth under a conductor link, set
+        - code [ref=f3e104]: VAULTED_AGENT_PROMPT_AUTH=1
+        - text: .
+  - generic [ref=f3e105]:
+    - link "GitHub" [ref=f3e106] [cursor=pointer]:
+      - /url: https://github.com/JacobStephens2/vaulted-agent
+    - link "The writeup" [ref=f3e109] [cursor=pointer]:
+      - /url: https://stephens.page/blog/one-vault-three-agents-writing-the-pattern-down-found-five-bugs/
+    - link "install.sh" [ref=f3e110] [cursor=pointer]:
+      - /url: /install.sh
+    - link "AGENTS.md" [ref=f3e111] [cursor=pointer]:
+      - /url: /AGENTS.md
+  - heading "Recipes" [level=2] [ref=f3e112]
+  - heading "Add one secret mapping to a harness" [level=3] [ref=f3e113]
+  - paragraph [ref=f3e114]: The harness points at a manifest. The vault holds the secret value. The refs file holds only the mapping (env var → reference). Do not put secret values in the refs file.
+  - list [ref=f3e115]:
+    - listitem [ref=f3e116]:
+      - strong [ref=f3e117]: Create the secret in the vault
+      - paragraph [ref=f3e118]: "Bitwarden Secrets Manager: create a secret. Keep the name or UUID. 1Password: create an item field that the service account can read."
+    - listitem [ref=f3e119]:
+      - strong [ref=f3e120]: Map it in a refs file
+      - generic [ref=f3e121]:
+        - button "Copy refresh" [ref=f3e122] [cursor=pointer]
+        - code [ref=f3e127]: "# Merge unmapped secrets into the refs file va refresh # Or replace the refs file for one backend: va refresh --backend onepassword --replace --all # Edit the refs file with checks: va edit-manifest # or: va edit-manifest full.env.tpl # Or add one line under /etc/vaulted-agent/manifests/: # Bitwarden: OPENAI_API_KEY=name:openai-api-key # 1Password: OPENAI_API_KEY=op://Vault/openai/credential # Do not put sample op://… in comments. op inject reads comments."
+    - listitem [ref=f3e128]:
+      - strong [ref=f3e129]: Set the harness manifest
+      - paragraph [ref=f3e130]:
+        - text: Example in
+        - code [ref=f3e131]: /etc/vaulted-agent/harnesses.d/claude.conf
+        - text: ":"
+        - code [ref=f3e132]: manifest = full.env.tpl
+        - text: . If you change only the secret value in the vault, run no command. The next launch fetches the new value. If you add a new mapping, run
+        - code [ref=f3e133]: va refresh
+        - text: or
+        - code [ref=f3e134]: va edit-manifest
+        - text: .
+  - heading "Use a manifest override for one launch" [level=3] [ref=f3e135]
+  - paragraph [ref=f3e136]:
+    - text: The harness still sets the command, workdir, and backend. The
+    - strong [ref=f3e137]: manifest override
+    - text: replaces the harness manifest for this launch. It does not merge with the configured manifest.
+  - generic [ref=f3e138]:
+    - button "Copy -m launch" [ref=f3e139] [cursor=pointer]
+    - code [ref=f3e144]: "# Launcher flag before the harness name (not after) va -m readonly.env.tpl claude va --manifest=/etc/vaulted-agent/manifests/narrow.env.tpl claude --resume <id> # Also with pick: va -m readonly.env.tpl pick"
+  - paragraph [ref=f3e145]:
+    - text: A relative name is under
+    - code [ref=f3e146]: /etc/vaulted-agent/manifests/
+    - text: . A missing file fails before the agent starts. The launcher prints the manifest in use. Do not use
+    - code [ref=f3e147]: "-m"
+    - text: under a
+    - strong [ref=f3e148]: conductor link
+    - text: (
+    - code [ref=f3e149]: "*-conductor"
+    - text: ). That path has a fixed entitlement. Use the direct
+    - code [ref=f3e150]: va
+    - text: binary for a manifest override.
+  - heading "Commands" [level=2] [ref=f3e151]
+  - generic [ref=f3e152]:
+    - button "Copy commands" [ref=f3e153] [cursor=pointer]
+    - code [ref=f3e158]: "va # list harnesses va agy # Antigravity CLI (workdir = caller) va muse # Muse Code with its configured permissions va muse --yolo # inject secrets, then use Muse native yolo mode va bash # secrets-injected shell (or va bash ./script.sh) va doctor # config / syntax as the launch user (offline) va secrets validate # resolve every harness + extra_manifest (live) va secrets validate --offline # shape only; no manager token va secrets list # Bitwarden SM va refresh # write or update a refs file va edit-manifest # edit a refs file; check on save va -m readonly.env.tpl claude # manifest override for this launch va auth-mode prompt # or: file va update # update binary and add missing detected harnesses va update --sync-harnesses # add missing harnesses without a binary download va run -m REFS --backend bitwarden -p -- your-cmd sudo va uninstall"
+  - paragraph [ref=f3e159]:
+    - strong [ref=f3e160]: "Upgrading from v0.4.23 or earlier:"
+    - text: run
+    - code [ref=f3e161]: va update
+    - text: ", then"
+    - code [ref=f3e162]: va update --sync-harnesses
+    - text: once to add missing harnesses such as Muse. Later updates handle both steps automatically. Existing profiles are preserved. New harnesses reuse the backend and manifest only when existing profiles agree; otherwise they start without secrets and print a configuration reminder.
+  - paragraph [ref=f3e163]:
+    - strong [ref=f3e164]: "Bitwarden:"
+    - text: use a Machine Account access token (
+    - code [ref=f3e165]: BWS_ACCESS_TOKEN
+    - text: ) as the manager token. Do not use your personal vault password. Refs file lines look like
+    - code [ref=f3e166]: OPENAI_API_KEY=name:openai-api-key
+    - text: .
+    - strong [ref=f3e167]: "1Password:"
+    - text: put the service account token in
+    - code [ref=f3e168]: OP_SERVICE_ACCOUNT_TOKEN
+    - text: .
+    - code [ref=f3e169]: va refresh
+    - text: lists items, asks which to include, and writes
+    - code [ref=f3e170]: VAR=op://VAULT/ITEM/FIELD
+    - text: lines. If you change only a secret value in the vault, run no command. If you add a mapping, run
+    - code [ref=f3e171]: va refresh
+    - text: or
+    - code [ref=f3e172]: va edit-manifest
+    - text: .
+    - code [ref=f3e173]: va secrets validate
+    - text: "is the pre-flight gate: it uses the same resolve path as a launch and fails closed if the vault is unreachable. Use"
+    - code [ref=f3e174]: "--offline"
+    - text: only for shape checks. A harness may set
+    - code [ref=f3e175]: alias = TARGET = SOURCE
+    - text: so one shared refs file can serve agents that hardcode different meanings for the same name.
+    - code [ref=f3e176]: va doctor
+    - text: stays offline by design (syntax and config). Doctor also flags
+    - code [ref=f3e177]: op://
+    - text: tokens in comments (
+    - code [ref=f3e178]: op inject
+    - text: resolves comments).
+  - paragraph [ref=f3e179]:
+    - strong [ref=f3e180]: "Auth mode:"
+    - code [ref=f3e181]: prompt
+    - text: "- paste the manager token on each launch (no token file)."
+    - code [ref=f3e182]: file
+    - text: "- read"
+    - code [ref=f3e183]: /etc/vaulted-agent/bws.env
+    - text: or
+    - code [ref=f3e184]: op.env
+    - text: . Use
+    - code [ref=f3e185]: "-p"
+    - text: on a direct
+    - code [ref=f3e186]: va
+    - text: launch for one prompt. Do not use
+    - code [ref=f3e187]: "-p"
+    - text: under a conductor link for launcher prompt auth. If a service user is set,
+    - code [ref=f3e188]: va run
+    - text: is off unless
+    - code [ref=f3e189]: allow_run = yes
+    - text: in machine defaults. An unreadable manager-token file is reported as permission denied, not as missing.
+  - generic [ref=f3e190]:
+    - button "Copy clone install" [ref=f3e191] [cursor=pointer]
+    - code [ref=f3e196]: "# From source instead of the one-liner: git clone --branch v0.4.24 --depth 1 \\ https://github.com/JacobStephens2/vaulted-agent cd vaulted-agent && sudo ./install.sh"
+  - heading "Launch path" [level=2] [ref=f3e197]
+  - paragraph [ref=f3e198]:
+    - text: "The harness is the unit of launch configuration. It names a command and a manifest. The launch path is: scrub → resolve → drop the manager token → exec. If a service user is set, the launcher re-execs with"
+    - code [ref=f3e199]: sudo -u
+    - text: first. Secret values live in the child environment until the process exits. Compare manifests to see which harness can resolve which references.
+  - generic "Launch path" [ref=f3e200]: "you $ va claude --resume <id> │ ▼ /usr/local/bin/vaulted-agent (alias: va) ├─ optional sudo -u <service> service-user re-exec ├─ cd workdir caller cwd by default ├─ scrub environment child environment allowlist only ├─ load manager token op.env / bws.env, or prompt (auth mode) ├─ resolve manifest op inject / bws secret get / … ├─ drop manager token must not enter the child environment └─ exec claude … --resume <id> └─ secret values stay here until exit"
+  - generic [ref=f3e201]:
+    - generic [ref=f3e202]: launcher
+    - generic [ref=f3e203]: harness
+    - generic [ref=f3e204]: manifest
+    - generic [ref=f3e205]: backend
+    - generic [ref=f3e206]: refs file
+    - generic [ref=f3e207]: manager token
+    - generic [ref=f3e208]: auth mode
+    - generic [ref=f3e209]: service user
+  - generic [ref=f3e210]:
+    - generic [ref=f3e211]:
+      - heading "Properties" [level=3] [ref=f3e212]
+      - list [ref=f3e213]:
+        - listitem [ref=f3e214]:
+          - text: One manager token on disk in auth mode
+          - code [ref=f3e215]: file
+          - text: ", or none in auth mode"
+          - code [ref=f3e216]: prompt
+        - listitem [ref=f3e217]: Change a secret value in the vault; the next launch fetches it
+        - listitem [ref=f3e218]: Manifests are plain files you can diff
+        - listitem [ref=f3e219]: No secret material on the agent argv
+        - listitem [ref=f3e220]:
+          - code [ref=f3e221]: va run
+          - text: for a one-shot command without a harness file
+        - listitem [ref=f3e222]:
+          - code [ref=f3e223]: doctor
+          - text: fails closed on bad or placeholder ref shapes (offline)
+        - listitem [ref=f3e224]:
+          - code [ref=f3e225]: secrets validate
+          - text: resolves every ref against the vault (live pre-flight)
+        - listitem [ref=f3e226]: A failed launch names the variables a bad resolve implicates
+        - listitem [ref=f3e227]:
+          - text: Harness
+          - code [ref=f3e228]: alias = TARGET = SOURCE
+          - text: renames an injected secret for that child env only
+        - listitem [ref=f3e229]:
+          - text: Kimi vault inject works (OpenAI-compatible via env); interim
+          - code [ref=f3e230]: env = KIMI_CODE_LEGACY_FLAG = 1
+          - text: on kimi.conf until kimi-code#2746
+        - listitem [ref=f3e231]:
+          - code [ref=f3e232]: doctor
+          - text: runs as the same user a launch would use
+        - listitem [ref=f3e233]: Unreadable manager-token files are not reported as missing
+        - listitem [ref=f3e234]: Service-user re-exec keeps original argv for sudoers
+        - listitem [ref=f3e235]:
+          - text: 1Password
+          - code [ref=f3e236]: refresh
+          - text: writes inject-ready refs lines
+        - listitem [ref=f3e237]: Launch fails closed if the service user cannot traverse the workdir
+        - listitem [ref=f3e238]:
+          - text: "Manifest override:"
+          - code [ref=f3e239]: va -m MANIFEST harness
+        - listitem [ref=f3e240]:
+          - code [ref=f3e241]: va edit-manifest
+          - text: checks the refs file on save
+        - listitem [ref=f3e242]:
+          - code [ref=f3e243]: doctor
+          - text: flags
+          - code [ref=f3e244]: op://
+          - text: in comments
+        - listitem [ref=f3e245]:
+          - code [ref=f3e246]: refresh
+          - text: checks write access before vault work
+    - generic [ref=f3e247]:
+      - heading "Limits" [level=3] [ref=f3e248]
+      - list [ref=f3e249]:
+        - listitem [ref=f3e250]:
+          - text: Auth mode
+          - code [ref=f3e251]: file
+          - text: keeps one manager token on disk
+        - listitem [ref=f3e252]: The agent can read its own child environment
+        - listitem [ref=f3e253]: A manifest limits which secret values resolve; it is not a sandbox
+        - listitem [ref=f3e254]:
+          - text: With auth mode
+          - code [ref=f3e255]: file
+          - text: ", the agent process can still open the token file if permissions allow it"
+        - listitem [ref=f3e256]:
+          - text: Auth mode
+          - code [ref=f3e257]: prompt
+          - text: needs a TTY; nested agent launches often need auth mode
+          - code [ref=f3e258]: file
+        - listitem [ref=f3e259]:
+          - text: With a service user,
+          - code [ref=f3e260]: va run
+          - text: stays off unless
+          - code [ref=f3e261]: allow_run = yes
+        - listitem [ref=f3e262]: Root on the host can still read all local files
+  - paragraph [ref=f3e263]:
+    - text: "Current release:"
+    - code [ref=f3e264]: v0.4.24
+    - text: (Rust launcher since
+    - code [ref=f3e265]: v0.4.0
+    - text: "). Design walkthrough:"
+    - link "One Vault, Three Agents" [ref=f3e266] [cursor=pointer]:
+      - /url: https://stephens.page/blog/one-vault-three-agents-writing-the-pattern-down-found-five-bugs/
+    - text: .
+  - heading "More" [level=2] [ref=f3e267]
+  - paragraph [ref=f3e268]:
+    - text: To install without a pipe, download
+    - link "install.sh" [ref=f3e269] [cursor=pointer]:
+      - /url: /install.sh
+    - text: ", read it, then run it. Pass flags after"
+    - code [ref=f3e270]: bash -s --
+    - text: ", for example"
+    - code [ref=f3e271]: "--backend bitwarden --auth-mode prompt"
+    - text: ","
+    - code [ref=f3e272]: "--user agent"
+    - text: ", or"
+    - code [ref=f3e273]: "--no-auto-harness"
+    - text: ". Full reference:"
+    - link "GitHub README" [ref=f3e274] [cursor=pointer]:
+      - /url: https://github.com/JacobStephens2/vaulted-agent#install-details
+    - text: ". Operator contract for agents:"
+    - link "AGENTS.md" [ref=f3e275] [cursor=pointer]:
+      - /url: /AGENTS.md
+    - text: ". Session resume:"
+    - code [ref=f3e276]: va claude --resume <id>
+    - text: ","
+    - code [ref=f3e277]: va codex resume <id>
+    - text: ","
+    - code [ref=f3e278]: va kimi --continue
+    - text: ","
+    - code [ref=f3e279]: va agy --continue
+    - text: ","
+    - code [ref=f3e280]: va muse resume --last
+    - text: .
+  - generic [ref=f3e281]:
+    - link "Docs on GitHub" [ref=f3e282] [cursor=pointer]:
+      - /url: https://github.com/JacobStephens2/vaulted-agent#usage
+    - link "v0.4.24 release notes" [ref=f3e285] [cursor=pointer]:
+      - /url: https://github.com/JacobStephens2/vaulted-agent/releases/tag/v0.4.24
+    - link "inkvoke" [ref=f3e286] [cursor=pointer]:
+      - /url: https://inkvoke.dev
+  - contentinfo [ref=f3e287]:
+    - paragraph [ref=f3e288]:
+      - text: "Source:"
+      - link "JacobStephens2/vaulted-agent" [ref=f3e289] [cursor=pointer]:
+        - /url: https://github.com/JacobStephens2/vaulted-agent
+      - text: · MIT · v0.4.24 ·
+      - link "stephens.page" [ref=f3e292] [cursor=pointer]:
+        - /url: https://stephens.page/
+    - paragraph [ref=f3e293]: © 2026 Stephens Page LLC

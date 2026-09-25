@@ -30,6 +30,9 @@ Most of this code is private. The **[ETA platform case study](https://stephens.p
 
 - **[Chart35](https://github.com/JacobStephens2/chart35-showcase)** — Offline-first charting with end-to-end encrypted sync across web, iOS, and Android. The public showcase explains the architecture and privacy boundaries. [Product](https://chart35.com/creighton)
 - **[Thereish](https://thereish.app/)** — A couch word game for two to six phones and a laptop: everyone bridges two far-apart words and a language model grades how close the table landed. Phoenix LiveView, with the rules as one pure reducer and every model call behind one seam. [Write-up](https://stephens.page/blog/the-machine-grades-it-never-rules/)
+
+  <a href="https://stephens.page/blog/the-machine-grades-it-never-rules/"><img src="assets/thereish.gif" width="560" alt="A Page of Thereish on the Stage: longship and defibrillator miss at 14, then oars and rowing meld at 94."></a>
+
 - **[Cascade](https://github.com/JacobStephens2/cascade)** — A waterfall sound player with one headless Rust core and six platform shells: web, Android, macOS, Windows, iOS, and watchOS. [Architecture](https://cascade.stephens.page/architecture/) · [Apps](https://cascade.stephens.page/apps)
 
 ### Upstream contributions

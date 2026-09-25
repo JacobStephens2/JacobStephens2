@@ -1,0 +1,556 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#start-of-content"
+      - banner [ref=e9]:
+        - heading "Navigation Menu" [level=2] [ref=e10]
+        - generic [ref=e11]:
+          - link "Homepage" [ref=e13] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e16]:
+            - navigation "Global" [ref=e17]:
+              - list [ref=e18]:
+                - listitem [ref=e19]:
+                  - button "Platform" [ref=e21] [cursor=pointer]
+                - listitem [ref=e24]:
+                  - button "Solutions" [ref=e26] [cursor=pointer]
+                - listitem [ref=e29]:
+                  - button "Resources" [ref=e31] [cursor=pointer]
+                - listitem [ref=e34]:
+                  - button "Open Source" [ref=e36] [cursor=pointer]
+                - listitem [ref=e39]:
+                  - button "Enterprise" [ref=e41] [cursor=pointer]
+                - listitem [ref=e44]:
+                  - link "Pricing" [ref=e45] [cursor=pointer]:
+                    - /url: https://github.com/pricing
+            - generic [ref=e46]:
+              - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]
+              - link "Sign in" [ref=e55] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FJacobStephens2%2Ftracewake
+              - link "Sign up" [ref=e58] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=JacobStephens2%2Ftracewake
+              - button "Appearance settings" [ref=e61] [cursor=pointer]
+    - main [ref=e68]:
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e72]:
+            - link "JacobStephens2" [ref=e76] [cursor=pointer]:
+              - /url: /JacobStephens2
+            - generic [ref=e77]: /
+            - strong [ref=e78]:
+              - link "tracewake" [ref=e79] [cursor=pointer]:
+                - /url: /JacobStephens2/tracewake
+            - generic [ref=e80]: Public
+          - generic [ref=e81]:
+            - list:
+              - listitem [ref=e82]:
+                - link "You must be signed in to change notification settings" [ref=e83] [cursor=pointer]:
+                  - /url: /login?return_to=%2FJacobStephens2%2Ftracewake
+                  - text: Notifications
+              - listitem [ref=e86]:
+                - link "Fork 0" [ref=e87] [cursor=pointer]:
+                  - /url: /login?return_to=%2FJacobStephens2%2Ftracewake
+                  - text: Fork
+                  - generic "0" [ref=e90]
+              - listitem [ref=e91]:
+                - link "You must be signed in to star a repository" [ref=e93] [cursor=pointer]:
+                  - /url: /login?return_to=%2FJacobStephens2%2Ftracewake
+                  - text: Star
+                  - generic "0 users starred this repository" [ref=e96]: "0"
+        - navigation "Repository" [ref=e97]:
+          - list [ref=e98]:
+            - listitem [ref=e99]:
+              - link "Code" [ref=e100] [cursor=pointer]:
+                - /url: /JacobStephens2/tracewake
+            - listitem [ref=e104]:
+              - link "Issues 13" [ref=e105] [cursor=pointer]:
+                - /url: /JacobStephens2/tracewake/issues
+                - generic [ref=e109]: Issues
+                - generic "13" [ref=e110]
+            - listitem [ref=e111]:
+              - link "Pull requests 1" [ref=e112] [cursor=pointer]:
+                - /url: /JacobStephens2/tracewake/pulls
+                - generic [ref=e115]: Pull requests
+                - generic "1" [ref=e116]
+            - listitem [ref=e117]:
+              - link "Actions" [ref=e118] [cursor=pointer]:
+                - /url: /JacobStephens2/tracewake/actions
+            - listitem [ref=e122]:
+              - link "Projects" [ref=e123] [cursor=pointer]:
+                - /url: /JacobStephens2/tracewake/projects
+            - listitem [ref=e127]:
+              - link "Security and quality" [ref=e128] [cursor=pointer]:
+                - /url: /JacobStephens2/tracewake/security
+            - listitem [ref=e132]:
+              - link "Insights" [ref=e133] [cursor=pointer]:
+                - /url: /JacobStephens2/tracewake/pulse
+      - generic [ref=e150]:
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - button "main branch" [ref=e157] [cursor=pointer]:
+                - generic [ref=e158]: main
+              - generic [ref=e162]:
+                - link "Branches" [ref=e163] [cursor=pointer]:
+                  - /url: /JacobStephens2/tracewake/branches
+                - link "Tags" [ref=e166] [cursor=pointer]:
+                  - /url: /JacobStephens2/tracewake/tags
+            - generic [ref=e169]:
+              - combobox "Go to file" [ref=e177]
+              - button "Code" [ref=e178] [cursor=pointer]
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - generic [ref=e184]:
+                - heading "Latest commit" [level=2] [ref=e185]
+                - generic [ref=e188]:
+                  - heading "History" [level=2] [ref=e189]
+                  - link "236 Commits" [ref=e190] [cursor=pointer]:
+                    - /url: /JacobStephens2/tracewake/commits/main/
+              - heading "Folders and files" [level=2] [ref=e193]
+              - table "Folders and files" [ref=e194]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message"
+                    - columnheader "Last commit date"
+                - rowgroup [ref=e195]:
+                  - row ".agents/skills, (Directory)" [ref=e196]:
+                    - cell [ref=e197]:
+                      - link ".agents/skills, (Directory)" [ref=e204] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/.agents/skills
+                        - text: .agents/skills
+                    - cell [ref=e205]
+                    - cell [ref=e207]
+                  - row ".claude/skills, (Directory)" [ref=e210]:
+                    - cell [ref=e211]:
+                      - link ".claude/skills, (Directory)" [ref=e218] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/.claude/skills
+                        - text: .claude/skills
+                    - cell [ref=e219]
+                    - cell [ref=e221]
+                  - row "deploy, (Directory)" [ref=e224]:
+                    - cell [ref=e225]:
+                      - link "deploy, (Directory)" [ref=e232] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/deploy
+                        - text: deploy
+                    - cell [ref=e233]
+                    - cell [ref=e235]
+                  - row "docs, (Directory)" [ref=e238]:
+                    - cell [ref=e239]:
+                      - link "docs, (Directory)" [ref=e246] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/docs
+                        - text: docs
+                    - cell [ref=e247]
+                    - cell [ref=e249]
+                  - row "loop, (Directory)" [ref=e252]:
+                    - cell [ref=e253]:
+                      - link "loop, (Directory)" [ref=e260] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/loop
+                        - text: loop
+                    - cell [ref=e261]
+                    - cell [ref=e263]
+                  - row "notes, (Directory)" [ref=e266]:
+                    - cell [ref=e267]:
+                      - link "notes, (Directory)" [ref=e274] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/notes
+                        - text: notes
+                    - cell [ref=e275]
+                    - cell [ref=e277]
+                  - row "research, (Directory)" [ref=e280]:
+                    - cell [ref=e281]:
+                      - link "research, (Directory)" [ref=e288] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/research
+                        - text: research
+                    - cell [ref=e289]
+                    - cell [ref=e291]
+                  - row "selector, (Directory)" [ref=e294]:
+                    - cell [ref=e295]:
+                      - link "selector, (Directory)" [ref=e302] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/selector
+                        - text: selector
+                    - cell [ref=e303]
+                    - cell [ref=e305]
+                  - row "site, (Directory)" [ref=e308]:
+                    - cell [ref=e309]:
+                      - link "site, (Directory)" [ref=e316] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/site
+                        - text: site
+                    - cell [ref=e317]
+                    - cell [ref=e319]
+                  - row "web, (Directory)" [ref=e322]:
+                    - cell [ref=e323]:
+                      - link "web, (Directory)" [ref=e330] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/web
+                        - text: web
+                    - cell [ref=e331]
+                    - cell [ref=e333]
+                  - row "wizards, (Directory)" [ref=e336]:
+                    - cell [ref=e337]:
+                      - link "wizards, (Directory)" [ref=e344] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/tree/main/wizards
+                        - text: wizards
+                    - cell [ref=e345]
+                    - cell [ref=e347]
+                  - row ".gitignore, (File)" [ref=e350]:
+                    - cell [ref=e351]:
+                      - link ".gitignore, (File)" [ref=e358] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/blob/main/.gitignore
+                        - text: .gitignore
+                    - cell [ref=e359]
+                    - cell [ref=e361]
+                  - row "AGENTS.md, (File)" [ref=e364]:
+                    - cell [ref=e365]:
+                      - link "AGENTS.md, (File)" [ref=e372] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/blob/main/AGENTS.md
+                        - text: AGENTS.md
+                    - cell [ref=e373]
+                    - cell [ref=e375]
+                  - row "CONTEXT.md, (File)" [ref=e378]:
+                    - cell [ref=e379]:
+                      - link "CONTEXT.md, (File)" [ref=e386] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/blob/main/CONTEXT.md
+                        - text: CONTEXT.md
+                    - cell [ref=e387]
+                    - cell [ref=e389]
+                  - row "INSTALL.md, (File)" [ref=e392]:
+                    - cell [ref=e393]:
+                      - link "INSTALL.md, (File)" [ref=e400] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/blob/main/INSTALL.md
+                        - text: INSTALL.md
+                    - cell [ref=e401]
+                    - cell [ref=e403]
+                  - row "LICENSE, (File)" [ref=e406]:
+                    - cell [ref=e407]:
+                      - link "LICENSE, (File)" [ref=e414] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/blob/main/LICENSE
+                        - text: LICENSE
+                    - cell [ref=e415]
+                    - cell [ref=e417]
+                  - row "README.md, (File)" [ref=e420]:
+                    - cell [ref=e421]:
+                      - link "README.md, (File)" [ref=e428] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/blob/main/README.md
+                        - text: README.md
+                    - cell [ref=e429]
+                    - cell [ref=e431]
+                  - row "SPEC.md, (File)" [ref=e434]:
+                    - cell [ref=e435]:
+                      - link "SPEC.md, (File)" [ref=e442] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/blob/main/SPEC.md
+                        - text: SPEC.md
+                    - cell [ref=e443]
+                    - cell [ref=e445]
+                  - row "skills-lock.json, (File)" [ref=e448]:
+                    - cell [ref=e449]:
+                      - link "skills-lock.json, (File)" [ref=e456] [cursor=pointer]:
+                        - /url: /JacobStephens2/tracewake/blob/main/skills-lock.json
+                        - text: skills-lock.json
+                    - cell [ref=e457]
+                    - cell [ref=e459]
+            - generic [ref=e463]:
+              - generic [ref=e464]:
+                - heading "Repository files navigation" [level=2] [ref=e465]
+                - navigation "Repository files" [ref=e466]:
+                  - list [ref=e467]:
+                    - listitem [ref=e468]:
+                      - link "README" [ref=e469] [cursor=pointer]:
+                        - /url: "#"
+                    - listitem [ref=e471]:
+                      - link "MIT license" [ref=e472] [cursor=pointer]:
+                        - /url: "#"
+                - button "Outline" [ref=e474] [cursor=pointer]
+              - article [ref=e478]:
+                - generic [ref=e479]:
+                  - heading "Tracewake" [level=1] [ref=e480]
+                  - 'link "Permalink: Tracewake" [ref=e481] [cursor=pointer]':
+                    - /url: "#tracewake"
+                - paragraph [ref=e484]: Tracewake turns a labeled issue into a reviewable pull request, unattended.
+                - paragraph [ref=e485]:
+                  - text: An operator labels an issue
+                  - code [ref=e486]: ready-for-agent
+                  - text: . On its next Cycle the Selector reads the tracker, decides whether that issue is Eligible, seeds a Run from it, and dispatches the Run to a box, where a coding agent works inside a microVM under a Termination Contract with five declared bounds. The Run's only output is a Proposal - a draft pull request - which the operator reviews. Nothing merges itself.
+                - paragraph [ref=e487]: "It is the same problem OpenAI's Symphony poses, with the opposite bets: the label as the point of Handover rather than a workflow state, one Run at a time rather than ten, a fresh microVM per Iteration rather than a persistent workspace, a Termination Contract rather than a stall timer, Proposal-Only Output rather than a landing state, and a Journal that records why every decision went the way it did."
+                - paragraph [ref=e488]:
+                  - code [ref=e489]: CONTEXT.md
+                  - text: is the vocabulary - every capitalised term above is defined there -
+                  - code [ref=e490]: SPEC.md
+                  - text: is the specification, stating Tracewake's bets side by side in the same terms as OpenAI's Symphony,
+                  - code [ref=e491]: INSTALL.md
+                  - text: is the Single-Host installation guide, and
+                  - code [ref=e492]: docs/adr/
+                  - text: holds the decisions, numbered, with the reasoning that produced them.
+                - generic [ref=e493]:
+                  - heading "Configuring an instance" [level=2] [ref=e494]
+                  - 'link "Permalink: Configuring an instance" [ref=e495] [cursor=pointer]':
+                    - /url: "#configuring-an-instance"
+                - paragraph [ref=e498]:
+                  - text: An instance is
+                  - strong [ref=e499]: an env file plus a targets file
+                  - text: ". Nothing in the code names a company, a host, a person or a repository: a value like that has exactly one right answer per instance and no right answer in the product, so a missing one stops the cycle at preflight with the value named rather than being filled in with somebody else's."
+                  - code [ref=e500]: selector/tests/test_configuration.py
+                  - text: "enforces that mechanically against every default in the shipping tree. The product ships no filled-in Instance: those two files are written on the Host."
+                - paragraph [ref=e501]:
+                  - code [ref=e502]: INSTALL.md
+                  - text: shows the Single-Host shape;
+                  - code [ref=e503]: selector/README.md
+                  - text: says what each value does. A second repository worked by the same instance is a second
+                  - code [ref=e504]: "[[target]]"
+                  - text: stanza - its own labels, allowlist, checkouts, token, guest image, review cap and landing mode - and not a second controller. The target repository itself stays unaware that Tracewake exists. A remote Box remains a substituted
+                  - code [ref=e505]: SELECTOR_BOX_COMMAND
+                  - text: ", not a second setup."
+                - generic [ref=e506]:
+                  - heading "Layout" [level=2] [ref=e507]
+                  - 'link "Permalink: Layout" [ref=e508] [cursor=pointer]':
+                    - /url: "#layout"
+                - table [ref=e512]:
+                  - rowgroup [ref=e513]:
+                    - row [ref=e514]:
+                      - columnheader "Path" [ref=e515]
+                      - columnheader "What lives there" [ref=e516]
+                  - rowgroup [ref=e517]:
+                    - row [ref=e518]:
+                      - cell [ref=e519]:
+                        - code [ref=e520]: SPEC.md
+                      - 'cell "The specification: Tracewake''s architecture, bounds, and guarantees stated in OpenAI Symphony''s terms." [ref=e521]'
+                    - row [ref=e522]:
+                      - cell [ref=e523]:
+                        - code [ref=e524]: INSTALL.md
+                      - cell "The step-by-step Single-Host walkthrough, from nothing to a first dry-run cycle." [ref=e525]
+                    - row [ref=e526]:
+                      - cell [ref=e527]:
+                        - code [ref=e528]: CONTEXT.md
+                      - cell "The single domain vocabulary for the project." [ref=e529]
+                    - row [ref=e530]:
+                      - cell [ref=e531]:
+                        - code [ref=e532]: loop/
+                      - cell [ref=e533]:
+                        - text: "The Run-side half: the Termination Contract, one Run, Seeding, the Proposal, the agent adapters, and the offline bats suite that drives all of it through scripted fakes. Start at"
+                        - code [ref=e534]: loop/README.md
+                        - text: .
+                    - row [ref=e535]:
+                      - cell [ref=e536]:
+                        - code [ref=e537]: selector/
+                      - cell [ref=e538]:
+                        - text: "The controller: the Cycle, Eligibility, Dispatch, the Journal, the watcher, the notifier, the board, and its pytest suite. Start at"
+                        - code [ref=e539]: selector/README.md
+                        - text: .
+                    - row [ref=e540]:
+                      - cell [ref=e541]:
+                        - code [ref=e542]: web/
+                      - 'cell "The window: a FastAPI app that renders the Journal - the queue board, a Run''s history, the ADRs - and its suite." [ref=e543]'
+                    - row [ref=e544]:
+                      - cell [ref=e545]:
+                        - code [ref=e546]: deploy/systemd/
+                      - 'cell "The units: the Selector''s cycle timer and notifier, the window and its Attended Preview." [ref=e547]'
+                    - row [ref=e548]:
+                      - cell [ref=e549]:
+                        - code [ref=e550]: deploy/ansible/
+                      - cell [ref=e551]:
+                        - code [ref=e552]: host.yml
+                        - text: installs the Single-Host Controller, local Box, and HTTPS proxy.
+                    - row [ref=e553]:
+                      - cell [ref=e554]:
+                        - code [ref=e555]: wizards/
+                      - cell [ref=e556]:
+                        - text: Runnable walkthroughs for the steps only a human can take - the browser logins the box does not have a browser for.
+                        - code [ref=e557]: host-up.sh
+                        - text: stands the Host up (droplet, play,
+                        - code [ref=e558]: /healthz
+                        - text: ", credential inventory) for #57."
+                    - row [ref=e559]:
+                      - cell [ref=e560]:
+                        - code [ref=e561]: docs/adr/
+                      - cell "The decisions, numbered 0001 upward." [ref=e562]
+                    - row [ref=e563]:
+                      - cell [ref=e564]:
+                        - code [ref=e565]: notes/
+                      - 'cell "Evidence: what was run, what it printed, and what that settled." [ref=e566]'
+                    - row [ref=e567]:
+                      - cell [ref=e568]:
+                        - code [ref=e569]: research/
+                      - cell "The source-cited investigations the notes and the ADRs rest on." [ref=e570]
+                - generic [ref=e571]:
+                  - heading "What Tracewake refuses to do" [level=2] [ref=e572]
+                  - 'link "Permalink: What Tracewake refuses to do" [ref=e573] [cursor=pointer]':
+                    - /url: "#what-tracewake-refuses-to-do"
+                - paragraph [ref=e576]: "The invariants that govern Tracewake are defined by what it guarantees and what it refuses to do:"
+                - list [ref=e577]:
+                  - listitem [ref=e578]:
+                    - strong [ref=e579]: Proposal-Only Output (refuses autonomous merges)
+                    - text: ": A Run's sole external output is a draft pull request (ADR 0013). A human operator reviews, tests, and merges every change. Nothing merges itself."
+                  - listitem [ref=e580]:
+                    - strong [ref=e581]: Subscription Credentials (refuses metered keys)
+                    - text: ": Agents authenticate against flat-rate subscriptions, such as a 1-year"
+                    - code [ref=e582]: CLAUDE_CODE_OAUTH_TOKEN
+                    - text: or seat (ADR 0004, ADR 0020). Preflight refuses metered API keys (such as
+                    - code [ref=e583]: ANTHROPIC_API_KEY
+                    - text: ), eliminating runaway spend.
+                  - listitem [ref=e584]:
+                    - strong [ref=e585]: Secret Scans on Diff (refuses credential leaks)
+                    - text: ":"
+                    - code [ref=e586]: propose.sh
+                    - text: inspects outgoing git diffs for known token patterns (such as
+                    - code [ref=e587]: sk-ant-oat01-
+                    - text: ) and refuses to publish a proposal containing them.
+                  - listitem [ref=e588]:
+                    - strong [ref=e589]: MicroVM Boundary (refuses unisolated execution)
+                    - text: ": Every Iteration executes inside an isolated microVM or container with pinned network egress and an ephemeral filesystem (ADR 0003, ADR 0011)."
+                  - listitem [ref=e590]:
+                    - strong [ref=e591]: Out-of-Repo Configuration (refuses repo pollution)
+                    - text: ": Target repositories carry zero Tracewake configuration files, workflow templates, or hooks. Configuration lives entirely on the controller."
+                  - listitem [ref=e592]:
+                    - strong [ref=e593]: Termination Contract (refuses unverified done signals)
+                    - text: ": A Run terminates only when one of its five declared Contract bounds binds (ADR 0007). A model's \"Completion Promise\" is advisory and never ends a Run or claims done on its own."
+                  - listitem [ref=e594]:
+                    - strong [ref=e595]: Explicit Instance Config (refuses guessed defaults)
+                    - text: ": Missing required instance or target configuration aborts the cycle immediately at preflight with the missing key named, refusing to fall back to arbitrary placeholder values (ADR 0003)."
+                  - listitem [ref=e596]:
+                    - strong [ref=e597]: Protected Executed Paths (refuses unreviewed execution)
+                    - text: ": The Guardrail verifies that all executed paths (scripts, selectors, unit files) are protected by GitHub rulesets and clean against reviewed git refs (ADR 0026)."
+                  - listitem [ref=e598]:
+                    - strong [ref=e599]: Review Capacity Bounds (refuses reviewer flooding)
+                    - text: ": Dispatches halt when open proposals awaiting review reach the target's"
+                    - code [ref=e600]: review_cap
+                    - text: (ADR 0022), keeping unattended throughput aligned with human review capacity.
+                  - listitem [ref=e601]:
+                    - strong [ref=e602]: Bounded Retries (refuses infinite loops)
+                    - text: ": Failed runs are retried at most once on the same branch before escalating to"
+                    - code [ref=e603]: ready-for-human
+                    - text: .
+                - generic [ref=e604]:
+                  - heading "Running the suites" [level=2] [ref=e605]
+                  - 'link "Permalink: Running the suites" [ref=e606] [cursor=pointer]':
+                    - /url: "#running-the-suites"
+                - paragraph [ref=e609]:
+                  - text: Three suites and two mutation checks, all offline - no model, no network, no spend. The two Python suites need a Postgres role matching the OS user with
+                  - code [ref=e610]: CREATEDB
+                  - text: ; they create and drop a throwaway database per run.
+                - generic [ref=e611]:
+                  - generic [ref=e612]:
+                    - generic [ref=e613]: "# The Loop - bats"
+                    - text: cd loop && bats tests/
+                    - generic [ref=e614]: "# The Selector - pytest"
+                    - text: cd selector && python -m venv .venv && .venv/bin/pip install -r requirements-dev.txt .venv/bin/python -m pytest tests/
+                    - generic [ref=e615]: "# The window - pytest"
+                    - text: cd web && python -m venv .venv && .venv/bin/pip install -r requirements-dev.txt .venv/bin/python -m pytest tests/
+                  - button "Copy code to clipboard" [ref=e617] [cursor=pointer]
+                - paragraph [ref=e621]: "The mutation checks break one bound or one guard at a time and confirm the suites go red. Anything whose removal leaves a suite green is something that suite does not actually verify, which on a project with one reviewer is the highest-value verification available. Each takes minutes: one suite run per mutation."
+                - generic [ref=e622]:
+                  - generic [ref=e623]: loop/tests/mutation-check.sh selector/tests/mutation-check.sh
+                  - button "Copy code to clipboard" [ref=e625] [cursor=pointer]
+                - generic [ref=e629]:
+                  - heading "Status" [level=2] [ref=e630]
+                  - 'link "Permalink: Status" [ref=e631] [cursor=pointer]':
+                    - /url: "#status"
+                - paragraph [ref=e634]:
+                  - text: "v0 is being assembled. This repository holds the history, the code, the suites and - since issue #3 - the configuration that replaced the defaults. What is left is tracked in this repository's issues, under"
+                  - 'link "Spec: Tracewake v0" [ref=e635] [cursor=pointer]':
+                    - /url: https://github.com/JacobStephens2/tracewake/issues/1
+                  - text: .
+                - generic [ref=e636]:
+                  - heading "Licence" [level=2] [ref=e637]
+                  - 'link "Permalink: Licence" [ref=e638] [cursor=pointer]':
+                    - /url: "#licence"
+                - paragraph [ref=e641]:
+                  - text: MIT. See
+                  - link [ref=e642] [cursor=pointer]:
+                    - /url: /JacobStephens2/tracewake/blob/main/LICENSE
+                    - code [ref=e643]: LICENSE
+                  - text: .
+        - generic [ref=e646]:
+          - generic [ref=e647]:
+            - heading "About" [level=2] [ref=e648]
+            - paragraph [ref=e649]: Turns a labeled GitHub issue into a reviewable draft pull request, unattended. A coding agent runs in a fresh microVM under a Termination Contract; nothing merges itself.
+            - heading "Topics" [level=3] [ref=e650]
+            - generic [ref=e651]:
+              - link "agentic-workflow" [ref=e652] [cursor=pointer]:
+                - /url: /topics/agentic-workflow
+              - link "ansible" [ref=e653] [cursor=pointer]:
+                - /url: /topics/ansible
+              - link "autonomous-agents" [ref=e654] [cursor=pointer]:
+                - /url: /topics/autonomous-agents
+              - link "bats" [ref=e655] [cursor=pointer]:
+                - /url: /topics/bats
+              - link "claude-code" [ref=e656] [cursor=pointer]:
+                - /url: /topics/claude-code
+              - link "codex" [ref=e657] [cursor=pointer]:
+                - /url: /topics/codex
+              - link "coding-agent" [ref=e658] [cursor=pointer]:
+                - /url: /topics/coding-agent
+              - link "fastapi" [ref=e659] [cursor=pointer]:
+                - /url: /topics/fastapi
+              - link "github-issues" [ref=e660] [cursor=pointer]:
+                - /url: /topics/github-issues
+              - link "microvm" [ref=e661] [cursor=pointer]:
+                - /url: /topics/microvm
+              - link "postgresql" [ref=e662] [cursor=pointer]:
+                - /url: /topics/postgresql
+              - link "pull-requests" [ref=e663] [cursor=pointer]:
+                - /url: /topics/pull-requests
+              - link "pytest" [ref=e664] [cursor=pointer]:
+                - /url: /topics/pytest
+              - link "systemd" [ref=e665] [cursor=pointer]:
+                - /url: /topics/systemd
+            - heading "Resources" [level=3] [ref=e666]
+            - link "Readme" [ref=e668] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+            - link "MIT license" [ref=e672] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+            - link "Activity" [ref=e676] [cursor=pointer]:
+              - /url: /JacobStephens2/tracewake/activity
+            - heading "Stars" [level=3] [ref=e679]
+            - generic [ref=e681]:
+              - strong [ref=e684]: "0"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e685]
+            - generic [ref=e687]:
+              - strong [ref=e690]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e691]
+            - link [ref=e693] [cursor=pointer]:
+              - /url: /JacobStephens2/tracewake/forks
+              - strong [ref=e697]: "0"
+              - text: forks
+            - link "Report repository" [ref=e699] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FJacobStephens2%2Ftracewake&report=JacobStephens2+%28user%29
+          - heading "Releases" [level=2] [ref=e701]
+          - heading "Packages" [level=2] [ref=e705]
+          - heading "Contributors" [level=2] [ref=e708]
+          - heading "Languages" [level=2] [ref=e711]
+    - contentinfo [ref=e714]:
+      - heading "Footer" [level=2] [ref=e715]
+      - generic [ref=e716]:
+        - generic [ref=e717]:
+          - link "GitHub Homepage" [ref=e718] [cursor=pointer]:
+            - /url: https://github.com
+          - generic [ref=e721]: © 2026 GitHub, Inc.
+        - navigation "Footer" [ref=e722]:
+          - heading "Footer navigation" [level=3] [ref=e723]
+          - list "Footer navigation" [ref=e724]:
+            - listitem [ref=e725]:
+              - link "Terms" [ref=e726] [cursor=pointer]:
+                - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+            - listitem [ref=e727]:
+              - link "Privacy" [ref=e728] [cursor=pointer]:
+                - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+            - listitem [ref=e729]:
+              - link "Security" [ref=e730] [cursor=pointer]:
+                - /url: https://github.com/security
+            - listitem [ref=e731]:
+              - link "Status" [ref=e732] [cursor=pointer]:
+                - /url: https://www.githubstatus.com/
+            - listitem [ref=e733]:
+              - link "Community" [ref=e734] [cursor=pointer]:
+                - /url: https://github.community/
+            - listitem [ref=e735]:
+              - link "Docs" [ref=e736] [cursor=pointer]:
+                - /url: https://docs.github.com/
+            - listitem [ref=e737]:
+              - link "Contact" [ref=e738] [cursor=pointer]:
+                - /url: https://support.github.com?tags=dotcom-footer
+            - listitem [ref=e739]:
+              - button "Manage cookies" [ref=e741] [cursor=pointer]
+            - listitem [ref=e742]:
+              - button "Do not share my personal information" [ref=e744] [cursor=pointer]
+  - alert [ref=e747]
