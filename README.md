@@ -20,7 +20,7 @@ As Head of Engineering at Educational Travel Adventures, I lead a two-engineer t
 
 - **Removed ~80% of measured database query time** with three online indexes, guided by production measurements and verified with query plans.
 - **Cut manifest load time from 5–7 seconds to ~1 second** and SQL statements per request from **2,650 to 183**, while preserving byte-identical HTML.
-- **Shipped 14 manager-prototyped features** through engineering review and hardening. Managers prototype in Docker sandboxes; a human reviews changes before production.
+- Built isolated Docker sandboxes for non-engineering managers; the marketing workflow alone has produced **30+ pull requests merged by engineering**.
 - **Instrumented 14 hosts** with Prometheus, Grafana, and Alertmanager, covering host metrics, database replication, uptime, and TLS expiry.
 
 Most of this code is private. The **[ETA platform case study](https://stephens.page/blog/one-engineer-platform-production-systems/)** documents the problems, decisions, and measured outcomes; **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** shares sanitized architecture decisions, threat models, and operational review practices.
