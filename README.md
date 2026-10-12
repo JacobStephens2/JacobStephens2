@@ -45,7 +45,7 @@ Most of this code is private. The **[ETA platform case study](https://stephens.p
 
 - **Merged and released:** [Per-profile hidden-folder support](https://github.com/sotashimozono/obsidian-remote-ssh/pull/535) in `obsidian-remote-ssh`, making selected hidden directories browsable over SSH, including agent worktrees, while preserving configuration and ignore rules. Shipped and credited in [v1.1.8](https://github.com/sotashimozono/obsidian-remote-ssh/pull/557).
 - **Merged:** [MySQL 8.4 authentication fix](https://github.com/krowinski/php-mysql-replication/pull/148) in `php-mysql-replication`, enabling binlog readers to connect without downgrading server authentication.
-- **PR submitted:** [Kimi Code credential-resolution fix](https://github.com/MoonshotAI/kimi-code/pull/2746) for headless runs that ignored environment-provided credentials.
+- **Reported and validated:** [Herdr / Muse stale working-state bug](https://github.com/herdrdev/herdr/issues/3951), with reproduction evidence and workaround verification. A Herdr maintainer confirmed the bug; the Muse team shipped the fix in **Muse Code 1.2.1**.
 
 <details>
 <summary>Published libraries and more projects</summary>
