@@ -36,10 +36,10 @@ Most of this code is private. The **[ETA platform case study](https://stephens.p
 
 ### Product engineering
 
-- **[Chart35](https://github.com/JacobStephens2/chart35-showcase)** — Offline-first charting with end-to-end encrypted sync across web, iOS, and Android. The public showcase explains the architecture and privacy boundaries. [Product](https://chart35.com/creighton)
-- **[Thereish](https://thereish.app/)** — A couch word game for two to six phones and a laptop: everyone bridges two far-apart words and a language model grades how close the table landed. Phoenix LiveView, with the rules as one pure reducer and every model call behind one seam. [Write-up](https://stephens.page/blog/the-machine-grades-it-never-rules/)
+- **[Chart35](https://github.com/JacobStephens2/chart35-showcase)** - Offline-first charting with end-to-end encrypted sync across web, iOS, and Android. The public showcase explains the architecture and privacy boundaries. [Product](https://chart35.com/creighton)
+- **[Thereish](https://thereish.app/)** - A couch word game for two to six phones and a laptop: everyone bridges two far-apart words and a language model grades how close the table landed. Phoenix LiveView, with the rules as one pure reducer and every model call behind one seam. [Write-up](https://stephens.page/blog/the-machine-grades-it-never-rules/)
 
-- **[Cascade](https://github.com/JacobStephens2/cascade)** — A waterfall sound player with one headless Rust core and six platform shells: web, Android, macOS, Windows, iOS, and watchOS. [Architecture](https://cascade.stephens.page/architecture/) · [Apps](https://cascade.stephens.page/apps)
+- **[Cascade](https://github.com/JacobStephens2/cascade)** - A waterfall sound player with one headless Rust core and six platform shells: web, Android, macOS, Windows, iOS, and watchOS. [Architecture](https://cascade.stephens.page/architecture/) · [Apps](https://cascade.stephens.page/apps)
 
 ### Upstream contributions
 
@@ -57,8 +57,8 @@ TypeScript and Go libraries with cross-language test fixtures:
 | HMAC webhook verification | [webhook-verify](https://github.com/JacobStephens2/webhook-verify) · [npm](https://www.npmjs.com/package/@stephenspage/webhook-verify) | [webhook-verify-go](https://github.com/JacobStephens2/webhook-verify-go) |
 | AES-256-GCM encryption envelopes | [webcrypto-envelope](https://github.com/JacobStephens2/webcrypto-envelope) · [npm](https://www.npmjs.com/package/@stephenspage/webcrypto-envelope) | [webcrypto-envelope-go](https://github.com/JacobStephens2/webcrypto-envelope-go) |
 
-- **[Drome](https://drome.day/)** — Local-first iOS challenge tracker with a Rust rules engine, SwiftUI, and WidgetKit.
-- **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** — A separate, non-production Kubernetes learning environment with probes, resource limits, ingress, and kustomize.
+- **[Drome](https://drome.day/)** - Local-first iOS challenge tracker with a Rust rules engine, SwiftUI, and WidgetKit.
+- **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** - A separate, non-production Kubernetes learning environment with probes, resource limits, ingress, and kustomize.
 
 </details>
 
