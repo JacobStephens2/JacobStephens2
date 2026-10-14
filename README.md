@@ -47,15 +47,17 @@ Most of this code is private. The **[ETA platform case study](https://stephens.p
 - **Merged:** [MySQL 8.4 authentication fix](https://github.com/krowinski/php-mysql-replication/pull/148) in `php-mysql-replication`, enabling binlog readers to connect without downgrading server authentication.
 - **Reported and validated:** [Herdr / Muse stale working-state bug](https://github.com/herdrdev/herdr/issues/3951), with reproduction evidence and workaround verification. A Herdr maintainer confirmed the bug; the Muse team shipped the fix in **Muse Code 1.2.1**.
 
-<details>
-<summary>Published libraries and more projects</summary>
+### Published libraries in TypeScript and Go
 
-TypeScript and Go libraries with cross-language test fixtures:
+Each library ships in both languages against shared cross-language test fixtures:
 
 | Library | TypeScript | Go |
 | --- | --- | --- |
 | HMAC webhook verification | [webhook-verify](https://github.com/JacobStephens2/webhook-verify) · [npm](https://www.npmjs.com/package/@stephenspage/webhook-verify) | [webhook-verify-go](https://github.com/JacobStephens2/webhook-verify-go) |
 | AES-256-GCM encryption envelopes | [webcrypto-envelope](https://github.com/JacobStephens2/webcrypto-envelope) · [npm](https://www.npmjs.com/package/@stephenspage/webcrypto-envelope) | [webcrypto-envelope-go](https://github.com/JacobStephens2/webcrypto-envelope-go) |
+
+<details>
+<summary>More projects</summary>
 
 - **[Drome](https://drome.day/)** - Local-first iOS challenge tracker with a Rust rules engine, SwiftUI, and WidgetKit.
 - **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** - A separate, non-production Kubernetes learning environment with probes, resource limits, ingress, and kustomize.
