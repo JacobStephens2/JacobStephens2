@@ -32,14 +32,16 @@ Most of this code is private. The **[ETA platform case study](https://stephens.p
 | **[thirdshift](https://github.com/JacobStephens2/thirdshift)** | Rust orchestration for unattended issue-to-PR delivery: dependency scheduling, review and CI gates, repair loops, and resumable work. |
 | **[infrastructure-patterns](https://github.com/JacobStephens2/infrastructure-patterns)** | Production architecture decisions and their trade-offs: tenant isolation, agent identity, deployment, and human review. |
 | **[vaulted-agent](https://github.com/JacobStephens2/vaulted-agent)** | Rust launcher that resolves vault secrets into agent processes, with per-agent secret manifests and optional prompt authentication. [Product](https://vaultedagent.com/) |
+| **[voice-agent-scheduling](https://github.com/JacobStephens2/voice-agent-scheduling)** | TypeScript telephone agent for Google Calendar booking: signed webhooks, explicit caller confirmation, durable reconciliation to prevent duplicate events, and bounded call costs. |
 | **[muxboard](https://github.com/JacobStephens2/muxboard)** | Python dashboard for tmux sessions across a host or fleet, with browser attach, default-deny authentication, and a documented threat model. [Product](https://muxboard.dev/) |
 
 ### Product engineering
 
 - **[Chart35](https://github.com/JacobStephens2/chart35-showcase)** - Offline-first charting with end-to-end encrypted sync across web, iOS, and Android. The public showcase explains the architecture and privacy boundaries. [Product](https://chart35.com/creighton)
-- **[Thereish](https://thereish.app/)** - A couch word game for two to six phones and a laptop: everyone bridges two far-apart words and a language model grades how close the table landed. Phoenix LiveView, with the rules as one pure reducer and every model call behind one seam. [Write-up](https://stephens.page/blog/the-machine-grades-it-never-rules/)
-
+- **[Thereish](https://github.com/JacobStephens2/thereish)** - A realtime couch word game in Elixir and Phoenix LiveView. Pure game rules stay separate from room processes and model calls. [Play](https://thereish.app/game) · [Write-up](https://stephens.page/blog/the-machine-grades-it-never-rules/)
 - **[Cascade](https://github.com/JacobStephens2/cascade)** - A waterfall sound player with one headless Rust core and six platform shells: web, Android, macOS, Windows, iOS, and watchOS. [Architecture](https://cascade.stephens.page/architecture/) · [Apps](https://cascade.stephens.page/apps)
+- **[Drome](https://github.com/JacobStephens2/drome)** - A local-first challenge tracker built for my sister, who used it through her 75-day challenge. An event-driven Rust rules engine powers native SwiftUI and WidgetKit; day-boundary math is property-tested. [Product](https://drome.day/)
+- **[Sotto for Android](https://github.com/JacobStephens2/sotto-android)** - On-device text-to-speech in Kotlin with resumable narration. The local build has no `INTERNET` permission; shared test vectors keep its text pipeline equivalent to the [Python service](https://github.com/JacobStephens2/sotto).
 
 ### Upstream contributions
 
@@ -59,7 +61,9 @@ Each library ships in both languages against shared cross-language test fixtures
 <details>
 <summary>More projects</summary>
 
-- **[Drome](https://drome.day/)** - Local-first iOS challenge tracker with a Rust rules engine, SwiftUI, and WidgetKit.
+- **[voice-agent](https://github.com/JacobStephens2/voice-agent)** - A personal TypeScript prototype for voice-led operations and coding-agent delegation, with passkey authentication, restricted capabilities, durable task evidence, and human-reviewed promotion. Live telephone and code-change flows remain under attended acceptance testing.
+- **[Quadrille](https://github.com/JacobStephens2/quadrille)** - Local-first Flutter workout tracker with SQLite persistence, optional sync, and wall-clock rest timers. The reusable [countdown-ring](https://github.com/JacobStephens2/countdown-ring) package was extracted from it.
+- **[Clave](https://github.com/JacobStephens2/clave)** - Cooperative salsa card game with a headless TypeScript rules engine, server-authoritative rooms, and transactional SQLite persistence. [Play](https://clave.dance)
 - **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** - A separate, non-production Kubernetes learning environment with probes, resource limits, ingress, and kustomize.
 
 </details>
