@@ -4,7 +4,7 @@
 
 My current focus is **[thirdshift](https://thirdshift.app/)**, an open-source software factory in Rust that takes GitHub issues through implementation, review, and CI to pull requests.
 
-As Head of Engineering at Educational Travel Adventures, I lead a two-engineer team and remain hands-on with the reservations, payments, Linux fleet, and AI-agent infrastructure of a multi-million-dollar specialty-travel business.
+As Head of Engineering at Educational Travel Adventures, I lead an engineering team and remain hands-on with the reservations, payments, Linux fleet, and AI-agent infrastructure of a multi-million-dollar specialty-travel business.
 
 [Start here](https://stephens.page/) · [thirdshift](https://thirdshift.app/) · [Portfolio](https://stephens.page/portfolio.html) · [Resume](https://stephens.page/resume/) · [LinkedIn](https://www.linkedin.com/in/jacob-c-stephens) · [Contact](https://stephens.page/contact.html)
 
