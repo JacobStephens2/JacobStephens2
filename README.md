@@ -12,7 +12,7 @@ As Head of Engineering at Educational Travel Adventures, I lead a two-engineer t
 
 - A deterministic Rust engine supports **six coding-agent harnesses** and coordinates standards and spec reviews, CI checks, and bounded repair loops.
 - Dependency-aware parallel tickets run in separate Git worktrees. Failed runs preserve their work for continuation; merging is explicitly configured.
-- I test the assumptions behind the factory. **[Fresh Eyes Beat a Second Family](https://stephens.page/blog/fresh-eyes-beat-a-second-family/)** reports 183 replayed code-review sessions, with fresh-session controls, acceptance bars, and limitations.
+- I test the assumptions behind the factory. **[Fresh Eyes Beat a Second Family](https://stephens.page/blog/fresh-eyes-beat-a-second-family/paper/)** reports 183 replayed code-review sessions, with fresh-session controls, acceptance bars, and limitations.
 
 [Source & architecture](https://github.com/JacobStephens2/thirdshift) · [Project](https://thirdshift.app/)
 
