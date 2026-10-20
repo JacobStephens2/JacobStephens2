@@ -61,7 +61,6 @@ Each library ships in both languages against shared cross-language test fixtures
 <details>
 <summary>More projects</summary>
 
-- **[voice-agent](https://github.com/JacobStephens2/voice-agent)** - A personal TypeScript prototype for voice-led operations and coding-agent delegation, with passkey authentication, restricted capabilities, durable task evidence, and human-reviewed promotion. Live telephone and code-change flows remain under attended acceptance testing.
 - **[Quadrille](https://github.com/JacobStephens2/quadrille)** - Local-first Flutter workout tracker with SQLite persistence, optional sync, and wall-clock rest timers. The reusable [countdown-ring](https://github.com/JacobStephens2/countdown-ring) package was extracted from it.
 - **[Clave](https://github.com/JacobStephens2/clave)** - Cooperative salsa card game with a headless TypeScript rules engine, server-authoritative rooms, and transactional SQLite persistence. [Play](https://clave.dance)
 - **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** - A separate, non-production Kubernetes learning environment with probes, resource limits, ingress, and kustomize.
