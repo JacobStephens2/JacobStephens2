@@ -46,6 +46,7 @@ Most of this code is private. The **[ETA platform case study](https://stephens.p
 ### Upstream contributions
 
 - **Merged and released:** [Per-profile hidden-folder support](https://github.com/sotashimozono/obsidian-remote-ssh/pull/535) in `obsidian-remote-ssh`, making selected hidden directories browsable over SSH, including agent worktrees, while preserving configuration and ignore rules. Shipped and credited in [v1.1.8](https://github.com/sotashimozono/obsidian-remote-ssh/pull/557).
+- **Merged and released:** a [Catppuccin theme](https://github.com/quboliu/flintmark/pull/9), a [Live Preview keyboard-focus fix](https://github.com/quboliu/flintmark/pull/12), and the indexing fix for [workspace rescans that froze the extension host](https://github.com/quboliu/flintmark/issues/13) in `flintmark`, an Obsidian-style Markdown live preview for VS Code. Shipped and credited in [v0.33.0](https://github.com/quboliu/flintmark/releases/tag/v0.33.0).
 - **Merged:** [MySQL 8.4 authentication fix](https://github.com/krowinski/php-mysql-replication/pull/148) in `php-mysql-replication`, enabling binlog readers to connect without downgrading server authentication.
 - **Reported and validated:** [Herdr / Muse stale working-state bug](https://github.com/herdrdev/herdr/issues/3951), with reproduction evidence and workaround verification. A Herdr maintainer confirmed the bug; the Muse team shipped the fix in **Muse Code 1.2.1**.
 
