@@ -67,7 +67,3 @@ Each library ships in both languages against shared cross-language test fixtures
 - **[k3s-demo](https://github.com/JacobStephens2/k3s-demo)** - A separate, non-production Kubernetes learning environment with probes, resource limits, ingress, and kustomize.
 
 </details>
-
----
-
-St. Carlo Acutis, pray for us.
